@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "iHafidh",
     images: [
       {
-        url: "https://ihafidh-website.vercel.app/og-image.png",
+        url: "https://ihafidh-website.vercel.app/banner.png",
         width: 1200,
         height: 630,
         alt: "iHafidh App - Master Quran Memorization",

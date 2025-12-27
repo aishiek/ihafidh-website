@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ihafidh.vercel.app"),
+  metadataBase: new URL("https://ihafidh-website.vercel.app"),
   title: {
     default: "iHafidh - Master Your Quran Memorization Journey",
     template: "%s | iHafidh"

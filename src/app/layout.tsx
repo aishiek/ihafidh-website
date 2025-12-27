@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "iHafidh",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://ihafidh-website.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "iHafidh App - Master Quran Memorization",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "iHafidh - Quran Memorization Simplified",
     description: "Beautiful statistics and progress tracking for your Quran memorization journey.",
-    images: ["/og-image.png"],
+    images: ["https://ihafidh-website.vercel.app/og-image.png"],
   },
   robots: {
     index: true,
@@ -61,12 +61,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" prefix="og: https://ogp.me/ns#">
       <head>
         <link rel="canonical" href="https://ihafidh-website.vercel.app" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-image.png" />
       </head>
       <body className={outfit.className}>
         {children}

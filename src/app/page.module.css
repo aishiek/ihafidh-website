@@ -186,6 +186,41 @@
   font-weight: 700;
 }
 
+.readerFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.readerFeatureItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.readerFeatureIcon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.readerFeatureItem h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.readerFeatureItem p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 @media (max-width: 968px) {
   .hero {
     flex-direction: column;

@@ -2,9 +2,12 @@ import {
   BarChart3,
   CheckCircle2,
   Clock,
+  Languages,
   Layers,
   Music,
-  Settings
+  Search,
+  Settings,
+  Sparkles
 } from "lucide-react";
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -36,14 +39,14 @@ export default function Home() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
-              <span className={`${styles.badge} animate - fade -in `}>New Version 2.0 Out Now</span>
+              <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
               <h1 className="animate-fade-in">Master Your Quran <span className="gradient-text">Memorization</span> Journey</h1>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Your comprehensive digital companion for Hifdh with detailed statistics,
                 visual progress tracking, and spaced repetition techniques.
               </p>
 
-              <div className={`${styles.downloadButtons} animate - fade -in `} style={{ animationDelay: '0.2s' }} id="download">
+              <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
                 <a href="#" className={styles.downloadButton}>
                   <Image src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on App Store" width={160} height={53} />
                 </a>
@@ -148,6 +151,60 @@ export default function Home() {
                   <CheckCircle2 color="var(--primary)" /> Achievement badges and milestones
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Daily Recitation Section */}
+      <section className={styles.dailySection} id="daily-recitation">
+        <div className="container">
+          <div className={styles.statsSection} style={{ flexDirection: 'row-reverse' }}>
+            <div className={styles.statsContent}>
+              <div className={styles.badge}>For Daily Readers</div>
+              <h2 className="gradient-text">Beyond Memorization</h2>
+              <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
+                Whether you're aiming for Hifdh or just want a meaningful daily recitation,
+                iHafidh provides a premium reading experience for every Muslim.
+              </p>
+
+              <div className={styles.readerFeatures}>
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon}><Sparkles size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>Daily Ayah Notifications</h4>
+                    <p>Start your morning with a beautiful verse and reflection delivered to your device.</p>
+                  </div>
+                </div>
+
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>Multi-Language Tarjuma</h4>
+                    <p>Access high-quality translations in English, Urdu, Tamil, French, and many more.</p>
+                  </div>
+                </div>
+
+                <div className={styles.readerFeatureIconItem}>
+                  <div className={styles.readerFeatureIcon}><Search size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>Scholarly Tafsirs</h4>
+                    <p>Deepen your understanding with multi-language tafsirs directly in the reader.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.heroImageArea} style={{ flex: 1 }}>
+              <div className={styles.heroGlow}></div>
+              <Image
+                src="/daily-preview.png"
+                alt="Daily Ayah and Translation Features"
+                width={350}
+                height={700}
+                className="glass animate-float"
+                style={{ borderRadius: '40px', objectFit: 'cover', zIndex: 2, position: 'relative' }}
+              />
             </div>
           </div>
         </div>

@@ -69,17 +69,20 @@ export default function Home() {
               <a href="#whats-new">
                 <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
               </a>
-              <h1 className="animate-fade-in">Master Your Quran <span className="gradient-text">Memorization</span> Journey</h1>
+              <h1 className="animate-fade-in" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
+                Master your <span className="gradient-text">Al-Quran</span> Memorization with iHafidh
+                <Image src="/logo.png" alt="iHafidh" width={48} height={48} style={{ borderRadius: '10px', marginLeft: '0.5rem' }} />
+              </h1>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Track your progress, build consistency, and achieve your Hifdh goals with our comprehensive digital companion.
               </p>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
-                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
-                </a>
                 <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
                   <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
+                </a>
+                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
                 </a>
               </div>
             </div>
@@ -146,6 +149,12 @@ export default function Home() {
 
           <div className={styles.featureGrid}>
             <div className={`${styles.featureCard} glass`}>
+              <div className={styles.featureIcon}><Settings size={32} /></div>
+              <h3>Custom Page Mode</h3>
+              <p>Customize reading from 3 to 20 Ayahs. Create and track your own pages with page-level audio repetition for easier memorization.</p>
+            </div>
+
+            <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><Layers size={32} /></div>
               <h3>Comprehensive Tracking</h3>
               <p>Monitor your journey across all 114 Surahs and 30 Juz with visual progress indicators.</p>
@@ -175,11 +184,6 @@ export default function Home() {
               <p>Create customizable study plans and receive smart reminders to keep you on track.</p>
             </div>
 
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><Settings size={32} /></div>
-              <h3>Fully Customizable</h3>
-              <p>Multiple Mushaf layouts including Hafs and Indopak to suit your preference.</p>
-            </div>
           </div>
         </div>
       </section>
@@ -339,16 +343,16 @@ export default function Home() {
       {/* CTA Section */}
       <section className={styles.cta}>
         <div className="container glass" style={{ padding: '6rem 2rem' }}>
-          <h2>Start Your Journey Today</h2>
+          <h2>Start Your Hfidh Journey Now</h2>
           <p style={{ maxWidth: '600px', margin: '1rem auto 3rem' }}>
             Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.
           </p>
           <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
-            <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-              <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
-            </a>
             <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
               <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
+            </a>
+            <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+              <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
             </a>
           </div>
         </div>

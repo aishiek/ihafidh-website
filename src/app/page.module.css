@@ -222,40 +222,50 @@
 }
 
 .banner {
-  background: linear-gradient(90deg, #f5f3ff 0%, #eff6ff 100%);
-  border-bottom: 1px solid #ddd6fe;
-  padding: 0.75rem 1rem;
+  background: rgba(139, 92, 246, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  padding: 0.6rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 101;
-  color: #5b21b6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #c4b5fd;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .bannerContent {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   max-width: 1200px;
   width: 100%;
+  text-align: center;
 }
 
 .bannerClose {
-  background: transparent;
-  border: none;
-  color: #5b21b6;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #c4b5fd;
+  border-radius: 6px;
   cursor: pointer;
-  padding: 4px;
+  padding: 2px;
   display: flex;
   align-items: center;
-  transition: opacity 0.2s;
+  transition: all 0.2s ease;
+  margin-left: 1rem;
 }
 
 .bannerClose:hover {
-  opacity: 0.7;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
 }
 
 .howItWorks {

@@ -69,20 +69,19 @@ export default function Home() {
               <a href="#whats-new">
                 <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
               </a>
-              <h1 className="animate-fade-in" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
-                Master your <span className="gradient-text">Al-Quran</span> Memorization with iHafidh
-                <Image src="/logo.png" alt="iHafidh" width={48} height={48} style={{ borderRadius: '10px', marginLeft: '0.5rem' }} />
+              <h1 className="animate-fade-in">
+                Master your <span className="gradient-text">Al-Quran</span> Memorization with <span className="gradient-text">iHafidh</span>
               </h1>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
                 Track your progress, build consistency, and achieve your Hifdh goals with our comprehensive digital companion.
               </p>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
-                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
-                </a>
                 <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
                   <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
                 </a>
               </div>
             </div>
@@ -348,11 +347,11 @@ export default function Home() {
             Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.
           </p>
           <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
-            <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-              <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
-            </a>
             <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
               <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+              <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
             </a>
           </div>
         </div>

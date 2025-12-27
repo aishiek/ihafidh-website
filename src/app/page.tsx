@@ -47,11 +47,11 @@ export default function Home() {
               </p>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
-                <a href="#" className={styles.downloadButton}>
-                  <Image src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on App Store" width={160} height={53} />
+                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/appstore-badge.png" alt="Download on App Store" width={160} height={48} style={{ height: 'auto' }} />
                 </a>
-                <a href="#" className={styles.downloadButton}>
-                  <Image src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width={200} height={78} style={{ marginTop: '-12px' }} />
+                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/playstore-badge.png" alt="Get it on Google Play" width={175} height={48} style={{ height: 'auto' }} />
                 </a>
               </div>
             </div>
@@ -218,11 +218,11 @@ export default function Home() {
             Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.
           </p>
           <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
-            <a href="#" className={styles.downloadButton}>
-              <Image src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on App Store" width={160} height={53} />
+            <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+              <Image src="/appstore-badge.png" alt="Download on App Store" width={160} height={48} style={{ height: 'auto' }} />
             </a>
-            <a href="#" className={styles.downloadButton}>
-              <Image src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width={200} height={78} style={{ marginTop: '-12px' }} />
+            <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+              <Image src="/playstore-badge.png" alt="Get it on Google Play" width={175} height={48} style={{ height: 'auto' }} />
             </a>
           </div>
         </div>

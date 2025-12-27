@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ihafidh.vercel.app"),
   title: "iHafidh - Master Quran Memorization with Detailed Statistics",
   description: "A comprehensive digital companion for Hifdh (Quran Memorization) with statistics, progress tracking, and audio recitations. Track your journey across all 114 Surahs and 30 Juz.",
-  keywords: ["iHafidh", "Hafidh", "Quran Memorization", "Hifdh", "Quran App", "Islamic Stats", "Quran Tracker"],
+  keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker"],
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
     title: "iHafidh - Quran Memorization Simplified",

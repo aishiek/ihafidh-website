@@ -9,13 +9,16 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ihafidh.vercel.app"),
-  title: "iHafidh - Master Quran Memorization with Detailed Statistics",
-  description: "iHafidh is your companion for Quran memorization. Track progress, build consistency, and achieve your Hifdh goals with beautiful statistics and detailed tracking for all 114 Surahs and 30 Juz.",
+  title: {
+    default: "iHafidh - Master Your Quran Memorization Journey",
+    template: "%s | iHafidh"
+  },
+  description: "iHafidh is your companion for Quran memorization. Track progress, build consistency, and achieve your Hifdh goals with beautiful statistics and detailed tracking.",
   keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker"],
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
     title: "iHafidh - Quran Memorization Simplified",
-    description: "Track your Hifdh progress with beautiful statistics and verse-by-verse audio.",
+    description: "Track your Hifdh progress with beautiful statistics and verse-by-verse audio. Join thousands mastering the Quran.",
     url: "https://ihafidh.vercel.app",
     siteName: "iHafidh",
     images: [
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "iHafidh App Preview",
+        alt: "iHafidh App - Master Quran Memorization",
       },
     ],
     locale: "en_US",
@@ -38,6 +41,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: "/favicon.ico",

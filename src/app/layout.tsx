@@ -10,7 +10,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ihafidh-website.vercel.app"),
   title: {
-    default: "iHafidh - Master Your Quran Memorization Journey",
+    default: "iHafidh - Master Your Quran Memorization",
     template: "%s | iHafidh"
   },
   description: "iHafidh is your companion for Quran memorization. Track progress, build consistency, and achieve your Hifdh goals with beautiful statistics and detailed tracking.",

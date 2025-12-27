@@ -1,22 +1,49 @@
+'use client';
+
 import {
   BarChart3,
   CheckCircle2,
   Clock,
+  Facebook,
+  Info,
+  Instagram,
   Languages,
   Layers,
+  Mail,
   Music,
   Search,
   Settings,
-  Sparkles
+  Sparkles,
+  Twitter,
+  X
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [showBanner, setShowBanner] = useState(true);
+
   return (
     <main className={styles.main}>
+      {/* Notification Banner */}
+      {showBanner && (
+        <div className={styles.banner}>
+          <div className={`${styles.bannerContent} container`}>
+            <Info size={18} />
+            <p style={{ flex: 1 }}>
+              Ramadan 2026 is around the corner - Have you started planning to memorize portions of the Holy Quran?
+            </p>
+            <button className={styles.bannerClose} onClick={() => setShowBanner(false)}>
+              <X size={18} />
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Navbar */}
-      <nav className={styles.navbar}>
+      <nav className={styles.navbar} style={{ top: showBanner ? '45px' : '0' }}>
         <div className={`${styles.navContainer} container`}>
           <div className={styles.logoArea}>
             <Image
@@ -39,34 +66,71 @@ export default function Home() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
-              <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
+              <a href="#whats-new">
+                <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
+              </a>
               <h1 className="animate-fade-in">Master Your Quran <span className="gradient-text">Memorization</span> Journey</h1>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Your comprehensive digital companion for Hifdh with detailed statistics,
-                visual progress tracking, and spaced repetition techniques.
+                Track your progress, build consistency, and achieve your Hifdh goals with our comprehensive digital companion.
               </p>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
                 <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/appstore-badge.png" alt="Download on App Store" width={160} height={48} style={{ height: 'auto' }} />
+                  <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/playstore-badge.png" alt="Get it on Google Play" width={175} height={48} style={{ height: 'auto' }} />
+                  <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
                 </a>
               </div>
             </div>
           </div>
-          <div className={`${styles.heroImageArea} animate - fade -in `} style={{ animationDelay: '0.3s' }}>
+          <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
             <div className={styles.heroGlow}></div>
             <div className={styles.heroImageWrapper}>
               <Image
                 src="/hero-preview.png"
-                alt="iHafidh App Screenshot"
+                alt="iHafidh App Main Dashboard Preview"
                 width={350}
                 height={700}
                 className="animate-float"
                 style={{ objectFit: 'contain' }}
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className={styles.howItWorks} id="how-it-works">
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className="gradient-text">How It Works</h2>
+            <p>Four simple steps to start your Quran journey today.</p>
+          </div>
+
+          <div className={styles.stepGrid}>
+            <div className={styles.stepCard}>
+              <div className={styles.stepNumber}>1</div>
+              <h3>Download & Setup</h3>
+              <p>Install iHafidh from your app store and choose your preferred Mushaf style and translation.</p>
+            </div>
+
+            <div className={styles.stepCard}>
+              <div className={styles.stepNumber}>2</div>
+              <h3>Set Your Goals</h3>
+              <p>Define which Surahs or Juz you want to memorize and set a daily recitation target.</p>
+            </div>
+
+            <div className={styles.stepCard}>
+              <div className={styles.stepNumber}>3</div>
+              <h3>Track Daily</h3>
+              <p>Mark verses as revised or memorized. Watch your progress rings fill up in real-time.</p>
+            </div>
+
+            <div className={styles.stepCard}>
+              <div className={styles.stepNumber}>4</div>
+              <h3>Analyze & Improve</h3>
+              <p>Use detailed statistics to identify patterns and stay consistent using spaced repetition.</p>
             </div>
           </div>
         </div>
@@ -127,7 +191,7 @@ export default function Home() {
             <div className={styles.statsImage}>
               <Image
                 src="/stats-preview.png"
-                alt="Statistics Dashboard"
+                alt="iHafidh Detailed Statistics Analytics Dashboard"
                 width={600}
                 height={400}
                 className="glass"
@@ -185,7 +249,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className={styles.readerFeatureIconItem}>
+                <div className={styles.readerFeatureItem}>
                   <div className={styles.readerFeatureIcon}><Search size={20} /></div>
                   <div>
                     <h4 style={{ color: '#fff' }}>Scholarly Tafsirs</h4>
@@ -199,12 +263,74 @@ export default function Home() {
               <div className={styles.heroGlow}></div>
               <Image
                 src="/daily-preview.png"
-                alt="Daily Ayah and Translation Features"
+                alt="iHafidh Daily Ayah and Multi-language Translation Interface"
                 width={350}
                 height={700}
                 className="glass animate-float"
                 style={{ borderRadius: '40px', objectFit: 'cover', zIndex: 2, position: 'relative' }}
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className={styles.faq} id="faq">
+        <div className="container">
+          <div className={styles.sectionHeader}>
+            <h2 className="gradient-text">Frequently Asked Questions</h2>
+            <p>Everything you need to know about the iHafidh app.</p>
+          </div>
+
+          <div className={styles.faqGrid}>
+            <div className={styles.faqItem}>
+              <h4>Is iHafidh free to use?</h4>
+              <p>Yes, the core features of iHafidh, including progress tracking and Quran recitation, are completely free to use with no hidden charges.</p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h4>Does it work offline?</h4>
+              <p>Most features work perfectly offline. Your progress is saved locally. Audio recitations can be downloaded to work without an internet connection.</p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h4>What Quran translations are available?</h4>
+              <p>We offer a wide range of translations in various languages including English (Asad, Pickthall, Sahih), Urdu, Tamil, French, Hindi, and more.</p>
+            </div>
+
+            <div className={styles.faqItem}>
+              <h4>Can I track both Surah and Juz progress?</h4>
+              <p>Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What's New Section */}
+      <section className={styles.changelog} id="whats-new">
+        <div className="container glass" style={{ padding: '4rem 2rem' }}>
+          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>Latest Updates (v2.0.3)</h2>
+          <div className={styles.featureGrid}>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><CheckCircle2 size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>Sync Improvements</h4>
+                <p>Fixed Verse count and Page count synchronization for smoother progress tracking.</p>
+              </div>
+            </div>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><Music size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>Audio Repeat Mode</h4>
+                <p>Page Mode Audio now supports loop/repeat (e.g., play 5 verses twice in a cycle).</p>
+              </div>
+            </div>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><Sparkles size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>Bug Fixes</h4>
+                <p>Resolved the blue audio button issue and other minor interface refinements.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -219,10 +345,10 @@ export default function Home() {
           </p>
           <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
             <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-              <Image src="/appstore-badge.png" alt="Download on App Store" width={160} height={48} style={{ height: 'auto' }} />
+              <Image src="/appstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
             </a>
             <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-              <Image src="/playstore-badge.png" alt="Get it on Google Play" width={175} height={48} style={{ height: 'auto' }} />
+              <Image src="/playstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
             </a>
           </div>
         </div>
@@ -235,13 +361,28 @@ export default function Home() {
             <Image src="/logo.png" alt="iHafidh Logo" width={32} height={32} style={{ borderRadius: '8px' }} />
             <span>iHafidh</span>
           </div>
-          <p>© {new Date().getFullYear()} iHafidh. Built with heart for the Ummah.</p>
-          <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', justifyContent: 'center', fontSize: '0.875rem' }}>
-            <a href="https://aishiek.github.io/" style={{ color: '#64748b' }}>Privacy Policy</a>
-            <a href="https://aishiek.github.io/" style={{ color: '#64748b' }}>Support</a>
+
+          <p>
+            © {new Date().getFullYear()} iHafidh. Built with heart for the Ummah.
+            <br />
+            <a href="mailto:iHafidhapp@gmail.com" className="gradient-text" style={{ fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
+              <Mail size={16} /> iHafidhapp@gmail.com
+            </a>
+          </p>
+
+          <div className={styles.socialIcons}>
+            <Link href="#" className={styles.socialIcon} aria-label="Facebook"><Facebook /></Link>
+            <Link href="#" className={styles.socialIcon} aria-label="Instagram"><Instagram /></Link>
+            <Link href="#" className={styles.socialIcon} aria-label="Twitter"><Twitter /></Link>
+          </div>
+
+          <div className={styles.footerLinks}>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="mailto:iHafidhapp@gmail.com">Support</Link>
           </div>
         </div>
       </footer>
     </main>
   );
 }
+

@@ -342,7 +342,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className={styles.cta}>
         <div className="container glass" style={{ padding: '6rem 2rem' }}>
-          <h2>Start Your Hfidh Journey Now</h2>
+          <h2>Start Your Hifdh Journey Now</h2>
           <p style={{ maxWidth: '600px', margin: '1rem auto 3rem' }}>
             Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.
           </p>

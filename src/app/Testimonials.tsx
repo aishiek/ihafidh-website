@@ -3,6 +3,7 @@
 import { ChevronLeft, ChevronRight, Quote, Star } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import styles from './testimonials.module.css';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 const TESTIMONIALS = [
     {
@@ -58,6 +59,7 @@ const TESTIMONIALS = [
 export default function Testimonials() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [cardsToShow, setCardsToShow] = useState(1);
+    const { t } = useLanguage();
 
     // Responsive card count
     useEffect(() => {
@@ -89,8 +91,8 @@ export default function Testimonials() {
         <section className={styles.testimonials} id="testimonials">
             <div className="container">
                 <div className={styles.sectionHeader}>
-                    <h2 className="gradient-text">Loved by the Ummah</h2>
-                    <p>Join our growing community of dedicated Huffadh around the world.</p>
+                    <h2 className="gradient-text">{t('testimonialsTitle')}</h2>
+                    <p>{t('testimonialsSubtitle')}</p>
                 </div>
 
                 <div className={styles.carouselContainer}>

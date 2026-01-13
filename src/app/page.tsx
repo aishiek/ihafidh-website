@@ -24,9 +24,12 @@ import styles from "./page.module.css";
 import Testimonials from "./Testimonials";
 import RamadanCountdown from "./RamadanCountdown";
 import DownloadDrawer from "./DownloadDrawer";
+import LanguageSelector from "./LanguageSelector";
+import { LanguageProvider, useLanguage } from "@/i18n/LanguageContext";
 
-export default function Home() {
+function HomeContent() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const { t } = useLanguage();
 
   const openDrawer = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -48,12 +51,13 @@ export default function Home() {
             />
             <span>iHafidh</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <LanguageSelector />
             <div className={styles.navCountdown}>
               <RamadanCountdown />
             </div>
             <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}>
-              Download Now
+              {t('downloadNow')}
             </a>
           </div>
         </div>
@@ -71,18 +75,18 @@ export default function Home() {
                 marginBottom: '1rem',
                 fontFamily: 'var(--font-heading)'
               }}>
-                This Ramadan Make every day & night count , Memorize , Recite, Reflect.
+                {t('ramadanText')}
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
                 <a href="#whats-new">
-                  <span className={`${styles.badge} animate-fade-in`}>New Version 2.0.6 Out Now</span>
+                  <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
                 </a>
               </div>
               <h1 className="animate-fade-in">
-                Struggling to stay consistent with <span className="gradient-text">Quran memorization?</span>
+                {t('heroHeadline')} <span className="gradient-text">{t('heroHeadlineHighlight')}</span>
               </h1>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '1.5rem' }}>
-                From 0 to 1 Juz in 30 days. Track your progress, build consistency, and achieve your Hifdh goals.
+                {t('heroSubheadline')}
               </p>
 
               {/* Social Proof Text */}
@@ -91,9 +95,9 @@ export default function Home() {
                   <div style={{ display: 'flex', gap: '2px' }}>
                     {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} fill="#fbbf24" strokeWidth={0} />)}
                   </div>
-                  <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>4.8 on App Store</span>
+                  <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>{t('appStoreRating')}</span>
                 </div>
-                <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Join thousands of Muslims worldwide</span>
+                <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>{t('joinCommunity')}</span>
               </div>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
@@ -104,7 +108,7 @@ export default function Home() {
                   <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
                 </a>
               </div>
-              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic' }}>It's Free, Start Now</p>
+              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic' }}>{t('ctaFree')}</p>
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
@@ -127,39 +131,39 @@ export default function Home() {
       <section className={styles.howItWorks} id="how-it-works">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className="gradient-text">How It Works</h2>
-            <p>Four simple steps to start your Quran journey today.</p>
+            <h2 className="gradient-text">{t('howItWorksTitle')}</h2>
+            <p>{t('howItWorksSubtitle')}</p>
           </div>
 
           <div className={styles.stepGrid}>
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>1</div>
-              <h3>Download & Setup</h3>
-              <p>Install iHafidh from your app store and choose your preferred Mushaf style and translation.</p>
+              <h3>{t('step1Title')}</h3>
+              <p>{t('step1Desc')}</p>
             </div>
 
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>2</div>
-              <h3>Set Your Goals</h3>
-              <p>Define which Surahs or Juz you want to memorize and set a daily recitation target.</p>
+              <h3>{t('step2Title')}</h3>
+              <p>{t('step2Desc')}</p>
             </div>
 
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>3</div>
-              <h3>Track Daily</h3>
-              <p>Mark verses as revised or memorized. Watch your progress rings fill up in real-time.</p>
+              <h3>{t('step3Title')}</h3>
+              <p>{t('step3Desc')}</p>
             </div>
 
             <div className={styles.stepCard}>
               <div className={styles.stepNumber}>4</div>
-              <h3>Analyze & Improve</h3>
-              <p>Use detailed statistics to identify patterns and stay consistent using spaced repetition.</p>
+              <h3>{t('step4Title')}</h3>
+              <p>{t('step4Desc')}</p>
             </div>
           </div>
 
           <div className={styles.primaryCtaContainer}>
             <a href="#" onClick={openDrawer} className={styles.ctaButton}>
-              It's Free, Start Now <ChevronRight size={20} />
+              {t('ctaFree')} <ChevronRight size={20} />
             </a>
           </div>
         </div>
@@ -169,52 +173,52 @@ export default function Home() {
       <section className={styles.features} id="features">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className="gradient-text">Powerful Features for Every Hafidh</h2>
-            <p>Everything you need to stay consistent and achieve your memorization goals.</p>
+            <h2 className="gradient-text">{t('featuresTitle')}</h2>
+            <p>{t('featuresSubtitle')}</p>
           </div>
 
           <div className={styles.featureGrid}>
             <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><Settings size={32} /></div>
-              <h3>Custom Page Mode</h3>
-              <p>Customize reading from 3 to 20 Ayahs. Create and track your own pages with page-level audio repetition for easier memorization.</p>
+              <h3>{t('feature1Title')}</h3>
+              <p>{t('feature1Desc')}</p>
             </div>
 
             <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><Layers size={32} /></div>
-              <h3>Comprehensive Tracking</h3>
-              <p>Monitor your journey across all 114 Surahs and 30 Juz with visual progress indicators.</p>
+              <h3>{t('feature2Title')}</h3>
+              <p>{t('feature2Desc')}</p>
             </div>
 
             <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><BarChart3 size={32} /></div>
-              <h3>Advanced Analytics</h3>
-              <p>Detailed memorization statistics and performance metrics to visualize your daily efforts.</p>
+              <h3>{t('feature3Title')}</h3>
+              <p>{t('feature3Desc')}</p>
             </div>
 
             <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><Clock size={32} /></div>
-              <h3>Spaced Repetition</h3>
-              <p>Smart review system designed for optimal retention and long-term memorization.</p>
+              <h3>{t('feature4Title')}</h3>
+              <p>{t('feature4Desc')}</p>
             </div>
 
             <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><Music size={32} /></div>
-              <h3>Audio Recitations</h3>
-              <p>High-quality verse-by-verse practice with customizable audio controls.</p>
+              <h3>{t('feature5Title')}</h3>
+              <p>{t('feature5Desc')}</p>
             </div>
 
             <div className={`${styles.featureCard} glass`}>
               <div className={styles.featureIcon}><CheckCircle2 size={32} /></div>
-              <h3>Study Plans</h3>
-              <p>Create customizable study plans and receive smart reminders to keep you on track.</p>
+              <h3>{t('feature6Title')}</h3>
+              <p>{t('feature6Desc')}</p>
             </div>
 
           </div>
 
           <div className={styles.primaryCtaContainer}>
             <a href="#" onClick={openDrawer} className={styles.ctaButton}>
-              It's Free, Start Now <ChevronRight size={20} />
+              {t('ctaFree')} <ChevronRight size={20} />
             </a>
           </div>
         </div>
@@ -235,20 +239,19 @@ export default function Home() {
               />
             </div>
             <div className={styles.statsContent}>
-              <h2 className="gradient-text">Visualize Your Success</h2>
+              <h2 className="gradient-text">{t('statsTitle')}</h2>
               <p style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>
-                They say what gets measured gets managed. iHafidh provides deep insights into your progress,
-                helping you identify patterns and stay motivated.
+                {t('statsDesc')}
               </p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="var(--primary)" /> Daily & Weekly activity heatmaps
+                  <CheckCircle2 color="var(--primary)" /> {t('statsList1')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="var(--primary)" /> Surah-wise completion metrics
+                  <CheckCircle2 color="var(--primary)" /> {t('statsList2')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="var(--primary)" /> Achievement badges and milestones
+                  <CheckCircle2 color="var(--primary)" /> {t('statsList3')}
                 </li>
               </ul>
             </div>
@@ -261,35 +264,34 @@ export default function Home() {
         <div className="container">
           <div className={styles.statsSection} style={{ flexDirection: 'row-reverse' }}>
             <div className={styles.statsContent}>
-              <div className={styles.badge}>For Daily Readers</div>
-              <h2 className="gradient-text">Beyond Memorization</h2>
+              <div className={styles.badge}>{t('dailyBadge')}</div>
+              <h2 className="gradient-text">{t('dailyTitle')}</h2>
               <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
-                Whether you're aiming for Hifdh or just want a meaningful daily recitation,
-                iHafidh provides a premium reading experience for every Muslim.
+                {t('dailyDesc')}
               </p>
 
               <div className={styles.readerFeatures}>
                 <div className={styles.readerFeatureItem}>
                   <div className={styles.readerFeatureIcon}><Sparkles size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>Daily Ayah Notifications</h4>
-                    <p>Start your morning with a beautiful verse and reflection delivered to your device.</p>
+                    <h4 style={{ color: '#fff' }}>{t('dailyFeature1Title')}</h4>
+                    <p>{t('dailyFeature1Desc')}</p>
                   </div>
                 </div>
 
                 <div className={styles.readerFeatureItem}>
                   <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>Multi-Language Tarjuma</h4>
-                    <p>Access high-quality translations in English, Urdu, Tamil, French, and many more.</p>
+                    <h4 style={{ color: '#fff' }}>{t('dailyFeature2Title')}</h4>
+                    <p>{t('dailyFeature2Desc')}</p>
                   </div>
                 </div>
 
                 <div className={styles.readerFeatureItem}>
                   <div className={styles.readerFeatureIcon}><Search size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>Scholarly Tafsirs</h4>
-                    <p>Deepen your understanding with multi-language tafsirs directly in the reader.</p>
+                    <h4 style={{ color: '#fff' }}>{t('dailyFeature3Title')}</h4>
+                    <p>{t('dailyFeature3Desc')}</p>
                   </div>
                 </div>
               </div>
@@ -314,29 +316,29 @@ export default function Home() {
       <section className={styles.faq} id="faq">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className="gradient-text">Frequently Asked Questions</h2>
-            <p>Everything you need to know about the iHafidh app.</p>
+            <h2 className="gradient-text">{t('faqTitle')}</h2>
+            <p>{t('faqSubtitle')}</p>
           </div>
 
           <div className={styles.faqGrid}>
             <div className={styles.faqItem}>
-              <h4>Is iHafidh free to use?</h4>
-              <p>Yes, the core features of iHafidh, including progress tracking and Quran recitation, are completely free to use with no hidden charges.</p>
+              <h4>{t('faq1Q')}</h4>
+              <p>{t('faq1A')}</p>
             </div>
 
             <div className={styles.faqItem}>
-              <h4>Does it work offline?</h4>
-              <p>Most features work perfectly offline. Your progress is saved locally. Audio recitations can be downloaded to work without an internet connection.</p>
+              <h4>{t('faq2Q')}</h4>
+              <p>{t('faq2A')}</p>
             </div>
 
             <div className={styles.faqItem}>
-              <h4>What Quran translations are available?</h4>
-              <p>We offer a wide range of translations in various languages including English (Asad, Pickthall, Sahih), Urdu, Tamil, French, Hindi, and more.</p>
+              <h4>{t('faq3Q')}</h4>
+              <p>{t('faq3A')}</p>
             </div>
 
             <div className={styles.faqItem}>
-              <h4>Can I track both Surah and Juz progress?</h4>
-              <p>Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.</p>
+              <h4>{t('faq4Q')}</h4>
+              <p>{t('faq4A')}</p>
             </div>
           </div>
         </div>
@@ -344,34 +346,34 @@ export default function Home() {
 
       <section className={styles.changelog} id="whats-new">
         <div className="container glass" style={{ padding: '4rem 2rem' }}>
-          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>Latest Updates (v2.0.6)</h2>
+          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>{t('updatesTitle')}</h2>
           <div className={styles.featureGrid}>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Music size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Mushaf Audio Repeat</h4>
-                <p>Repeat audio by Verse or Page level for effective Hifdh repetition.</p>
+                <h4 style={{ color: '#fff' }}>{t('update1Title')}</h4>
+                <p>{t('update1Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Tajweed Fonts</h4>
-                <p>New color-coded Tajweed fonts in settings to perfect your pronunciation.</p>
+                <h4 style={{ color: '#fff' }}>{t('update2Title')}</h4>
+                <p>{t('update2Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Settings size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Preview Reciter</h4>
-                <p>Listen to audio samples when selecting your preferred Qari in settings.</p>
+                <h4 style={{ color: '#fff' }}>{t('update3Title')}</h4>
+                <p>{t('update3Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Layers size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Custom Page Mode</h4>
-                <p>Customize your reading experience from 3 up to 20 verses per page.</p>
+                <h4 style={{ color: '#fff' }}>{t('update4Title')}</h4>
+                <p>{t('update4Desc')}</p>
               </div>
             </div>
           </div>
@@ -384,9 +386,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className={styles.cta}>
         <div className="container glass" style={{ padding: '6rem 2rem' }}>
-          <h2>Start Your Hifdh Journey Now</h2>
+          <h2>{t('ctaTitle')}</h2>
           <p style={{ maxWidth: '600px', margin: '1rem auto 3rem' }}>
-            Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.
+            {t('ctaDesc')}
           </p>
           <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
             <a href="#" onClick={openDrawer} className={styles.downloadButton}>
@@ -417,7 +419,7 @@ export default function Home() {
           </div>
 
           <p>
-            © {new Date().getFullYear()} iHafidh. Built with heart for the Ummah.
+            © {new Date().getFullYear()} iHafidh. {t('footerCopyright')}
             <br />
             <a href="mailto:iHafidhapp@gmail.com" className="gradient-text" style={{ fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
               <Mail size={16} /> iHafidhapp@gmail.com
@@ -441,3 +443,10 @@ export default function Home() {
   );
 }
 
+export default function Home() {
+  return (
+    <LanguageProvider>
+      <HomeContent />
+    </LanguageProvider>
+  );
+}

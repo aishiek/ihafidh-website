@@ -452,14 +452,13 @@
 
   /* Optimize CTA button for mobile to prevent text wrapping */
   .ctaButton {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
-    width: 100%;
-    /* Ensure it fills container instead of wrapping awkwardly */
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
     justify-content: center;
-    max-width: 300px;
-    /* Prevent it from getting too wide */
-    margin: 0 auto;
-    /* Center if block */
+  }
+
+  .primaryCtaContainer {
+    margin: 2rem 0;
   }
 }

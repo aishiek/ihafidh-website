@@ -104,7 +104,7 @@ export default function Home() {
                   <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
                 </a>
               </div>
-              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic' }}>Start Memorizing Today - Free</p>
+              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic' }}>It's Free, Start Now</p>
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
@@ -159,7 +159,7 @@ export default function Home() {
 
           <div className={styles.primaryCtaContainer}>
             <a href="#" onClick={openDrawer} className={styles.ctaButton}>
-              Start Memorizing Today - Free <ChevronRight size={20} />
+              It's Free, Start Now <ChevronRight size={20} />
             </a>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Home() {
 
           <div className={styles.primaryCtaContainer}>
             <a href="#" onClick={openDrawer} className={styles.ctaButton}>
-              Start Memorizing Today - Free <ChevronRight size={20} />
+              It's Free, Start Now <ChevronRight size={20} />
             </a>
           </div>
         </div>

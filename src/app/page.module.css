@@ -68,8 +68,15 @@
 
 @media (max-width: 768px) {
   .navCountdown {
+    transform: scale(0.85);
+    /* Slightly smaller on mobile to fit */
+    margin-right: -0.5rem;
+    /* Compensate for scale spacing */
+  }
+
+  .logoArea span {
     display: none;
-    /* Hide countdown on very small screens to avoid clutter, or scale it down */
+    /* Hide 'iHafidh' text on mobile if space is too tight, or keep it */
   }
 }
 

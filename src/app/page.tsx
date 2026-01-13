@@ -26,7 +26,6 @@ import RamadanCountdown from "./RamadanCountdown";
 import DownloadDrawer from "./DownloadDrawer";
 
 export default function Home() {
-  const [showBanner, setShowBanner] = useState(true);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const openDrawer = (e: React.MouseEvent) => {
@@ -36,23 +35,8 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      {/* Notification Banner */}
-      {showBanner && (
-        <div className={styles.banner}>
-          <div className={`${styles.bannerContent} container`}>
-            <Info size={18} />
-            <p style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-              <span>Ramadan 2026, Make every day & night count with IHafidh - Memorize, Recite, Reflect</span>
-            </p>
-            <button className={styles.bannerClose} onClick={() => setShowBanner(false)}>
-              <X size={18} />
-            </button>
-          </div>
-        </div>
-      )}
-
       {/* Navbar */}
-      <nav className={styles.navbar} style={{ top: showBanner ? '45px' : '0' }}>
+      <nav className={styles.navbar}>
         <div className={`${styles.navContainer} container`}>
           <div className={styles.logoArea}>
             <Image

@@ -44,7 +44,7 @@ export default function Home() {
           <div className={`${styles.bannerContent} container`}>
             <Info size={18} />
             <p style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-              <span>Start your Ramadan prep - Download free plan.</span>
+              <span>Ramadan 2026, Make every day & night count with IHafidh - Memorize, Recite, Reflect</span>
             </p>
             <button className={styles.bannerClose} onClick={() => setShowBanner(false)}>
               <X size={18} />
@@ -66,9 +66,14 @@ export default function Home() {
             />
             <span>iHafidh</span>
           </div>
-          <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}>
-            Download Now
-          </a>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <div className={styles.navCountdown}>
+              <RamadanCountdown />
+            </div>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}>
+              Download Now
+            </a>
+          </div>
         </div>
       </nav>
 
@@ -81,7 +86,6 @@ export default function Home() {
                 <a href="#whats-new">
                   <span className={`${styles.badge} animate-fade-in`}>New Version 2.0.6 Out Now</span>
                 </a>
-                <RamadanCountdown />
               </div>
               <h1 className="animate-fade-in">
                 Struggling to stay consistent with <span className="gradient-text">Quran memorization?</span>
@@ -163,7 +167,7 @@ export default function Home() {
           </div>
 
           <div className={styles.primaryCtaContainer}>
-            <a href="#download" className={styles.ctaButton}>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton}>
               Start Memorizing Today - Free <ChevronRight size={20} />
             </a>
           </div>
@@ -218,7 +222,7 @@ export default function Home() {
           </div>
 
           <div className={styles.primaryCtaContainer}>
-            <a href="#download" className={styles.ctaButton}>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton}>
               Start Memorizing Today - Free <ChevronRight size={20} />
             </a>
           </div>

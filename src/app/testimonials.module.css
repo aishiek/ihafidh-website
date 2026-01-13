@@ -206,3 +206,15 @@
         right: -60px;
     }
 }
+
+@media (max-width: 767px) {
+    .trackWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Ensure single card is centered */
+    .cardWrapper {
+        /* flex logic handles width, but let's ensure it's not left aligned if container is wider */
+    }
+}

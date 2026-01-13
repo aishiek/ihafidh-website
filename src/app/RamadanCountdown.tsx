@@ -32,32 +32,40 @@ const RamadanCountdown = () => {
     return (
         <div style={{
             display: 'inline-flex',
-            gap: '0.8rem',
+            flexDirection: 'column',
             alignItems: 'center',
-            background: 'rgba(212, 175, 55, 0.1)',
-            padding: '0.5rem 1.2rem',
-            borderRadius: '12px',
-            border: '1px solid rgba(212, 175, 55, 0.3)',
-            fontSize: '1.1em',
-            fontVariantNumeric: 'tabular-nums',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
+            marginRight: '1rem'
         }}>
-            <span>
-                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.days}</span>
-                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>d</span>
-            </span>
-            <span>
-                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.hours}</span>
-                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>h</span>
-            </span>
-            <span>
-                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.minutes}</span>
-                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>m</span>
-            </span>
-            <span>
-                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.seconds}</span>
-                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>s</span>
-            </span>
+            <span style={{ fontSize: '0.7em', color: '#D4AF37', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '2px' }}>Ramadan Countdown</span>
+            <div style={{
+                display: 'inline-flex',
+                gap: '0.4rem',
+                alignItems: 'center',
+                background: 'rgba(212, 175, 55, 0.1)',
+                padding: '0.2rem 0.8rem',
+                borderRadius: '8px',
+                border: '1px solid rgba(212, 175, 55, 0.3)',
+                fontSize: '0.9rem',
+                fontVariantNumeric: 'tabular-nums',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+            }}>
+                <span>
+                    <span style={{ fontWeight: 800, color: '#FFD700' }}>{timeLeft.days}</span>
+                    <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '1px' }}>d</span>
+                </span>
+                <span>
+                    <span style={{ fontWeight: 800, color: '#FFD700' }}>{timeLeft.hours}</span>
+                    <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '1px' }}>h</span>
+                </span>
+                <span>
+                    <span style={{ fontWeight: 800, color: '#FFD700' }}>{timeLeft.minutes}</span>
+                    <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '1px' }}>m</span>
+                </span>
+                <span className="hidden md:inline">
+                    <span style={{ fontWeight: 800, color: '#FFD700' }}>{timeLeft.seconds}</span>
+                    <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '1px' }}>s</span>
+                </span>
+            </div>
         </div>
     );
 };

@@ -40,6 +40,62 @@
   overflow: hidden;
 }
 
+/* Compact spacing for other sections */
+.howItWorks,
+.features,
+.stats,
+.dailySection,
+.faq,
+.changelog,
+.cta {
+  padding: 4rem 0;
+  /* Reduced from default high padding */
+}
+
+/* Updated borders to Light Gold */
+.featureCard,
+.faqItem,
+.bannerClose,
+.stepCard,
+.card {
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.featureCard:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+}
+
+/* Footer Logo Enlarge */
+.footerLogo img {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.footerLogo span {
+  font-size: 2rem !important;
+}
+
+@media (max-width: 968px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 3rem;
+  }
+
+  .howItWorks,
+  .features,
+  .stats,
+  .dailySection,
+  .faq,
+  .changelog,
+  .cta {
+    padding: 3rem 0;
+    /* Even more compact on mobile */
+  }
+}
+
 .heroContent {
   flex: 1;
 }

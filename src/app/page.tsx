@@ -25,9 +25,16 @@ import { useState } from "react";
 import styles from "./page.module.css";
 import Testimonials from "./Testimonials";
 import RamadanCountdown from "./RamadanCountdown";
+import DownloadDrawer from "./DownloadDrawer";
 
 export default function Home() {
   const [showBanner, setShowBanner] = useState(true);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const openDrawer = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsDrawerOpen(true);
+  };
 
   return (
     <main className={styles.main}>
@@ -38,8 +45,6 @@ export default function Home() {
             <Info size={18} />
             <p style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
               <span>Start your Ramadan prep - Download free plan.</span>
-              <span style={{ opacity: 0.8 }}>Countdown to Ramadan:</span>
-              <RamadanCountdown />
             </p>
             <button className={styles.bannerClose} onClick={() => setShowBanner(false)}>
               <X size={18} />
@@ -61,7 +66,7 @@ export default function Home() {
             />
             <span>iHafidh</span>
           </div>
-          <a href="#download" className={styles.ctaButton} style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}>
+          <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}>
             Download Now
           </a>
         </div>
@@ -72,9 +77,12 @@ export default function Home() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
-              <a href="#whats-new">
-                <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
-              </a>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
+                <a href="#whats-new">
+                  <span className={`${styles.badge} animate-fade-in`}>New Version 2.0.6 Out Now</span>
+                </a>
+                <RamadanCountdown />
+              </div>
               <h1 className="animate-fade-in">
                 Struggling to stay consistent with <span className="gradient-text">Quran memorization?</span>
               </h1>
@@ -94,10 +102,10 @@ export default function Home() {
               </div>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
-                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                <a href="#" onClick={openDrawer} className={styles.downloadButton}>
                   <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={190} height={56} style={{ height: 'auto' }} />
                 </a>
-                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                <a href="#" onClick={openDrawer} className={styles.downloadButton}>
                   <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
                 </a>
               </div>
@@ -341,27 +349,34 @@ export default function Home() {
 
       <section className={styles.changelog} id="whats-new">
         <div className="container glass" style={{ padding: '4rem 2rem' }}>
-          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>Latest Updates (v2.0.3)</h2>
+          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>Latest Updates (v2.0.6)</h2>
           <div className={styles.featureGrid}>
-            <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><CheckCircle2 size={20} /></div>
-              <div>
-                <h4 style={{ color: '#fff' }}>Sync Improvements</h4>
-                <p>Fixed Verse count and Page count synchronization for smoother progress tracking.</p>
-              </div>
-            </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Music size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Audio Repeat Mode</h4>
-                <p>Page Mode Audio now supports loop/repeat (e.g., play 5 verses twice in a cycle).</p>
+                <h4 style={{ color: '#fff' }}>Mushaf Audio Repeat</h4>
+                <p>Repeat audio by Verse or Page level for effective Hifdh repetition.</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><Sparkles size={20} /></div>
+              <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Bug Fixes</h4>
-                <p>Resolved the blue audio button issue and other minor interface refinements.</p>
+                <h4 style={{ color: '#fff' }}>Tajweed Fonts</h4>
+                <p>New color-coded Tajweed fonts in settings to perfect your pronunciation.</p>
+              </div>
+            </div>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><Settings size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>Preview Reciter</h4>
+                <p>Listen to audio samples when selecting your preferred Qari in settings.</p>
+              </div>
+            </div>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><Layers size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>Custom Page Mode</h4>
+                <p>Customize your reading experience from 3 up to 20 verses per page.</p>
               </div>
             </div>
           </div>
@@ -379,10 +394,10 @@ export default function Home() {
             Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.
           </p>
           <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
-            <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+            <a href="#" onClick={openDrawer} className={styles.downloadButton}>
               <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
             </a>
-            <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+            <a href="#" onClick={openDrawer} className={styles.downloadButton}>
               <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
             </a>
           </div>
@@ -426,6 +441,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <DownloadDrawer isOpen={isDrawerOpen} onClose={() => setIsDrawerOpen(false)} />
     </main>
   );
 }

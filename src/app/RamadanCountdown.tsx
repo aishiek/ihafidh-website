@@ -34,21 +34,29 @@ const RamadanCountdown = () => {
             display: 'inline-flex',
             gap: '0.8rem',
             alignItems: 'center',
-            background: 'rgba(0,0,0,0.2)',
-            padding: '0.2rem 0.8rem',
-            borderRadius: '8px',
-            marginLeft: '0.5rem',
-            fontSize: '0.9em',
-            fontVariantNumeric: 'tabular-nums'
+            background: 'rgba(212, 175, 55, 0.1)',
+            padding: '0.5rem 1.2rem',
+            borderRadius: '12px',
+            border: '1px solid rgba(212, 175, 55, 0.3)',
+            fontSize: '1.1em',
+            fontVariantNumeric: 'tabular-nums',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
         }}>
             <span>
-                <span style={{ fontWeight: 700, color: '#fbbf24' }}>{timeLeft.days}</span>d
+                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.days}</span>
+                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>d</span>
             </span>
             <span>
-                <span style={{ fontWeight: 700, color: '#fbbf24' }}>{timeLeft.hours}</span>h
+                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.hours}</span>
+                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>h</span>
             </span>
             <span>
-                <span style={{ fontWeight: 700, color: '#fbbf24' }}>{timeLeft.minutes}</span>m
+                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.minutes}</span>
+                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>m</span>
+            </span>
+            <span>
+                <span style={{ fontWeight: 800, color: '#FFD700', fontSize: '1.2em' }}>{timeLeft.seconds}</span>
+                <span style={{ fontSize: '0.8em', color: '#D4AF37', marginLeft: '2px' }}>s</span>
             </span>
         </div>
     );

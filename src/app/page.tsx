@@ -64,6 +64,15 @@ export default function Home() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
+              <p className="animate-fade-in" style={{
+                color: '#D4AF37',
+                fontSize: '1.1rem',
+                fontWeight: 500,
+                marginBottom: '1rem',
+                fontFamily: 'var(--font-heading)'
+              }}>
+                This Ramadan Make every day & night count , Memorize , Recite, Reflect.
+              </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
                 <a href="#whats-new">
                   <span className={`${styles.badge} animate-fade-in`}>New Version 2.0.6 Out Now</span>

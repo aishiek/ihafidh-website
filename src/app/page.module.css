@@ -3,8 +3,13 @@
   top: 0;
   width: 100%;
   z-index: 100;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   transition: all 0.3s ease;
+  background: rgba(15, 23, 42, 0.8);
+  /* Dark background for sticky visibility */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .navContainer {
@@ -73,11 +78,44 @@
 
 .downloadButton {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .downloadButton:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.02);
+  filter: drop-shadow(0 10px 15px rgba(16, 185, 129, 0.2));
 }
+
+/* Primary CTA Section Button Wrapper */
+.primaryCtaContainer {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.ctaButton {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ctaButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+  background: #0cad75;
+  /* Slightly lighter shade */
+}
+
 
 .heroImageArea {
   flex: 1;

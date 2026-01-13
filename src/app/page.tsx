@@ -3,6 +3,7 @@
 import {
   BarChart3,
   CheckCircle2,
+  ChevronRight,
   Clock,
   Facebook,
   Info,
@@ -14,6 +15,7 @@ import {
   Search,
   Settings,
   Sparkles,
+  Star,
   Twitter,
   X
 } from "lucide-react";
@@ -21,6 +23,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
+import Testimonials from "./Testimonials";
+import RamadanCountdown from "./RamadanCountdown";
 
 export default function Home() {
   const [showBanner, setShowBanner] = useState(true);
@@ -32,8 +36,10 @@ export default function Home() {
         <div className={styles.banner}>
           <div className={`${styles.bannerContent} container`}>
             <Info size={18} />
-            <p style={{ flex: 1 }}>
-              Ramadan 2026 is around the corner - Have you started planning to memorize portions of the Holy Quran?
+            <p style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <span>Start your Ramadan prep - Download free plan.</span>
+              <span style={{ opacity: 0.8 }}>Countdown to Ramadan:</span>
+              <RamadanCountdown />
             </p>
             <button className={styles.bannerClose} onClick={() => setShowBanner(false)}>
               <X size={18} />
@@ -47,7 +53,7 @@ export default function Home() {
         <div className={`${styles.navContainer} container`}>
           <div className={styles.logoArea}>
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="iHafidh Logo"
               width={40}
               height={40}
@@ -55,7 +61,7 @@ export default function Home() {
             />
             <span>iHafidh</span>
           </div>
-          <a href="#download" className="glass" style={{ padding: '0.5rem 1.25rem', fontWeight: 600 }}>
+          <a href="#download" className={styles.ctaButton} style={{ padding: '0.6rem 1.5rem', fontSize: '0.95rem' }}>
             Download Now
           </a>
         </div>
@@ -70,20 +76,32 @@ export default function Home() {
                 <span className={`${styles.badge} animate-fade-in`}>New Version 2.0 Out Now</span>
               </a>
               <h1 className="animate-fade-in">
-                Master your <span className="gradient-text">Al-Quran</span> Memorization with <span className="gradient-text">iHafidh</span>
+                Struggling to stay consistent with <span className="gradient-text">Quran memorization?</span>
               </h1>
-              <p className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Track your progress, build consistency, and achieve your Hifdh goals with our comprehensive digital companion.
+              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '1.5rem' }}>
+                From 0 to 1 Juz in 30 days. Track your progress, build consistency, and achieve your Hifdh goals.
               </p>
+
+              {/* Social Proof Text */}
+              <div className="animate-fade-in" style={{ animationDelay: '0.15s', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,255,255,0.05)', padding: '0.4rem 0.8rem', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <div style={{ display: 'flex', gap: '2px' }}>
+                    {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} fill="#fbbf24" strokeWidth={0} />)}
+                  </div>
+                  <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>4.8 on App Store</span>
+                </div>
+                <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>Join thousands of Muslims worldwide</span>
+              </div>
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
                 <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
+                  <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={190} height={56} style={{ height: 'auto' }} />
                 </a>
                 <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
+                  <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
                 </a>
               </div>
+              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic' }}>Start Memorizing Today - Free</p>
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
@@ -135,6 +153,12 @@ export default function Home() {
               <p>Use detailed statistics to identify patterns and stay consistent using spaced repetition.</p>
             </div>
           </div>
+
+          <div className={styles.primaryCtaContainer}>
+            <a href="#download" className={styles.ctaButton}>
+              Start Memorizing Today - Free <ChevronRight size={20} />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -183,6 +207,12 @@ export default function Home() {
               <p>Create customizable study plans and receive smart reminders to keep you on track.</p>
             </div>
 
+          </div>
+
+          <div className={styles.primaryCtaContainer}>
+            <a href="#download" className={styles.ctaButton}>
+              Start Memorizing Today - Free <ChevronRight size={20} />
+            </a>
           </div>
         </div>
       </section>
@@ -309,7 +339,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What's New Section */}
       <section className={styles.changelog} id="whats-new">
         <div className="container glass" style={{ padding: '4rem 2rem' }}>
           <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>Latest Updates (v2.0.3)</h2>
@@ -339,6 +368,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <Testimonials />
+
       {/* CTA Section */}
       <section className={styles.cta}>
         <div className="container glass" style={{ padding: '6rem 2rem' }}>
@@ -361,8 +393,17 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className="container">
           <div className={styles.footerLogo}>
-            <Image src="/logo.png" alt="iHafidh Logo" width={32} height={32} style={{ borderRadius: '8px' }} />
-            <span>iHafidh</span>
+            <Image
+              src="/logo.jpg"
+              alt="iHafidh Logo"
+              width={60}
+              height={60}
+              style={{
+                borderRadius: '12px',
+                boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)'
+              }}
+            />
+            <span style={{ fontSize: '1.5rem', background: 'linear-gradient(to right, #fff, #a7f3d0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>iHafidh</span>
           </div>
 
           <p>

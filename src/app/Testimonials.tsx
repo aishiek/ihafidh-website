@@ -123,13 +123,15 @@ export default function Testimonials() {
                                                 <div className={styles.avatar}>{item.initial}</div>
                                                 <div className={styles.meta}>
                                                     <div className={styles.name}>{item.name}</div>
-                                                    <div className={styles.date}>{item.date}</div>
+                                                    <div className={styles.dateLine}>
+                                                        <span className={styles.date}>{item.date}</span>
+                                                        <div className={styles.stars}>
+                                                            {[...Array(5)].map((_, i) => (
+                                                                <Star key={i} size={14} fill={i < item.rating ? "#fbbf24" : "none"} strokeWidth={0} />
+                                                            ))}
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className={styles.stars}>
-                                                {[...Array(5)].map((_, i) => (
-                                                    <Star key={i} size={16} fill={i < item.rating ? "#fbbf24" : "none"} strokeWidth={0} />
-                                                ))}
                                             </div>
                                         </div>
 

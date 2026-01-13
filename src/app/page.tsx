@@ -6,7 +6,6 @@ import {
   ChevronRight,
   Clock,
   Facebook,
-  Info,
   Instagram,
   Languages,
   Layers,
@@ -16,8 +15,7 @@ import {
   Settings,
   Sparkles,
   Star,
-  Twitter,
-  X
+  Twitter
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";

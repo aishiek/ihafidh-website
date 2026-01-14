@@ -204,8 +204,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Hero
         ramadanText: 'இந்த ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
         versionBadge: 'புதிய பதிப்பு 2.0.6 வெளியானது',
-        heroHeadline: 'குர்ஆன் மனனம் செய்வதை தொடர்வது கடினமாக இருக்கிறதா?',
-        heroHeadlineHighlight: '',
+        heroHeadline: 'குர்ஆன் மனனம் செய்வதை தொடர்வது',
+        heroHeadlineHighlight: 'கடினமாக இருக்கிறதா?',
         heroSubheadline: '30 நாட்களில் 0 முதல் 1 ஜுஸ் வரை. உங்கள் முன்னேற்றத்தைக் கண்காணியுங்கள்,  உங்கள் ஹிஃப்ழ் இலக்குகளை அடையுங்கள்.',
         appStoreRating: 'App Store-இல் 4.8 மதிப்பீடு',
         joinCommunity: 'உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்',

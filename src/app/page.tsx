@@ -51,14 +51,16 @@ function HomeContent() {
             />
             <span>iHafidh</span>
           </div>
-          <div className={styles.navRight} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <div className={styles.navRight}>
             <LanguageSelector />
-            <div className={styles.navCountdown}>
-              <RamadanCountdown />
+            <div className={styles.navActions}>
+              <a href="#" onClick={openDrawer} className={styles.ctaButton}>
+                {t('downloadNow')}
+              </a>
+              <div className={styles.navCountdown}>
+                <RamadanCountdown />
+              </div>
             </div>
-            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
-              {t('downloadNow')}
-            </a>
           </div>
         </div>
       </nav>

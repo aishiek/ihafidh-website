@@ -67,28 +67,30 @@
 
 @media (max-width: 768px) {
   .navCountdown {
-    transform: scale(0.8);
-    /* Slightly smaller on mobile to fit */
-    margin-right: -0.8rem;
-    margin-left: -0.5rem;
-    /* Compensate for scale spacing */
+    transform: scale(0.75);
+    margin-right: -1rem;
+    margin-left: -0.8rem;
   }
 
   .logoArea span {
     display: none;
-    /* Hide 'iHafidh' text on mobile to save horizontal space */
   }
 
-  /* Reduce gap between items in the right side of navbar */
   .navRight {
-    gap: 0.4rem !important;
+    gap: 0.3rem !important;
   }
 }
 
-@media (max-width: 480px) {
+/* Ensure it is NEVER hidden but can be made even smaller */
+@media (max-width: 400px) {
   .navCountdown {
-    display: none;
-    /* Hide countdown on very small phones if it's still causing overflow */
+    transform: scale(0.65);
+    margin-right: -1.5rem;
+    margin-left: -1.2rem;
+  }
+
+  .navRight {
+    gap: 0.2rem !important;
   }
 }
 

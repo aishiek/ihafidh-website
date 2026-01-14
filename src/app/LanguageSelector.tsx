@@ -7,9 +7,18 @@ import { useLanguage } from '@/i18n/LanguageContext';
 export default function LanguageSelector() {
     const { language, setLanguage, languages } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
     const currentLang = languages.find(l => l.code === language);
+
+    // Check if mobile
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     // Close dropdown when clicking outside
     useEffect(() => {
@@ -30,14 +39,14 @@ export default function LanguageSelector() {
                 style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.4rem',
-                    padding: '0.5rem 0.75rem',
+                    gap: '0.25rem',
+                    padding: isMobile ? '0.4rem 0.5rem' : '0.5rem 0.75rem',
                     background: 'rgba(255, 255, 255, 0.05)',
                     border: '1px solid rgba(255, 255, 255, 0.1)',
                     borderRadius: '8px',
                     color: '#fff',
                     cursor: 'pointer',
-                    fontSize: '0.85rem',
+                    fontSize: isMobile ? '0.75rem' : '0.85rem',
                     fontWeight: 500,
                     transition: 'all 0.2s ease',
                 }}
@@ -48,8 +57,8 @@ export default function LanguageSelector() {
                     e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
                 }}
             >
-                <Globe size={16} />
-                <span>{currentLang?.nativeLabel}</span>
+                <Globe size={isMobile ? 14 : 16} />
+                <span>{isMobile ? currentLang?.shortLabel : currentLang?.nativeLabel}</span>
             </button>
 
             {isOpen && (
@@ -65,7 +74,7 @@ export default function LanguageSelector() {
                         overflow: 'hidden',
                         boxShadow: '0 10px 40px rgba(0, 0, 0, 0.4)',
                         zIndex: 1000,
-                        minWidth: '140px',
+                        minWidth: '120px',
                     }}
                 >
                     {languages.map((lang) => (

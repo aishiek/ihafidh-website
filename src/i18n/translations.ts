@@ -1,9 +1,9 @@
 export type Language = 'en' | 'ta' | 'ms';
 
-export const LANGUAGES: { code: Language; label: string; nativeLabel: string }[] = [
-    { code: 'en', label: 'English', nativeLabel: 'English' },
-    { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்' },
-    { code: 'ms', label: 'Malay', nativeLabel: 'Melayu' },
+export const LANGUAGES: { code: Language; label: string; nativeLabel: string; shortLabel: string }[] = [
+    { code: 'en', label: 'English', nativeLabel: 'English', shortLabel: 'Eng' },
+    { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', shortLabel: 'தமி' },
+    { code: 'ms', label: 'Malay', nativeLabel: 'Melayu', shortLabel: 'Mal' },
 ];
 
 type TranslationKeys = {

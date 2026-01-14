@@ -247,7 +247,7 @@ export const translations: Record<Language, TranslationKeys> = {
         statsList3: 'சாதனை பேட்ஜ்கள் மற்றும் மைல்கற்கள்',
 
         // Daily Recitation
-        dailyBadge: 'தினசரி வாசகர்களுக்கு',
+        dailyBadge: 'தினசரி குர்ஆன் ஓதுபவர்களுக்கு',
         dailyTitle: 'மனப்பாடத்திற்கு அப்பால்',
         dailyDesc: 'நீங்கள் ஹிஃப்ழ் செய்ய விரும்புகிறீர்களா?அல்லது அர்த்தமுள்ள தினசரி ஓதுதலை விரும்புகிறீர்களா? iHafidh ஒவ்வொரு முஸ்லிமுக்கும் உயர்தர வாசிப்பு அனுபவத்தை வழங்குகிறது.',
         dailyFeature1Title: 'தினசரி ஆயத் அறிவிப்புகள்',

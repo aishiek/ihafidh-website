@@ -109,8 +109,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Hero
         ramadanText: 'This Ramadan Make every day & night count , Memorize , Recite, Reflect.',
         versionBadge: 'New Version 2.0.6 Out Now',
-        heroHeadline: 'Struggling to stay consistent with',
-        heroHeadlineHighlight: 'Quran memorization?',
+        heroHeadline: 'Ready to make this Ramadan',
+        heroHeadlineHighlight: 'your strongest Hifdh yet?',
         heroSubheadline: 'From 0 to 1 Juz in 30 days. Track your progress, build consistency, and achieve your Hifdh goals.',
         appStoreRating: '4.8 on App Store',
         joinCommunity: 'Join thousands of Muslims worldwide',
@@ -204,8 +204,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Hero
         ramadanText: 'இந்த புனித ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
         versionBadge: 'புதிய பதிப்பு வெளியிடப்பட்டுள்ளது',
-        heroHeadline: 'குர்ஆன் மனனம் செய்வதை தொடர்வது',
-        heroHeadlineHighlight: 'கடினமாக இருக்கிறதா?',
+        heroHeadline: 'இந்த ரமலானை உங்கள் சிறந்த',
+        heroHeadlineHighlight: 'ஹிஃப்ழ் ஆண்டாக்கத் தயாரா?',
         heroSubheadline: '30 நாட்களில் 0 முதல் 1 ஜுஸ் வரை. உங்கள் முன்னேற்றத்தைக் கண்காணியுங்கள்,  உங்கள் ஹிஃப்ழ் இலக்குகளை அடையுங்கள்.',
         appStoreRating: 'App Store-இல் 4.8 மதிப்பீடு',
         joinCommunity: 'உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்',
@@ -299,8 +299,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Hero
         ramadanText: 'Ramadan ini, manfaatkan setiap siang dan malam. Hafal, Baca, Renungi.',
         versionBadge: 'Versi Baharu 2.0.6 Kini Tersedia',
-        heroHeadline: 'Sukar untuk kekal konsisten dalam',
-        heroHeadlineHighlight: 'menghafal Al-Quran?',
+        heroHeadline: 'Sedia jadikan Ramadan ini',
+        heroHeadlineHighlight: 'hafazan terkuat anda?',
         heroSubheadline: 'Dari 0 ke 1 Juzuk dalam 30 hari. Jejaki kemajuan anda, bina konsistensi, dan capai matlamat hafazan anda.',
         appStoreRating: '4.8 di App Store',
         joinCommunity: 'Sertai ribuan Muslim di seluruh dunia',

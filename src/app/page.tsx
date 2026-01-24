@@ -29,7 +29,7 @@ import { LanguageProvider, useLanguage } from "@/i18n/LanguageContext";
 
 function HomeContent() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const openDrawer = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -37,7 +37,7 @@ function HomeContent() {
   };
 
   return (
-    <main className={styles.main}>
+    <main className={styles.main} dir={language === 'ur' ? 'rtl' : 'ltr'}>
       {/* Navbar */}
       <nav className={styles.navbar}>
         <div className={`${styles.navContainer} container`}>

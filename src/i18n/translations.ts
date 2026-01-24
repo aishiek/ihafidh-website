@@ -1,9 +1,10 @@
-export type Language = 'en' | 'ta' | 'ms';
+export type Language = 'en' | 'ta' | 'ms' | 'ur';
 
 export const LANGUAGES: { code: Language; label: string; nativeLabel: string; shortLabel: string }[] = [
     { code: 'en', label: 'English', nativeLabel: 'English', shortLabel: 'Eng' },
     { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', shortLabel: 'தமி' },
     { code: 'ms', label: 'Malay', nativeLabel: 'Melayu', shortLabel: 'Mal' },
+    { code: 'ur', label: 'Urdu', nativeLabel: 'اردو', shortLabel: 'اردو' },
 ];
 
 type TranslationKeys = {
@@ -99,6 +100,10 @@ type TranslationKeys = {
 
     // Footer
     footerCopyright: string;
+
+    // Download Drawer
+    downloadTitle: string;
+    downloadSubtitle: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
@@ -195,6 +200,10 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'Built with heart for the Ummah.',
+
+        // Download Drawer
+        downloadTitle: 'Download iHafidh',
+        downloadSubtitle: 'Select your store to start your journey.',
     },
 
     ta: {
@@ -290,6 +299,10 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'உம்மத்திற்காக அன்புடன் உருவாக்கப்பட்டது.',
+
+        // Download Drawer
+        downloadTitle: 'iHafidh-ஐ பதிவிறக்கவும்',
+        downloadSubtitle: 'உங்கள் பயணத்தைத் தொடங்க உங்கள் ஸ்டோரைத் தேர்ந்தெடுக்கவும்.',
     },
 
     ms: {
@@ -385,5 +398,107 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'Dibina dengan kasih sayang untuk Umat.',
+
+        // Download Drawer
+        downloadTitle: 'Muat Turun iHafidh',
+        downloadSubtitle: 'Pilih gedung aplikasi anda untuk memulakan perjalanan.',
+    },
+    ur: {
+        // Navbar
+        downloadNow: 'ڈاؤن لوڈ کریں',
+
+        // Hero
+        ramadanText: 'اس رمضان ہر دن اور رات کو قیمتی بنائیں، حفظ کریں، تلاوت کریں اور غور و فکر کریں۔',
+        versionBadge: 'نیا ورژن 2.0.6 اب دستیاب ہے',
+        heroHeadline: 'کیا آپ اس رمضان کو اپنا',
+        heroHeadlineHighlight: 'بہترین حفظ سال بنانے کے لیے تیار ہیں؟',
+        heroSubheadline: '30 دنوں میں 0 سے 1 جزو تک۔ اپنی پیشرفت کو ٹریک کریں، تسلسل پیدا کریں، اور اپنے حفظ کے اہداف حاصل کریں۔',
+        appStoreRating: 'ایپ اسٹور پر 4.8 ریٹنگ',
+        joinCommunity: 'دنیا بھر کے ہزاروں مسلمانوں میں شامل ہوں',
+        ctaFree: 'ابھی شروع کریں',
+
+        // How It Works
+        howItWorksTitle: 'یہ کیسے کام کرتا ہے',
+        howItWorksSubtitle: 'آج ہی اپنا قرآنی سفر شروع کرنے کے لیے چار آسان اقدامات۔',
+        step1Title: 'ڈاؤن لوڈ اور سیٹ اپ',
+        step1Desc: 'اپنے ایپ اسٹور سے iHafidh انسٹال کریں اور اپنا پسندیدہ مصحف اسٹائل اور ترجمہ منتخب کریں۔',
+        step2Title: 'اپنے اہداف طے کریں',
+        step2Desc: 'واضح کریں کہ آپ کون سی سورتیں یا پارے حفظ کرنا چاہتے ہیں اور روزانہ تلاوت کا ہدف طے کریں۔',
+        step3Title: 'روزانہ ٹریک کریں',
+        step3Desc: 'آیات کو دہرائے گئے یا حفظ شدہ کے طور پر نشان زد کریں۔ اپنی پیشرفت کے حلقوں کو بھرتا ہوا دیکھیں۔',
+        step4Title: 'تجزیہ اور بہتری',
+        step4Desc: 'تفصیلی اعداد و شمار کا استعمال کرتے ہوئے پیٹرنز کی شناخت کریں اور اسپیسڈ ریپیٹیشن کے ذریعے مستقل مزاج رہیں۔',
+
+        // Features
+        featuresTitle: 'ہر حافظ کے لیے طاقتور خصوصیات',
+        featuresSubtitle: 'وہ سب کچھ جو آپ کو مستقل مزاج رہنے اور اپنے حفظ کے اہداف حاصل کرنے کے لیے درکار ہے۔',
+        feature1Title: 'کسٹم پیج موڈ',
+        feature1Desc: '3 سے 20 آیات تک تلاوت کو اپنی ضرورت کے مطابق ڈھالیں۔ حفظ کو آسان بنانے کے لیے پیج لیول آڈیو ریپیٹ کے ساتھ اپنے صفحات بنائیں اور ٹریک کریں۔',
+        feature2Title: 'جامع ٹریکنگ',
+        feature2Desc: 'تمام 114 سورتوں اور 30 پاروں میں اپنے سفر کی نگرانی کریں پیشرفت کے اشاروں کے ساتھ۔',
+        feature3Title: 'اعلی درجے کا تجزیہ',
+        feature3Desc: 'اپنی روزانہ کی کوششوں کو دیکھنے کے لیے حفظ کے تفصیلی اعداد و شمار اور کارکردگی کے پیمانے۔',
+        feature4Title: 'اسپیسڈ ریپیٹیشن',
+        feature4Desc: 'بہترین یادداشت اور طویل مدتی حفظ کے لیے ڈیزائن کیا گیا اسمارٹ ریویو سسٹم۔',
+        feature5Title: 'آڈیو تلاوت',
+        feature5Desc: 'مرضی کے مطابق آڈیو کنٹرولز کے ساتھ اعلیٰ معیار کی آیت بہ آیت مشق۔',
+        feature6Title: 'مطالعہ کے منصوبے',
+        feature6Desc: 'اپنی مرضی کے مطابق اسٹڈی پلانز بنائیں اور ٹریک پر رہنے کے لیے اسمارٹ ریمائنڈرز حاصل کریں۔',
+
+        // Stats
+        statsTitle: 'اپنی کامیابی کو دیکھیں',
+        statsDesc: 'iHafidh آپ کی پیشرفت کے بارے میں گہری بصیرت فراہم کرتا ہے، جو پیٹرنز کی شناخت اور تحریک میں مدد دیتا ہے۔',
+        statsList1: 'روزانہ اور ہفتہ وار سرگرمی کے ہیٹ میپس',
+        statsList2: 'سورہ وار تکمیل کے پیمانے',
+        statsList3: 'کامیابی کے بیجز اور سنگ میل',
+
+        // Daily Recitation
+        dailyBadge: 'روزانہ تلاوت کرنے والوں کے لیے',
+        dailyTitle: 'حفظ سے آگے',
+        dailyDesc: 'چاہے آپ کا مقصد حفظ ہو یا صرف روزانہ کی بامقصد تلاوت، iHafidh ہر مسلمان کے لیے تلاوت کا بہترین تجربہ فراہم کرتا ہے۔',
+        dailyFeature1Title: 'روزانہ آیت کے نوٹیفیکیشن',
+        dailyFeature1Desc: 'اپنے دن کا آغاز ایک خوبصورت آیت اور اس کے ہمراہ نصیحت کے ساتھ کریں۔',
+        dailyFeature2Title: 'کثیر لسانی ترجمہ',
+        dailyFeature2Desc: 'انگریزی، اردو، تمل، فرانسیسی اور بہت سی زبانوں میں اعلیٰ معیار کے تراجم تک رسائی حاصل کریں۔',
+        dailyFeature3Title: 'علمی تفاسیر',
+        dailyFeature3Desc: 'تلاوت کے دوران براہ راست کثیر لسانی تفاسیر کے ساتھ اپنی سمجھ کو گہرا کریں۔',
+
+        // FAQ
+        faqTitle: 'اکثر پوچھے گئے سوالات',
+        faqSubtitle: 'iHafidh ایپ کے بارے میں وہ سب کچھ جو آپ جاننا چاہتے ہیں۔',
+        faq1Q: 'کیا iHafidh استعمال کرنے کے لیے مفت ہے؟',
+        faq1A: 'جی ہاں، iHafidh کی بنیادی خصوصیات بشمول پروگریس ٹریکنگ اور تلاوت قرآن، بغیر کسی پوشیدہ چارجز کے مکمل طور پر استعمال کے لیے مفت ہیں۔',
+        faq2Q: 'کیا یہ آف لائن کام کرتا ہے؟',
+        faq2A: 'زیادہ تر خصوصیات آف لائن بالکل ٹھیک کام کرتی ہیں۔ آپ کی پیشرفت مقامی طور پر محفوظ کی جاتی ہے۔ انٹرنیٹ کے بغیر کام کرنے کے لیے آڈیو تلاوتیں ڈاؤن لوڈ کی جا سکتی ہیں۔',
+        faq3Q: 'کون سے قرآنی تراجم دستیاب ہیں؟',
+        faq3A: 'ہم انگریزی، اردو، تمل، فرانسیسی، ہندی اور بہت سی زبانوں میں تراجم کی ایک وسیع رینج پیش کرتے ہیں۔',
+        faq4Q: 'کیا میں سورہ اور جزو دونوں کی پیشرفت ٹریک کر سکتا ہوں؟',
+        faq4A: 'بالکل۔ iHafidh آپ کو سورہ اور پارہ دونوں سطحوں پر بیک وقت اپنی پیشرفت ٹریک کرنے کی اجازت دیتا ہے۔',
+
+        // Latest Updates
+        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.0.6)',
+        update1Title: 'مصحف آڈیو ریپیٹ',
+        update1Desc: 'موثر حفظ کے لیے آیت یا صفحہ کی سطح پر آڈیو دہرائیں۔',
+        update2Title: 'تجویدی فونٹس',
+        update2Desc: 'اپنے تلفظ کو درست کرنے کے لیے سیٹنگز میں نئے رنگین تجویدی فونٹس۔',
+        update3Title: 'قاری کا پریویو',
+        update3Desc: 'سیٹنگز میں اپنے پسندیدہ قاری کا انتخاب کرتے وقت تلاوت کے نمونے سنیں۔',
+        update4Title: 'کسٹم پیج موڈ',
+        update4Desc: 'فی صفحہ 3 سے 20 آیات تک تلاوت کے تجربے کو اپنی مرضی کے مطابق بنائیں۔',
+
+        // Testimonials
+        testimonialsTitle: 'امت کی پسند',
+        testimonialsSubtitle: 'دنیا بھر میں وقف حفظ کرنے والوں کی ہماری بڑھتی ہوئی کمیونٹی میں شامل ہوں۔',
+
+        // CTA
+        ctaTitle: 'اپنا حفظ کا سفر ابھی شروع کریں',
+        ctaDesc: 'دنیا بھر کے ان ہزاروں مسلمانوں میں شامل ہوں جو قرآن پاک پر عبور حاصل کرنے کے لیے iHafidh کا استعمال کر رہے ہیں۔',
+
+        // Footer
+        footerCopyright: 'امت کے لیے دل سے بنایا گیا۔',
+
+        // Download Drawer
+        downloadTitle: 'iHafidh ڈاؤن لوڈ کریں',
+        downloadSubtitle: 'اپنا سفر شروع کرنے کے لیے اسٹور منتخب کریں۔',
     },
 };

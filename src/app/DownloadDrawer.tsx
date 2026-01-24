@@ -4,12 +4,15 @@ import { X } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
+import { useLanguage } from '@/i18n/LanguageContext';
+
 interface DownloadDrawerProps {
     isOpen: boolean;
     onClose: () => void;
 }
 
 export default function DownloadDrawer({ isOpen, onClose }: DownloadDrawerProps) {
+    const { t, language } = useLanguage();
     useEffect(() => {
         const handleEsc = (e: KeyboardEvent) => {
             if (e.key === 'Escape') onClose();
@@ -73,13 +76,14 @@ export default function DownloadDrawer({ isOpen, onClose }: DownloadDrawerProps)
                     marginBottom: '0', // Mobile Bottom
                 }}
                 className="drawer-content" // Helper class for media queries if needed
+                dir={language === 'ur' ? 'rtl' : 'ltr'}
             >
                 {/* Decorative Handle */}
                 <div style={{ width: '40px', height: '4px', background: 'rgba(255,255,255,0.2)', borderRadius: '100px', marginBottom: '0.5rem' }} />
 
                 <div style={{ textAlign: 'center' }}>
-                    <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#fff' }}>Download iHafidh</h3>
-                    <p style={{ color: '#94a3b8' }}>Select your store to start your journey.</p>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#fff' }}>{t('downloadTitle')}</h3>
+                    <p style={{ color: '#94a3b8' }}>{t('downloadSubtitle')}</p>
                 </div>
 
                 <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>

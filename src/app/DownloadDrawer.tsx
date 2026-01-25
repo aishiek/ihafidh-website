@@ -1,6 +1,6 @@
 'use client';
 
-import { X } from 'lucide-react';
+import { ShieldCheck, UserX, X } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
@@ -93,6 +93,38 @@ export default function DownloadDrawer({ isOpen, onClose }: DownloadDrawerProps)
                     <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" style={{ transition: 'transform 0.2s' }}>
                         <Image src="/playstore-badge.png" alt="Apple App Store" width={145} height={48} style={{ height: 'auto' }} />
                     </a>
+                </div>
+
+                {/* Privacy Badge Section */}
+                <div style={{
+                    marginTop: '0.5rem',
+                    padding: '1rem',
+                    background: 'rgba(255, 255, 255, 0.03)',
+                    borderRadius: '16px',
+                    width: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.75rem',
+                    border: '1px solid rgba(255, 255, 255, 0.05)'
+                }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#10b981', fontSize: '0.85rem', fontWeight: 500 }}>
+                            <UserX size={16} />
+                            <span>{t('noSignInRequired')}</span>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#10b981', fontSize: '0.85rem', fontWeight: 500 }}>
+                            <ShieldCheck size={16} />
+                            <span>{t('noDataCollection')}</span>
+                        </div>
+                    </div>
+                    <p style={{
+                        fontSize: '0.75rem',
+                        color: '#64748b',
+                        textAlign: 'center',
+                        margin: 0
+                    }}>
+                        {t('privacyNote')}
+                    </p>
                 </div>
 
                 <button

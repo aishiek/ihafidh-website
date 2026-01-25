@@ -104,6 +104,9 @@ type TranslationKeys = {
     // Download Drawer
     downloadTitle: string;
     downloadSubtitle: string;
+    noSignInRequired: string;
+    noDataCollection: string;
+    privacyNote: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
@@ -204,6 +207,9 @@ export const translations: Record<Language, TranslationKeys> = {
         // Download Drawer
         downloadTitle: 'Download iHafidh',
         downloadSubtitle: 'Select your store to start your journey.',
+        noSignInRequired: 'No Sign-in Required',
+        noDataCollection: 'No Data Collection',
+        privacyNote: 'Your progress stays private on your device.',
     },
 
     ta: {
@@ -303,6 +309,9 @@ export const translations: Record<Language, TranslationKeys> = {
         // Download Drawer
         downloadTitle: 'iHafidh-ஐ பதிவிறக்கவும்',
         downloadSubtitle: 'உங்கள் பயணத்தைத் தொடங்க உங்கள் ஸ்டோரைத் தேர்ந்தெடுக்கவும்.',
+        noSignInRequired: 'உள்நுழைவு தேவையில்லை',
+        noDataCollection: 'தகவல்கள் சேகரிக்கப்படுவதில்லை',
+        privacyNote: 'உங்கள் முன்னேற்றம் உங்கள் சாதனத்திலேயே இருக்கும்.',
     },
 
     ms: {
@@ -402,6 +411,9 @@ export const translations: Record<Language, TranslationKeys> = {
         // Download Drawer
         downloadTitle: 'Muat Turun iHafidh',
         downloadSubtitle: 'Pilih gedung aplikasi anda untuk memulakan perjalanan.',
+        noSignInRequired: 'Tiada Log Masuk Diperlukan',
+        noDataCollection: 'Tiada Pengumpulan Data',
+        privacyNote: 'Kemajuan anda kekal peribadi pada peranti anda.',
     },
     ur: {
         // Navbar
@@ -500,5 +512,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Download Drawer
         downloadTitle: 'iHafidh ڈاؤن لوڈ کریں',
         downloadSubtitle: 'اپنا سفر شروع کرنے کے لیے اسٹور منتخب کریں۔',
+        noSignInRequired: 'لاگ ان کی ضرورت نہیں',
+        noDataCollection: 'ڈیٹا اکٹھا نہیں کیا جاتا',
+        privacyNote: 'آپ کی پیشرفت آپ کے آلے پر محفوظ رہتی ہے۔',
     },
 };

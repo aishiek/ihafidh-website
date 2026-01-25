@@ -67,7 +67,7 @@ function HomeContent() {
 
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+        <div className={`${styles.heroContainer} container`}>
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
               <p className="animate-fade-in" style={{
@@ -122,7 +122,7 @@ function HomeContent() {
                 width={350}
                 height={700}
                 className="animate-float"
-                style={{ objectFit: 'contain' }}
+                style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
               />
             </div>
           </div>
@@ -237,7 +237,7 @@ function HomeContent() {
                 width={600}
                 height={400}
                 className="glass"
-                style={{ borderRadius: '24px' }}
+                style={{ borderRadius: '24px', maxWidth: '100%', height: 'auto' }}
               />
             </div>
             <div className={styles.statsContent}>
@@ -307,7 +307,7 @@ function HomeContent() {
                 width={350}
                 height={700}
                 className="glass animate-float"
-                style={{ borderRadius: '40px', objectFit: 'cover', zIndex: 2, position: 'relative' }}
+                style={{ borderRadius: '40px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto' }}
               />
             </div>
           </div>

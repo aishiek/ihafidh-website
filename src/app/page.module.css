@@ -133,7 +133,11 @@
     flex-direction: column;
     text-align: center;
     padding-top: 120px;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
+    min-height: auto;
+    /* Allow height to grow with content */
+    overflow: visible;
+    /* Prevent clipping of floating animations */
   }
 
   .howItWorks,
@@ -145,6 +149,15 @@
   .cta {
     padding: 3rem 0;
     /* Even more compact on mobile */
+  }
+}
+
+/* Adjust image wrapper for mobile to avoid clipping */
+@media (max-width: 768px) {
+  .heroImageWrapper {
+    border-radius: 20px;
+    /* Softer radius on mobile */
+    max-width: 90vw;
   }
 }
 
@@ -460,11 +473,24 @@
   color: #fff;
 }
 
+/* Hero Container to replace inline styles */
+.heroContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
 @media (max-width: 968px) {
   .hero {
+    /* Keep existing styles */
     flex-direction: column;
     text-align: center;
     padding-top: 140px;
+  }
+
+  .heroContainer {
+    flex-direction: column;
   }
 
   .heroInfo {

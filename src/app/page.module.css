@@ -189,19 +189,20 @@
 
   /* Typography adjustments for side-by-side mobile */
   .dualHeadlinePart h1 {
-    font-size: 0.95rem !important;
-    line-height: 1.35;
+    font-size: 1.15rem !important;
+    /* Increased from 0.95rem */
+    line-height: 1.3;
     word-wrap: break-word;
   }
 
   /* Tamil specific mobile constraints */
   .main[data-lang="ta"] .dualHeadlinePart h1 {
-    font-size: 0.8rem !important;
-    /* Smaller for Tamil */
-    line-height: 1.5;
+    font-size: 1.0rem !important;
+    /* Increased from 0.8rem */
+    line-height: 1.4;
     word-break: normal;
     overflow-wrap: anywhere;
-    /* Enable breaking anywhere if needed to prevent hiding */
+    /* Keep anywhere to handle long words */
     hyphens: auto;
     white-space: normal;
   }

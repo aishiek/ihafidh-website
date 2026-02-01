@@ -142,7 +142,7 @@
   .dualHeadlineWrapper {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     width: 100%;
     margin-bottom: 2rem;
     box-sizing: border-box;
@@ -153,9 +153,12 @@
 
   .dualHeadlinePart {
     width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
+    margin-bottom: 0;
+    /* Card Styling Mobile */
+    border: 2px solid rgba(16, 185, 129, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    background: rgba(16, 185, 129, 0.05);
   }
 
   /* Hide divider on mobile as requested */
@@ -171,30 +174,38 @@
 
   /* Tamil specific mobile constraints */
   .main[data-lang="ta"] .dualHeadlinePart h1 {
-    font-size: 1.7rem !important;
-    /* Slightly smaller for long Tamil words */
+    font-size: clamp(1.5rem, 6vw, 2.2rem) !important;
     line-height: 1.5;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   /* Supporting text mobile styling */
   .heroInfo>p:nth-of-type(2) {
     text-align: center;
-    max-width: 90%;
-    /* Safety margin */
+    max-width: 95vw;
     width: 100%;
     margin: 0 auto 2rem auto;
-    font-size: 1rem !important;
-    line-height: 1.6;
-    padding: 0 1rem;
+    font-size: 16px !important;
+    line-height: 1.7;
+    padding: 0 1.5rem;
     box-sizing: border-box;
+    color: #94a3b8;
+    word-wrap: break-word;
+  }
+
+  .main[data-lang="ta"] .heroInfo>p:nth-of-type(2) {
+    font-size: 15px !important;
   }
 
   /* Badge fixes for mobile */
   .badge {
-    margin: 0 1rem 1.5rem 1rem;
+    margin: 0 auto 1.5rem auto;
     display: inline-block;
-    max-width: calc(100% - 2rem);
-    white-space: normal;
+    max-width: fit-content;
+    white-space: nowrap;
+    padding: 0.75rem 1.25rem;
+    font-size: 14px;
     line-height: 1.4;
   }
 
@@ -222,13 +233,32 @@
   }
 }
 
-/* Dual Headline Styling */
+/* Dual Headline Styling (Desktop Base) */
 .dualHeadlineWrapper {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  align-items: center;
+  align-items: stretch;
+  /* Stretch to equal height */
   gap: 2rem;
   margin-bottom: 2.5rem;
+}
+
+.dualHeadlinePart {
+  /* Card Styling Desktop */
+  border: 2px solid rgba(16, 185, 129, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  background: rgba(16, 185, 129, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dualHeadlinePart:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  transform: scale(1.02);
 }
 
 .dualHeadlinePart h1 {
@@ -238,10 +268,34 @@
   /* Remove bottom margin from h1 as wrapper handles spacing */
 }
 
+/* OR Text in the middle for desktop */
 .dualHeadlineDivider {
-  width: 1px;
-  height: 100px;
-  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.2), transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  width: 50px;
+  /* Give it some width */
+}
+
+/* Optional: Keep line or remove it. Request said 'Vertical divider line' remove on mobile. 
+   On desktop, let's make it an 'OR' or just space. 
+   The prompt suggested "OR" text between columns. Let's try to implement that cleanly 
+   replacing the simple line. 
+*/
+.dualHeadlineDivider::before {
+  content: 'OR';
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background: var(--background);
+  /* Match bg to mask line if needed, or just stand alone */
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .heroContent {

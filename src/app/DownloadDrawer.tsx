@@ -1,6 +1,6 @@
 'use client';
 
-import { ShieldCheck, UserX, X } from 'lucide-react';
+import { ShieldCheck, UserX, X, Ban } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
@@ -115,6 +115,10 @@ export default function DownloadDrawer({ isOpen, onClose }: DownloadDrawerProps)
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#10b981', fontSize: '0.85rem', fontWeight: 500 }}>
                             <ShieldCheck size={16} />
                             <span>{t('noDataCollection')}</span>
+                        </div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#10b981', fontSize: '0.85rem', fontWeight: 500 }}>
+                            <Ban size={16} />
+                            <span>{t('noAds')}</span>
                         </div>
                     </div>
                     <p style={{

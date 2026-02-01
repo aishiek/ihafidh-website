@@ -110,6 +110,7 @@ type TranslationKeys = {
     noDataCollection: string;
     privacyNote: string;
     orText: string;
+    noAds: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
@@ -119,7 +120,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'This Ramadan Make every day & night count , Memorize , Recite, Reflect.',
-        versionBadge: 'Ramadan 2025 Edition',
+        versionBadge: 'Ramadan 2026 Edition',
         heroHeadline: 'Make this Ramadan',
         heroHeadlineHighlight: 'your Hifdh breakthrough.',
         heroHeadlineTafsir: 'Make this Ramadan',
@@ -216,6 +217,7 @@ export const translations: Record<Language, TranslationKeys> = {
         noDataCollection: 'No Data Collection',
         privacyNote: 'Your progress stays private on your device.',
         orText: 'OR',
+        noAds: 'No Ads',
     },
 
     ta: {
@@ -224,7 +226,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'இந்த புனித ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
-        versionBadge: 'புதிய பதிப்பு வெளியிடப்பட்டுள்ளது',
+        versionBadge: 'ரமலான் 2026 பதிப்பு',
         heroHeadline: 'இந்த ரமலானை உங்கள்',
         heroHeadlineHighlight: 'சிறந்த ஹிஃப்ழ் ரமலானாக ஆக்குங்கள்.',
         heroHeadlineTafsir: 'இந்த ரமலானை உங்கள்',
@@ -321,6 +323,7 @@ export const translations: Record<Language, TranslationKeys> = {
         noDataCollection: 'தகவல்கள் சேகரிக்கப்படுவதில்லை',
         privacyNote: 'உங்கள் முன்னேற்றம் உங்கள் சாதனத்திலேயே இருக்கும்.',
         orText: 'அல்லது',
+        noAds: 'விளம்பரங்கள் இல்லை',
     },
 
     ms: {
@@ -329,7 +332,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'Ramadan ini, manfaatkan setiap siang dan malam. Hafal, Baca, Renungi.',
-        versionBadge: 'Versi Baharu 2.0.6 Kini Tersedia',
+        versionBadge: 'Edisi Ramadan 2026',
         heroHeadline: 'Jadikan Ramadan ini',
         heroHeadlineHighlight: 'hafazan terkuat anda.',
         heroHeadlineTafsir: 'Jadikan Ramadan ini',
@@ -426,6 +429,7 @@ export const translations: Record<Language, TranslationKeys> = {
         noDataCollection: 'Tiada Pengumpulan Data',
         privacyNote: 'Kemajuan anda kekal peribadi pada peranti anda.',
         orText: 'ATAU',
+        noAds: 'Tiada Iklan',
     },
     ur: {
         // Navbar
@@ -433,7 +437,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'اس رمضان ہر دن اور رات کو قیمتی بنائیں، حفظ کریں، تلاوت کریں اور غور و فکر کریں۔',
-        versionBadge: 'نیا ورژن 2.0.6 اب دستیاب ہے',
+        versionBadge: 'رمضان 2026 ایڈیشن',
         heroHeadline: 'اس رمضان کو بنائیں',
         heroHeadlineHighlight: 'اپنا بہترین حفظ کا سال۔',
         heroHeadlineTafsir: 'اس رمضان کو بنائیں',
@@ -530,5 +534,6 @@ export const translations: Record<Language, TranslationKeys> = {
         noDataCollection: 'ڈیٹا اکٹھا نہیں کیا جاتا',
         privacyNote: 'آپ کی پیشرفت آپ کے آلے پر محفوظ رہتی ہے۔',
         orText: 'یا',
+        noAds: 'کوئی اشتہار نہیں',
     },
 };

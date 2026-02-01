@@ -138,12 +138,12 @@
     overflow: visible;
   }
 
-  /* Swapped to Flex column for mobile stability */
+  /* Swapped to Flex column for mobile stability - FORCED */
   .dualHeadlineWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2.5rem;
+    width: 100% !important;
     margin-bottom: 2rem;
     box-sizing: border-box;
     padding: 0 1rem;
@@ -152,14 +152,13 @@
   }
 
   .dualHeadlinePart {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
     margin-bottom: 0;
     text-align: center;
-    /* REMOVED CARD STYLING */
     border: none;
-    border-radius: 0;
-    padding: 0;
     background: transparent;
+    padding: 0;
   }
 
   /* Show divider as 'OR' on mobile */

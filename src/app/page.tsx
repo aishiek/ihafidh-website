@@ -84,9 +84,19 @@ function HomeContent() {
                   <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
                 </a>
               </div>
-              <h1 className="animate-fade-in">
-                {t('heroHeadline')} <span className="gradient-text">{t('heroHeadlineHighlight')}</span>
-              </h1>
+              <div className={styles.dualHeadlineWrapper}>
+                <div className={styles.dualHeadlinePart}>
+                  <h1 className="animate-fade-in">
+                    {t('heroHeadline')} <span className="gradient-text">{t('heroHeadlineHighlight')}</span>
+                  </h1>
+                </div>
+                <div className={styles.dualHeadlineDivider}></div>
+                <div className={styles.dualHeadlinePart}>
+                  <h1 className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+                    {t('heroHeadlineTafsir')} <span className="gradient-text">{t('heroHeadlineTafsirHighlight')}</span>
+                  </h1>
+                </div>
+              </div>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '1.5rem' }}>
                 {t('heroSubheadline')}
               </p>

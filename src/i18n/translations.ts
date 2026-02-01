@@ -16,6 +16,8 @@ type TranslationKeys = {
     versionBadge: string;
     heroHeadline: string;
     heroHeadlineHighlight: string;
+    heroHeadlineTafsir: string;
+    heroHeadlineTafsirHighlight: string;
     heroSubheadline: string;
     appStoreRating: string;
     joinCommunity: string;
@@ -119,6 +121,8 @@ export const translations: Record<Language, TranslationKeys> = {
         versionBadge: 'New Version 2.0.6 Out Now',
         heroHeadline: 'Ready to make this Ramadan',
         heroHeadlineHighlight: 'your strongest Hifdh yet?',
+        heroHeadlineTafsir: 'Have you planned to complete',
+        heroHeadlineTafsirHighlight: 'Tafsir cover to cover?',
         heroSubheadline: 'From 0 to 1 Juz in 30 days. Track your progress, build consistency, and achieve your Hifdh goals.',
         appStoreRating: '4.8 on App Store',
         joinCommunity: 'Join thousands of Muslims worldwide',
@@ -221,6 +225,8 @@ export const translations: Record<Language, TranslationKeys> = {
         versionBadge: 'புதிய பதிப்பு வெளியிடப்பட்டுள்ளது',
         heroHeadline: 'இந்த ரமலானை உங்கள் சிறந்த',
         heroHeadlineHighlight: 'ஹிஃப்ழ் ஆண்டாக்கத் தயாரா?',
+        heroHeadlineTafsir: 'இந்த ரமலானில் தப்ஸீர் முழுவதையும்',
+        heroHeadlineTafsirHighlight: 'முடிக்க திட்டமிட்டுள்ளீர்களா?',
         heroSubheadline: '30 நாட்களில் 0 முதல் 1 ஜுஸ் வரை. உங்கள் முன்னேற்றத்தைக் கண்காணியுங்கள்,  உங்கள் ஹிஃப்ழ் இலக்குகளை அடையுங்கள்.',
         appStoreRating: 'App Store-இல் 4.8 மதிப்பீடு',
         joinCommunity: 'உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்',
@@ -323,6 +329,8 @@ export const translations: Record<Language, TranslationKeys> = {
         versionBadge: 'Versi Baharu 2.0.6 Kini Tersedia',
         heroHeadline: 'Sedia jadikan Ramadan ini',
         heroHeadlineHighlight: 'hafazan terkuat anda?',
+        heroHeadlineTafsir: 'Sudahkah anda merancang untuk',
+        heroHeadlineTafsirHighlight: 'khatam Tafsir Ramadan ini?',
         heroSubheadline: 'Dari 0 ke 1 Juzuk dalam 30 hari. Jejaki kemajuan anda, bina konsistensi, dan capai matlamat hafazan anda.',
         appStoreRating: '4.8 di App Store',
         joinCommunity: 'Sertai ribuan Muslim di seluruh dunia',
@@ -424,6 +432,8 @@ export const translations: Record<Language, TranslationKeys> = {
         versionBadge: 'نیا ورژن 2.0.6 اب دستیاب ہے',
         heroHeadline: 'کیا آپ اس رمضان کو اپنا',
         heroHeadlineHighlight: 'بہترین حفظ سال بنانے کے لیے تیار ہیں؟',
+        heroHeadlineTafsir: 'کیا آپ نے اس رمضان میں',
+        heroHeadlineTafsirHighlight: 'مکمل تفسیر کا منصوبہ بنایا ہے؟',
         heroSubheadline: '30 دنوں میں 0 سے 1 جزو تک۔ اپنی پیشرفت کو ٹریک کریں، تسلسل پیدا کریں، اور اپنے حفظ کے اہداف حاصل کریں۔',
         appStoreRating: 'ایپ اسٹور پر 4.8 ریٹنگ',
         joinCommunity: 'دنیا بھر کے ہزاروں مسلمانوں میں شامل ہوں',

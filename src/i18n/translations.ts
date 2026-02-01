@@ -109,6 +109,7 @@ type TranslationKeys = {
     noSignInRequired: string;
     noDataCollection: string;
     privacyNote: string;
+    orText: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
@@ -214,6 +215,7 @@ export const translations: Record<Language, TranslationKeys> = {
         noSignInRequired: 'No Sign-in Required',
         noDataCollection: 'No Data Collection',
         privacyNote: 'Your progress stays private on your device.',
+        orText: 'OR',
     },
 
     ta: {
@@ -227,7 +229,7 @@ export const translations: Record<Language, TranslationKeys> = {
         heroHeadlineHighlight: 'சிறந்த ஹிஃப்ழ் ரமலானாக ஆக்குங்கள்.',
         heroHeadlineTafsir: 'இந்த ரமலானை உங்கள்',
         heroHeadlineTafsirHighlight: 'ஆழமான தப்ஸீர் ரமலானாக ஆக்குங்கள்.',
-        heroSubheadline: 'உங்கள் பாதையைத் தேர்வுசெய்யுங்கள்: 30 நாட்களில் உங்கள் முதல் ஜுஸை மனப்பாடம் செய்யுங்கள் அல்லது முழுமையான தஃப்ஸீர் படிப்பை முடியுங்கள். தினசரி முன்னேற்றத்தை கண்காணியுங்கள், நிலையான பழக்கங்களை உருவாக்குங்கள், இந்த ரமலானில் குர்ஆனுடனான உங்கள் உறவை மாற்றியமையுங்கள்.',
+        heroSubheadline: 'உங்கள் பாதையைத் தேர்வுசெய்யுங்கள்: 30 நாட்களில் உங்கள் முதல் ஜுஸை மனப்பாடம் செய்யுங்கள் அல்லது முழுமையான தஃப்ஸீர் படிப்பை முடியுங்கள். தினசரி முன்னேற்றத்தைக் கண்காணியுங்கள், நிலையான பழக்கங்களை உருவாக்குங்கள், இந்த ரமலானில் குர்ஆனுடனான உங்கள் உறவை மாற்றுங்கள்.',
         appStoreRating: 'App Store-இல் 4.8 மதிப்பீடு',
         joinCommunity: 'உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்',
         ctaFree: 'இப்போதே தொடங்குங்கள்',
@@ -318,6 +320,7 @@ export const translations: Record<Language, TranslationKeys> = {
         noSignInRequired: 'உள்நுழைவு தேவையில்லை',
         noDataCollection: 'தகவல்கள் சேகரிக்கப்படுவதில்லை',
         privacyNote: 'உங்கள் முன்னேற்றம் உங்கள் சாதனத்திலேயே இருக்கும்.',
+        orText: 'அல்லது',
     },
 
     ms: {
@@ -422,6 +425,7 @@ export const translations: Record<Language, TranslationKeys> = {
         noSignInRequired: 'Tiada Log Masuk Diperlukan',
         noDataCollection: 'Tiada Pengumpulan Data',
         privacyNote: 'Kemajuan anda kekal peribadi pada peranti anda.',
+        orText: 'ATAU',
     },
     ur: {
         // Navbar
@@ -525,5 +529,6 @@ export const translations: Record<Language, TranslationKeys> = {
         noSignInRequired: 'لاگ ان کی ضرورت نہیں',
         noDataCollection: 'ڈیٹا اکٹھا نہیں کیا جاتا',
         privacyNote: 'آپ کی پیشرفت آپ کے آلے پر محفوظ رہتی ہے۔',
+        orText: 'یا',
     },
 };

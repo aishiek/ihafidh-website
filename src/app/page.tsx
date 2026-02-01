@@ -90,7 +90,9 @@ function HomeContent() {
                     {t('heroHeadline')} <span className="gradient-text">{t('heroHeadlineHighlight')}</span>
                   </h1>
                 </div>
-                <div className={styles.dualHeadlineDivider}></div>
+                <div className={styles.dualHeadlineDivider}>
+                  <span>{t('orText')}</span>
+                </div>
                 <div className={styles.dualHeadlinePart}>
                   <h1 className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
                     {t('heroHeadlineTafsir')} <span className="gradient-text">{t('heroHeadlineTafsirHighlight')}</span>

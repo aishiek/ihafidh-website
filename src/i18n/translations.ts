@@ -118,12 +118,12 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'This Ramadan Make every day & night count , Memorize , Recite, Reflect.',
-        versionBadge: 'New Version 2.0.6 Out Now',
+        versionBadge: 'Ramadan 2025 Edition',
         heroHeadline: 'Make this Ramadan',
-        heroHeadlineHighlight: 'your strongest Hifdh yet.',
+        heroHeadlineHighlight: 'your Hifdh breakthrough.',
         heroHeadlineTafsir: 'Make this Ramadan',
-        heroHeadlineTafsirHighlight: 'your deepest Tafsir yet.',
-        heroSubheadline: 'From 0 to 1 Juz in 30 days. Track your progress, build consistency, and achieve your Hifdh goals.',
+        heroHeadlineTafsirHighlight: 'your Tafsir journey.',
+        heroSubheadline: 'Choose your path: Memorize your first Juz in 30 days OR complete a full Tafsir study. Track daily progress, build lasting habits, and transform your relationship with the Quran this Ramadan.',
         appStoreRating: '4.8 on App Store',
         joinCommunity: 'Join thousands of Muslims worldwide',
         ctaFree: "It's Free, Start Now",

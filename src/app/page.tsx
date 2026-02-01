@@ -37,7 +37,7 @@ function HomeContent() {
   };
 
   return (
-    <main className={styles.main} dir={language === 'ur' ? 'rtl' : 'ltr'}>
+    <main className={styles.main} dir={language === 'ur' ? 'rtl' : 'ltr'} data-lang={language}>
       {/* Navbar */}
       <nav className={styles.navbar}>
         <div className={`${styles.navContainer} container`}>

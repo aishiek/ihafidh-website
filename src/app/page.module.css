@@ -145,10 +145,17 @@
     gap: 2rem;
     width: 100%;
     margin-bottom: 2rem;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .dualHeadlinePart {
     width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
   /* Hide divider on mobile as requested */
@@ -159,16 +166,36 @@
   /* Typography adjustments for mobile */
   .dualHeadlinePart h1 {
     font-size: 2rem !important;
+    line-height: 1.3;
+  }
+
+  /* Tamil specific mobile constraints */
+  .main[data-lang="ta"] .dualHeadlinePart h1 {
+    font-size: 1.7rem !important;
+    /* Slightly smaller for long Tamil words */
+    line-height: 1.5;
   }
 
   /* Supporting text mobile styling */
   .heroInfo>p:nth-of-type(2) {
     text-align: center;
     max-width: 90%;
+    /* Safety margin */
+    width: 100%;
     margin: 0 auto 2rem auto;
     font-size: 1rem !important;
     line-height: 1.6;
     padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  /* Badge fixes for mobile */
+  .badge {
+    margin: 0 1rem 1.5rem 1rem;
+    display: inline-block;
+    max-width: calc(100% - 2rem);
+    white-space: normal;
+    line-height: 1.4;
   }
 
   .howItWorks,

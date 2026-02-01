@@ -138,64 +138,72 @@
     overflow: visible;
   }
 
-  /* Swapped to Flex column for mobile stability - FORCED */
+  /* Side-by-Side Mobile Layout - USER REQUESTED */
   .dualHeadlineWrapper {
     display: flex !important;
-    flex-direction: column !important;
-    gap: 2.5rem;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    /* Ensure equal height */
+    gap: 0.5rem;
     width: 100% !important;
     margin-bottom: 2rem;
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     max-width: 100vw;
     overflow-x: hidden;
   }
 
   .dualHeadlinePart {
-    width: 100% !important;
-    max-width: 100% !important;
+    flex: 1 !important;
+    width: 50% !important;
+    max-width: 50% !important;
     margin-bottom: 0;
     text-align: center;
     border: none;
     background: transparent;
     padding: 0;
-  }
-
-  /* Show divider as 'OR' on mobile */
-  .dualHeadlineDivider {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1.5rem 0;
+  }
+
+  /* Vertical Divider for Mobile */
+  .dualHeadlineDivider {
+    display: flex !important;
+    width: 1px !important;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+    height: auto !important;
+    min-height: 40px;
+    margin: 0 !important;
+    flex-shrink: 0;
   }
 
   .dualHeadlineDivider span {
-    font-size: 1.5rem;
-    color: var(--primary);
-    font-weight: bold;
+    display: none !important;
+    /* Hide 'OR' text */
   }
 
-  /* Hide the desktop definition of divider line on mobile */
   .dualHeadlineDivider::before {
-    display: none;
+    display: none !important;
   }
 
-  /* Typography adjustments for mobile */
+  /* Typography adjustments for side-by-side mobile */
   .dualHeadlinePart h1 {
-    font-size: 2rem !important;
-    line-height: 1.3;
+    font-size: 0.95rem !important;
+    line-height: 1.35;
+    word-wrap: break-word;
   }
 
-  /* Tamil specific mobile constraints CRITICAL FIX */
+  /* Tamil specific mobile constraints */
   .main[data-lang="ta"] .dualHeadlinePart h1 {
-    font-size: 2rem !important;
-    line-height: 1.4;
-    word-break: keep-all;
-    /* CRITICAL: Do NOT break words */
-    overflow-wrap: normal;
+    font-size: 0.8rem !important;
+    /* Smaller for Tamil */
+    line-height: 1.5;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    /* Enable breaking anywhere if needed to prevent hiding */
+    hyphens: auto;
     white-space: normal;
-    word-spacing: normal;
-    hyphens: none;
   }
 
   /* Supporting text mobile styling */

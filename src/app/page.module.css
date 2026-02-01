@@ -135,28 +135,40 @@
     padding-top: 120px;
     padding-bottom: 4rem;
     min-height: auto;
-    /* Allow height to grow with content */
     overflow: visible;
-    /* Prevent clipping of floating animations */
   }
 
+  /* Swapped to Flex column for mobile stability */
   .dualHeadlineWrapper {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
+  .dualHeadlinePart {
+    width: 100%;
+  }
+
+  /* Hide divider on mobile as requested */
   .dualHeadlineDivider {
-    width: 60%;
-    height: 1px;
-    margin: 0 auto;
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+    display: none;
   }
 
-  /* Reduce font size on mobile */
+  /* Typography adjustments for mobile */
   .dualHeadlinePart h1 {
     font-size: 2rem !important;
-    /* Force smaller size on mobile */
+  }
+
+  /* Supporting text mobile styling */
+  .heroInfo>p:nth-of-type(2) {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 2rem auto;
+    font-size: 1rem !important;
+    line-height: 1.6;
+    padding: 0 1rem;
   }
 
   .howItWorks,
@@ -167,7 +179,6 @@
   .changelog,
   .cta {
     padding: 3rem 0;
-    /* Even more compact on mobile */
   }
 }
 
@@ -175,8 +186,12 @@
 @media (max-width: 768px) {
   .heroImageWrapper {
     border-radius: 20px;
-    /* Softer radius on mobile */
     max-width: 90vw;
+  }
+
+  /* Ensure strict stacking on smaller screens if specific overrides needed */
+  .dualHeadlineWrapper {
+    flex-direction: column;
   }
 }
 

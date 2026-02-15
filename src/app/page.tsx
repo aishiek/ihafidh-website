@@ -6,6 +6,7 @@ import {
   ChevronRight,
   Clock,
   Facebook,
+  HandHeart,
   Instagram,
   Languages,
   Layers,
@@ -388,6 +389,13 @@ function HomeContent() {
               <div>
                 <h4 style={{ color: '#fff' }}>{t('update4Title')}</h4>
                 <p>{t('update4Desc')}</p>
+              </div>
+            </div>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><HandHeart size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>{t('update5Title')}</h4>
+                <p>{t('update5Desc')}</p>
               </div>
             </div>
           </div>

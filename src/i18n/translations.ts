@@ -91,6 +91,8 @@ type TranslationKeys = {
     update3Desc: string;
     update4Title: string;
     update4Desc: string;
+    update5Title: string;
+    update5Desc: string;
 
     // Testimonials
     testimonialsTitle: string;
@@ -189,7 +191,7 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
 
         // Latest Updates
-        updatesTitle: 'Latest Updates (v2.0.6)',
+        updatesTitle: 'Latest Updates (v2.0.8)',
         update1Title: 'Mushaf Audio Repeat',
         update1Desc: 'Repeat audio by Verse or Page level for effective Hifdh repetition.',
         update2Title: 'Tajweed Fonts',
@@ -198,6 +200,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update3Desc: 'Listen to audio samples when selecting your preferred Qari in settings.',
         update4Title: 'Custom Page Mode',
         update4Desc: 'Customize your reading experience from 3 up to 20 verses per page.',
+        update5Title: 'Quranic Duas Collection',
+        update5Desc: 'Access authentic supplications from the Quran. Available in the menu for daily spiritual enrichment.',
 
         // Testimonials
         testimonialsTitle: 'Loved by the Ummah',
@@ -295,7 +299,7 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4A: 'நிச்சயமாக. iHafidh சூரா நிலை (அனைத்து 114) மற்றும் ஜுஸ் நிலை (அனைத்து 30) இரண்டிலும் ஒரே நேரத்தில் உங்கள் முன்னேற்றத்தைக் காணலாம்.',
 
         // Latest Updates
-        updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.0.6)',
+        updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.0.8)',
         update1Title: 'முஸ்ஹஃப் ஆடியோ இயக்கம்',
         update1Desc: 'திறமையான ஹிஃப்ழ் Revision ஆயத்து அல்லது பக்க அளவில் ஆடியோவை  இயக்குங்கள்.',
         update2Title: 'தஜ்வீத் எழுத்துருக்கள்',
@@ -304,6 +308,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update3Desc: 'அமைப்புகளில் உங்களுக்கு விருப்பமான காரியைத் தேர்ந்தெடுக்கும்போது ஆடியோ மாதிரிகளைக் கேளுங்கள்.',
         update4Title: 'தனிப்பயன் பக்க முறை (Page Mode)',
         update4Desc: 'உங்கள் வசதிக்கேற்ப ஒரு பக்கத்திற்கு 3 முதல் 20 ஆயத்துக்கள் வரை உங்கள் வாசிப்பு .',
+        update5Title: 'குர்ஆன் துஆக்கள் தொகுப்பு',
+        update5Desc: 'குர்ஆனில் இருந்து உண்மையான பிரார்த்தனைகளை அணுகவும். தினசரி ஆன்மீக வளர்ச்சிக்காக மெனுவில் கிடைக்கிறது.',
 
         // Testimonials
         testimonialsTitle: 'நற்சான்றிதழ்கள்',
@@ -401,7 +407,7 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4A: 'Sudah tentu. iHafidh membolehkan anda menjejaki kemajuan anda di peringkat Surah (semua 114) dan peringkat Juzuk (semua 30) secara serentak.',
 
         // Latest Updates
-        updatesTitle: 'Kemas Kini Terkini (v2.0.6)',
+        updatesTitle: 'Kemas Kini Terkini (v2.0.8)',
         update1Title: 'Ulangan Audio Mushaf',
         update1Desc: 'Ulang audio mengikut ayat atau halaman untuk ulangan hafazan yang berkesan.',
         update2Title: 'Fon Tajwid',
@@ -410,6 +416,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update3Desc: 'Dengar sampel audio semasa memilih Qari pilihan anda dalam tetapan.',
         update4Title: 'Mod Halaman Tersuai',
         update4Desc: 'Sesuaikan pengalaman bacaan anda dari 3 hingga 20 ayat setiap halaman.',
+        update5Title: 'Koleksi Doa Quran',
+        update5Desc: 'Akses doa-doa sahih dari Al-Quran. Tersedia dalam menu untuk pengayaan rohani harian.',
 
         // Testimonials
         testimonialsTitle: 'Dicintai Umat',
@@ -506,7 +514,7 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4A: 'بالکل۔ iHafidh آپ کو سورہ اور پارہ دونوں سطحوں پر بیک وقت اپنی پیشرفت ٹریک کرنے کی اجازت دیتا ہے۔',
 
         // Latest Updates
-        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.0.6)',
+        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.0.8)',
         update1Title: 'مصحف آڈیو ریپیٹ',
         update1Desc: 'موثر حفظ کے لیے آیت یا صفحہ کی سطح پر آڈیو دہرائیں۔',
         update2Title: 'تجویدی فونٹس',
@@ -515,6 +523,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update3Desc: 'سیٹنگز میں اپنے پسندیدہ قاری کا انتخاب کرتے وقت تلاوت کے نمونے سنیں۔',
         update4Title: 'کسٹم پیج موڈ',
         update4Desc: 'فی صفحہ 3 سے 20 آیات تک تلاوت کے تجربے کو اپنی مرضی کے مطابق بنائیں۔',
+        update5Title: 'قرآنی دعاؤں کا مجموعہ',
+        update5Desc: 'قرآن سے مستند دعاؤں تک رسائی حاصل کریں۔ روزانہ روحانی ترقی کے لیے مینو میں دستیاب ہے۔',
 
         // Testimonials
         testimonialsTitle: 'امت کی پسند',

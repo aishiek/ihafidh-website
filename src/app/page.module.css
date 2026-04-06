@@ -1,13 +1,15 @@
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  width: 100%;
-  z-index: 100;
-  padding: 0.75rem 0;
-  transition: all 0.3s ease;
-  background: rgba(15, 23, 42, 0.9);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
 }
 
 .launchBanner {
@@ -72,26 +74,15 @@
   margin-left: 0.5rem;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: rgba(10, 10, 10, 0.85);
-  backdrop-filter: blur(12px);
-  padding: 1.25rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
 
 .navSunnahBadge {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(201, 168, 76, 0.1);
   padding: 0.4rem 0.8rem;
   border-radius: 100px;
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(201, 168, 76, 0.2);
   font-size: 0.8rem;
   font-weight: 500;
   color: #fff;
@@ -136,8 +127,21 @@
   padding-top: 100px;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top right, rgba(201, 168, 76, 0.1), transparent),
-              radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.05), transparent);
+  background: radial-gradient(circle at top right, rgba(201, 168, 76, 0.15), transparent),
+              radial-gradient(circle at bottom left, rgba(201, 168, 76, 0.05), transparent);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0l10 30h30l-25 20 10 30-25-20-25 20 10-30-25-20h30z' fill='%23C9A84C' fill-opacity='0.05'/%3E%3C/svg%3E");
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero::before {
@@ -147,9 +151,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5L35 15L45 20L35 25L30 35L25 25L15 20L25 15L30 5Z' fill='%23C9A84C' fill-opacity='0.05'/%3E%3C/svg%3E");
-  opacity: 0.6;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0 C70 30 90 30 120 40 C90 50 70 50 60 80 C50 50 30 50 0 40 C30 30 50 30 60 0' fill='%23C9A84C' fill-opacity='0.03'/%3E%3C/svg%3E");
+  opacity: 1;
   pointer-events: none;
+  z-index: 0;
 }
 
 /* Compact spacing for other sections */
@@ -596,13 +601,13 @@
 .featureIcon {
   width: 60px;
   height: 60px;
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(201, 168, 76, 0.1);
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: var(--primary);
+  color: #C9A84C;
 }
 
 .featureCard h3 {
@@ -626,7 +631,7 @@
 
 .cta {
   text-align: center;
-  background: linear-gradient(rgba(16, 185, 129, 0.1), transparent);
+  background: linear-gradient(rgba(201, 168, 76, 0.1), transparent);
 }
 
 .footer {
@@ -661,12 +666,12 @@
   flex-shrink: 0;
   width: 40px;
   height: 40px;
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(201, 168, 76, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+  color: #C9A84C;
 }
 
 .readerFeatureItem h4 {

@@ -91,7 +91,7 @@ export default function Testimonials() {
         <section className={styles.testimonials} id="testimonials">
             <div className="container">
                 <div className={styles.sectionHeader}>
-                    <h2 className="gradient-text">{t('testimonialsTitle')}</h2>
+                    <h2 className={styles.goldGradientText}>{t('testimonialsTitle')}</h2>
                     <p>{t('testimonialsSubtitle')}</p>
                 </div>
 

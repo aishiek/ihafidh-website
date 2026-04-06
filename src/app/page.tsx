@@ -1,23 +1,43 @@
 'use client';
 
 import {
+  Activity,
   BarChart3,
+  BookOpen,
+  Brain,
+  CaseSensitive,
   CheckCircle2,
   ChevronRight,
   Clock,
+  CreditCard,
+  Eye,
   Facebook,
+  Globe,
   HandHeart,
+  Hash,
+  Heart,
   Instagram,
   Languages,
   Layers,
+  Layout,
+  List,
   Mail,
+  Maximize,
+  Moon,
   Music,
   RotateCw,
+  Scissors,
   Search,
   Settings,
+  Settings2,
+  Smartphone,
   Sparkles,
   Star,
-  Twitter
+  Sun,
+  ToggleLeft,
+  Twitter,
+  Type,
+  WifiOff
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,6 +47,93 @@ import Testimonials from "./Testimonials";
 import DownloadDrawer from "./DownloadDrawer";
 import LanguageSelector from "./LanguageSelector";
 import { LanguageProvider, useLanguage } from "@/i18n/LanguageContext";
+
+function FeaturesExplorer({ openDrawer }: { openDrawer: (e: React.MouseEvent) => void }) {
+  const { t } = useLanguage();
+  const [activeCategory, setActiveCategory] = useState<'Recitation' | 'Memorization' | 'Experience' | 'Growth'>('Recitation');
+
+  const categories = [
+    { id: 'Recitation' as const, label: t('categoryRecitation'), icon: <BookOpen size={20} /> },
+    { id: 'Memorization' as const, label: t('categoryHifdh'), icon: <Brain size={20} /> },
+    { id: 'Experience' as const, label: t('categoryUI'), icon: <Layout size={20} /> },
+    { id: 'Growth' as const, label: t('categoryGrowth'), icon: <Activity size={20} /> },
+  ];
+
+  const features = {
+    Recitation: [
+      { id: 'f1', icon: <Moon size={24} /> },
+      { id: 'f2', icon: <Sun size={24} /> },
+      { id: 'f3', icon: <RotateCw size={24} /> },
+      { id: 'f4', icon: <Type size={24} /> },
+      { id: 'f5', icon: <Languages size={24} /> },
+      { id: 'f6', icon: <Layers size={24} /> },
+      { id: 'f7', icon: <List size={24} /> },
+      { id: 'f8', icon: <Hash size={24} /> },
+    ],
+    Memorization: [
+      { id: 'f9', icon: <Eye size={24} /> },
+      { id: 'f10', icon: <Brain size={24} /> },
+      { id: 'f11', icon: <HandHeart size={24} /> },
+      { id: 'f12', icon: <Heart size={24} /> },
+      { id: 'f13', icon: <Activity size={24} /> },
+      { id: 'f14', icon: <Scissors size={24} /> },
+      { id: 'f15', icon: <Settings2 size={24} /> },
+      { id: 'f16', icon: <ToggleLeft size={24} /> },
+    ],
+    Experience: [
+      { id: 'f17', icon: <Maximize size={24} /> },
+      { id: 'f18', icon: <CaseSensitive size={24} /> },
+      { id: 'f19', icon: <CreditCard size={24} /> },
+      { id: 'f20', icon: <WifiOff size={24} /> },
+      { id: 'f21', icon: <Smartphone size={24} /> },
+      { id: 'f22', icon: <Sparkles size={24} /> },
+    ],
+    Growth: [
+      { id: 'f23', icon: <BarChart3 size={24} /> },
+      { id: 'f24', icon: <Globe size={24} /> },
+    ],
+  };
+
+  return (
+    <section className={styles.features} id="features">
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.goldGradientText}>{t('featuresTitle')}</h2>
+          <p>{t('featuresSubtitle')}</p>
+        </div>
+
+        <div className={styles.featureTabs}>
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              className={`${styles.tabButton} ${activeCategory === cat.id ? styles.active : ''}`}
+              onClick={() => setActiveCategory(cat.id)}
+            >
+              {cat.icon}
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
+        <div className={styles.fGrid}>
+          {features[activeCategory].map((f) => (
+            <div key={f.id} className={`${styles.fCard} glass animate-fade-in`}>
+              <div className={styles.fIcon}>{f.icon}</div>
+              <h4>{t(`${f.id}Title` as any)}</h4>
+              <p>{t(`${f.id}Desc` as any)}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className={styles.primaryCtaContainer}>
+          <a href="#" onClick={openDrawer} className={styles.ctaButton}>
+            {t('ctaFree')} <ChevronRight size={20} />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function HomeContent() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -41,7 +148,7 @@ function HomeContent() {
     <main className={styles.main} dir={language === 'ur' ? 'rtl' : 'ltr'} data-lang={language}>
       {/* Launch Banner */}
       <div className={styles.launchBanner}>
-        🎉 <strong>Golden Edition v2.1 is live</strong> — New Tajweed fonts, audio repeat & more. <a href="#download">Download Free →</a>
+        🎉 <strong>{t('bannerText')}</strong> <a href="#download">{t('bannerCTA')}</a>
       </div>
       {/* Navbar */}
       <nav className={styles.navbar}>
@@ -89,15 +196,18 @@ function HomeContent() {
                 <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
                 <span className={`${styles.featuresBadge} animate-fade-in`} style={{ animationDelay: '0.1s' }}>{t('featuresCount')}</span>
               </div>
-              <div className={styles.dualHeadlineWrapper}>
-                <div className={styles.dualHeadlinePart}>
-                  <h1 className="animate-fade-in">
-                    {t('heroHeadline')} <span className="gradient-text">{t('heroHeadlineHighlight')}</span>
+              <div className={styles.dualHeadlineWrapper} style={{ justifyContent: 'center', textAlign: 'center', gridTemplateColumns: '1fr' }}>
+                <div className={styles.dualHeadlinePart} style={{ width: '100%', maxWidth: '100%' }}>
+                  <h1 className="animate-fade-in" style={{ fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', color: '#fff' }}>
+                    <span className={styles.goldGradientText}>{t('heroHeadline')}</span> {t('heroHeadlineHighlight')}
                   </h1>
                 </div>
               </div>
-              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '1.5rem' }}>
+              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '0.5rem' }}>
                 {t('heroSubheadline')}
+              </p>
+              <p className="animate-fade-in" style={{ animationDelay: '0.12s', fontSize: '1rem', color: '#D4AF37', fontWeight: 600, marginBottom: '1.5rem' }}>
+                {t('availabilityText')}
               </p>
 
               {/* Trust Bar below Headline on Mobile, Trust Bar below CTAs on Desktop */}
@@ -143,7 +253,7 @@ function HomeContent() {
       <section className={styles.howItWorks} id="how-it-works">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className="gradient-text">{t('howItWorksTitle')}</h2>
+            <h2 className={styles.goldGradientText}>{t('howItWorksTitle')}</h2>
             <p>{t('howItWorksSubtitle')}</p>
           </div>
 
@@ -181,60 +291,7 @@ function HomeContent() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className={styles.features} id="features">
-        <div className="container">
-          <div className={styles.sectionHeader}>
-            <h2 className="gradient-text">{t('featuresTitle')}</h2>
-            <p>{t('featuresSubtitle')}</p>
-          </div>
-
-          <div className={styles.featureGrid}>
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><Settings size={32} /></div>
-              <h3>{t('feature1Title')}</h3>
-              <p>{t('feature1Desc')}</p>
-            </div>
-
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><Layers size={32} /></div>
-              <h3>{t('feature2Title')}</h3>
-              <p>{t('feature2Desc')}</p>
-            </div>
-
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><BarChart3 size={32} /></div>
-              <h3>{t('feature3Title')}</h3>
-              <p>{t('feature3Desc')}</p>
-            </div>
-
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><Clock size={32} /></div>
-              <h3>{t('feature4Title')}</h3>
-              <p>{t('feature4Desc')}</p>
-            </div>
-
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><Music size={32} /></div>
-              <h3>{t('feature5Title')}</h3>
-              <p>{t('feature5Desc')}</p>
-            </div>
-
-            <div className={`${styles.featureCard} glass`}>
-              <div className={styles.featureIcon}><CheckCircle2 size={32} /></div>
-              <h3>{t('feature6Title')}</h3>
-              <p>{t('feature6Desc')}</p>
-            </div>
-
-          </div>
-
-          <div className={styles.primaryCtaContainer}>
-            <a href="#" onClick={openDrawer} className={styles.ctaButton}>
-              {t('ctaFree')} <ChevronRight size={20} />
-            </a>
-          </div>
-        </div>
-      </section>
+      <FeaturesExplorer openDrawer={openDrawer} />
 
       {/* Stats Highlight */}
       <section className={styles.stats}>
@@ -251,7 +308,7 @@ function HomeContent() {
               />
             </div>
             <div className={styles.statsContent}>
-              <h2 className="gradient-text">{t('statsTitle')}</h2>
+              <h2 className={styles.goldGradientText}>{t('statsTitle')}</h2>
               <p style={{ fontSize: '1.25rem', marginBottom: '1.5rem' }}>
                 {t('statsDesc')}
               </p>
@@ -277,7 +334,7 @@ function HomeContent() {
           <div className={styles.statsSection} style={{ flexDirection: 'row-reverse' }}>
             <div className={styles.statsContent}>
               <div className={styles.badge}>{t('dailyBadge')}</div>
-              <h2 className="gradient-text">{t('dailyTitle')}</h2>
+              <h2 className={styles.goldGradientText}>{t('dailyTitle')}</h2>
                 <p style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>
                   {t('dailyDesc')}
                 </p>
@@ -333,7 +390,7 @@ function HomeContent() {
       <section className={styles.faq} id="faq">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className="gradient-text">{t('faqTitle')}</h2>
+            <h2 className={styles.goldGradientText}>{t('faqTitle')}</h2>
             <p>{t('faqSubtitle')}</p>
           </div>
 
@@ -359,8 +416,8 @@ function HomeContent() {
             </div>
 
             <div className={styles.faqItem}>
-              <h4>How is iHafidh different from other Quran apps?</h4>
-              <p>Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It&apos;s a tool for those serious about their Hifdh journey, not just daily reading.</p>
+              <h4>{t('faq5Q')}</h4>
+              <p>{t('faq5A')}</p>
             </div>
           </div>
         </div>
@@ -368,40 +425,40 @@ function HomeContent() {
 
       <section className={styles.changelog} id="whats-new">
         <div className="container glass" style={{ padding: '4rem 2rem' }}>
-          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>What&apos;s New in v2.1 — Golden Edition</h2>
+          <h2 className={styles.goldGradientText} style={{ textAlign: 'center', marginBottom: '3rem' }}>{t('updatesTitle')}</h2>
           <div className={styles.featureGrid}>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Music size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Repeat any verse or page until it sticks — perfect for deep Hifdh practice</h4>
+                <h4 style={{ color: '#fff' }}>{t('update1Title')}</h4>
                 <p>{t('update1Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Read effortlessly with premium fonts designed for clarity and Tajweed</h4>
+                <h4 style={{ color: '#fff' }}>{t('update2Title')}</h4>
                 <p>{t('update2Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><Settings size={20} /></div>
+              <div className={styles.readerFeatureIcon}><Settings2 size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Tailor your reading from 3 to 20 verses — your Hifdh, your rules</h4>
+                <h4 style={{ color: '#fff' }}>{t('update3Title')}</h4>
                 <p>{t('update3Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Layers size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Beautiful landscape mode for deep, undistracted Quran contemplation</h4>
+                <h4 style={{ color: '#fff' }}>{t('update4Title')}</h4>
                 <p>{t('update4Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><HandHeart size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>Keep your focus with a 100% ad-free experience, forever</h4>
+                <h4 style={{ color: '#fff' }}>{t('update5Title')}</h4>
                 <p>{t('update5Desc')}</p>
               </div>
             </div>
@@ -456,7 +513,7 @@ function HomeContent() {
           <p>
             © {new Date().getFullYear()} iHafidh. {t('footerCopyright')}
             <br />
-            <a href="mailto:iHafidhapp@gmail.com" className="gradient-text" style={{ fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
+            <a href="mailto:iHafidhapp@gmail.com" className={styles.goldGradientText} style={{ fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginTop: '0.5rem' }}>
               <Mail size={16} /> iHafidhapp@gmail.com
             </a>
           </p>
@@ -468,8 +525,8 @@ function HomeContent() {
           </div>
 
           <div className={styles.footerLinks}>
-            <Link href="/privacy">Privacy Policy</Link>
-            <Link href="mailto:iHafidhapp@gmail.com">Support</Link>
+            <Link href="/privacy">{t('privacyPolicy')}</Link>
+            <Link href="mailto:iHafidhapp@gmail.com">{t('support')}</Link>
           </div>
         </div>
       </footer>

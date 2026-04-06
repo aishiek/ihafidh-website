@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
     return (
         <main className={styles.main} style={{ background: 'var(--background)' }}>
             <div className="container" style={{ padding: '8rem 2rem' }}>
-                <Link href="/" className="gradient-text" style={{ fontWeight: 600, marginBottom: '2rem', display: 'inline-block' }}>
+                <Link href="/" className={styles.goldGradientText} style={{ fontWeight: 600, marginBottom: '2rem', display: 'inline-block' }}>
                     ← Back to Home
                 </Link>
                 <h1 style={{ marginBottom: '2rem' }}>Privacy Policy</h1>

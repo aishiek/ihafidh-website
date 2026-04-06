@@ -8,6 +8,10 @@ export const LANGUAGES: { code: Language; label: string; nativeLabel: string; sh
 ];
 
 type TranslationKeys = {
+    // Banner
+    bannerText: string;
+    bannerCTA: string;
+
     // Navbar
     downloadNow: string;
 
@@ -23,6 +27,7 @@ type TranslationKeys = {
     joinCommunity: string;
     ctaFree: string;
     sunnahFasting: string;
+    availabilityText: string;
 
     // How It Works
     howItWorksTitle: string;
@@ -81,6 +86,8 @@ type TranslationKeys = {
     faq3A: string;
     faq4Q: string;
     faq4A: string;
+    faq5Q: string;
+    faq5A: string;
 
     // Latest Updates
     updatesTitle: string;
@@ -105,6 +112,8 @@ type TranslationKeys = {
 
     // Footer
     footerCopyright: string;
+    privacyPolicy: string;
+    support: string;
 
     // Download Drawer
     downloadTitle: string;
@@ -126,21 +135,56 @@ type TranslationKeys = {
     ctaTailoredTestimonials: string;
     ctaTailoredFooter: string;
     landscapeNudge: string;
+
+    // 24 Features
+    categoryRecitation: string;
+    categoryHifdh: string;
+    categoryUI: string;
+    categoryGrowth: string;
+    f1Title: string; f1Desc: string;
+    f2Title: string; f2Desc: string;
+    f3Title: string; f3Desc: string;
+    f4Title: string; f4Desc: string;
+    f5Title: string; f5Desc: string;
+    f6Title: string; f6Desc: string;
+    f7Title: string; f7Desc: string;
+    f8Title: string; f8Desc: string;
+    f9Title: string; f9Desc: string;
+    f10Title: string; f10Desc: string;
+    f11Title: string; f11Desc: string;
+    f12Title: string; f12Desc: string;
+    f13Title: string; f13Desc: string;
+    f14Title: string; f14Desc: string;
+    f15Title: string; f15Desc: string;
+    f16Title: string; f16Desc: string;
+    f17Title: string; f17Desc: string;
+    f18Title: string; f18Desc: string;
+    f19Title: string; f19Desc: string;
+    f20Title: string; f20Desc: string;
+    f21Title: string; f21Desc: string;
+    f22Title: string; f22Desc: string;
+    f23Title: string; f23Desc: string;
+    f24Title: string; f24Desc: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
     en: {
+        // Banner
+        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerCTA: 'Download Free →',
+
         // Navbar
         downloadNow: 'Download Now',
 
         // Hero
         ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Study.',
         versionBadge: 'Golden Edition v2.1',
-        heroHeadline: 'Master the Quran.',
-        heroHeadlineHighlight: 'One Verse at a Time.',
-        heroHeadlineTafsir: 'Master the Quran.',
-        heroHeadlineTafsirHighlight: 'One Verse at a Time.',
+        heroHeadline: 'Read in Gold.',
+        heroHeadlineHighlight: 'Understand Every Word.',
+        heroHeadlineTafsir: 'Read in Gold.',
+        heroHeadlineTafsirHighlight: 'Understand Every Word.',
         heroSubheadline: 'The ultimate tool for both Reciters and the Memorizing crowd. iHafidh now brings you immersive Golden Landscape mode and precise Word-by-Word translation to deepen your connection.',
+        availabilityText: 'Golden mode available in English, Malay, Tamil and Urdu',
         appStoreRating: '4.9 on the App Store',
         joinCommunity: 'Used by Muslims in 40+ countries',
         ctaFree: "Download for Free",
@@ -203,6 +247,8 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'We offer a wide range of translations in various languages including English (Asad, Pickthall, Sahih), Urdu, Tamil, French, Hindi, and more.',
         faq4Q: 'Can I track both Surah and Juz progress?',
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
+        faq5Q: 'How is iHafidh different from other Quran apps?',
+        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
         trustUsedBy: 'Used by Muslims in 40+ countries',
         trustFree: 'Free to Download',
         ctaTailoredHow: 'Start in Minutes — Download Free',
@@ -234,6 +280,8 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'Built with heart for the Ummah.',
+        privacyPolicy: 'Privacy Policy',
+        support: 'Support',
 
         // Download Drawer
         downloadTitle: 'Download iHafidh',
@@ -248,20 +296,55 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "Rotate your phone to landscape for a premium golden experience.",
         wbwTitle: "Word-by-Word",
         wbwDesc: "Interactive translation for every single word.",
+
+        // 24 Features
+        categoryRecitation: 'Recitation Experience',
+        categoryHifdh: 'Advanced Memorization',
+        categoryUI: 'Premium Experience',
+        categoryGrowth: 'Growth & Analytics',
+        f1Title: 'Golden Read Mode', f1Desc: 'High-contrast gold text on midnight background for immersive night reading.',
+        f2Title: 'Parchment Mode', f2Desc: 'Eye-friendly ivory canvas with espresso ink for a traditional feel.',
+        f3Title: 'Landscape Support', f3Desc: 'Full rotation for a cinematic, distraction-free reading experience.',
+        f4Title: 'Word-by-Word', f4Desc: 'Interactive dots beneath every Arabic word for instant meaning.',
+        f5Title: 'Full Translation', f5Desc: 'High-quality translations for deeper contextual understanding.',
+        f6Title: 'Juz Selection', f6Desc: 'Navigate the Quran by traditional divisions (Juz 1-30).',
+        f7Title: 'Surah Navigation', f7Desc: 'Organized list for rapid jumping between chapters.',
+        f8Title: 'Verse Selection', f8Desc: 'Granular navigation down to the specific Ayah.',
+        f9Title: 'Visual Word Markers', f9Desc: 'Interactive dots to help anchor your memory during recitation.',
+        f10Title: 'Active Recall', f10Desc: 'UI layouts designed to test your memory without looking at translation.',
+        f11Title: 'Quranic Duas', f11Desc: 'Dedicated section for essential supplications found in the Quran.',
+        f12Title: 'Favourites', f12Desc: 'One-tap "hearting" of verses to build a personal collection.',
+        f13Title: 'Progress Tracking', f13Desc: 'Visual indicators of which Surahs or Juz you are memorizing.',
+        f14Title: 'Custom Ranges', f14Desc: 'Ability to focus on specific sections for repetitive loops.',
+        f15Title: 'Memorization Engine', f15Desc: 'Specialized logic for tracking memorization accuracy over time.',
+        f16Title: 'Reading Mode Toggle', f16Desc: 'Seamless switching between Study and Pure Recitation views.',
+        f17Title: 'Distraction-Free', f17Desc: 'Minimalist design that hides notifications during reading.',
+        f18Title: 'Premium Typography', f18Desc: 'Custom-tuned Arabic fonts for clarity across all sizes.',
+        f19Title: 'Modern Card Layout', f19Desc: 'Clean, mobile-first UI for browsing Surahs and verses.',
+        f20Title: 'Offline Access', f20Desc: 'Read and use core tools without an active internet connection.',
+        f21Title: 'Cross-Platform Sync', f21Desc: 'Uniform experience across both iOS and Android devices.',
+        f22Title: 'Minimalist UI/UX', f22Desc: '"Vibe-coded" design philosophy focused on elegance and calm.',
+        f23Title: 'Integrated Analytics', f23Desc: 'Insights into which features help you progress the most.',
+        f24Title: 'Multi-Language', f24Desc: 'Localized metadata and translations for global markets.',
     },
 
     ta: {
+        // Banner
+        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerCTA: 'Download Free →',
+
         // Navbar
         downloadNow: 'பதிவிறக்கம்',
 
         // Hero
         ramadanText: 'இந்த புனித ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
         versionBadge: 'ரமலான் 2026 பதிப்பு',
-        heroHeadline: 'இந்த ரமலானை உங்கள்',
-        heroHeadlineHighlight: 'சிறந்த ஹிஃப்ழ் ரமலானாக ஆக்குங்கள்.',
-        heroHeadlineTafsir: 'இந்த ரமலானை உங்கள்',
-        heroHeadlineTafsirHighlight: 'ஆழமான தப்ஸீர் ரமலானாக ஆக்குங்கள்.',
-        heroSubheadline: 'உங்கள் பாதையைத் தேர்வுசெய்யுங்கள்: 30 நாட்களில் உங்கள் முதல் ஜுஸை மனப்பாடம் செய்யுங்கள் அல்லது முழுமையான தஃப்ஸீரை முடியுங்கள். தினசரி முன்னேற்றத்தைக் கண்காணியுங்கள், நிலையான பழக்கங்களை உருவாக்குங்கள், இந்த ரமலானில் குர்ஆனுடனான உங்கள் தொடர்பை மாற்றுங்கள்.',
+        heroHeadline: 'தங்கத்தில் ஓதுங்கள்.',
+        heroHeadlineHighlight: 'ஒவ்வொரு வார்த்தையையும் புரிந்து கொள்ளுங்கள்.',
+        heroHeadlineTafsir: 'தங்கத்தில் ஓதுங்கள்.',
+        heroHeadlineTafsirHighlight: 'ஒவ்வொரு வார்த்தையையும் புரிந்து கொள்ளுங்கள்.',
+        heroSubheadline: 'ஓதுபவர்கள் மற்றும் மனப்பாடம் செய்பவர்கள் இருவருக்கும் ஏற்ற சிறந்த கருவி. iHafidh இப்போது உங்களுக்கு அதிவேக கோல்டன் லேண்ட்ஸ்கேப் மோடு மற்றும் துல்லியமான வார்த்தைக்கு வார்த்தை மொழிபெயர்ப்பை வழங்குகிறது.',
+        availabilityText: 'கோல்டன் மோடு ஆங்கிலம், மலாய், தமிழ் மற்றும் உருது மொழிகளில் கிடைக்கிறது',
         appStoreRating: 'App Store-இல் 4.9 மதிப்பீடு',
         joinCommunity: '40+ நாடுகளில் உள்ள முஸ்லிம்களால் பயன்படுத்தப்படுகிறது',
         ctaFree: 'இலவசமாக பதிவிறக்குங்கள்',
@@ -324,6 +407,8 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'ஆங்கிலம் (அசத், பிக்தால், ஸஹீஹ்), உருது, தமிழ், பிரெஞ்சு, இந்தி மற்றும் பல மொழிகளில் பரந்த அளவிலான மொழிபெயர்ப்புகளை நாங்கள் வழங்குகிறோம்.',
         faq4Q: 'சூரா மற்றும் ஜுஸ் முன்னேற்றம் இரண்டையும் கண்காணிக்க முடியுமா?',
         faq4A: 'நிச்சயமாக. iHafidh சூரா நிலை (அனைத்து 114) மற்றும் ஜுஸ் நிலை (அனைத்து 30) இரண்டிலும் ஒரே நேரத்தில் உங்கள் முன்னேற்றத்தைக் காணலாம்.',
+        faq5Q: 'How is iHafidh different from other Quran apps?',
+        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
         trustUsedBy: '40+ நாடுகளில் உள்ள முஸ்லிம்களால் பயன்படுத்தப்படுகிறது',
         trustFree: 'பதிவிறக்கம் செய்ய இலவசம்',
         ctaTailoredHow: 'நிமிடங்களில் தொடங்குங்கள் - இலவசமாக பதிவிறக்குங்கள்',
@@ -355,6 +440,8 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'உம்மத்திற்காக அன்புடன் உருவாக்கப்பட்டது.',
+        privacyPolicy: 'Privacy Policy',
+        support: 'Support',
 
         // Download Drawer
         downloadTitle: 'iHafidh-ஐ பதிவிறக்கவும்',
@@ -369,9 +456,43 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "சிறந்த அனுபவத்திற்காக உங்கள் போனை கிடைமட்டமாக மாற்றவும்.",
         wbwTitle: "வார்த்தைக்கு வார்த்தை",
         wbwDesc: "ஒவ்வொரு வார்த்தைக்கும் ஊடாடும் மொழிபெயர்ப்பு.",
+
+        // 24 Features
+        categoryRecitation: 'Recitation Experience',
+        categoryHifdh: 'Advanced Memorization',
+        categoryUI: 'Premium Experience',
+        categoryGrowth: 'Growth & Analytics',
+        f1Title: 'Golden Read Mode', f1Desc: 'High-contrast gold text on midnight background for immersive night reading.',
+        f2Title: 'Parchment Mode', f2Desc: 'Eye-friendly ivory canvas with espresso ink for a traditional feel.',
+        f3Title: 'Landscape Support', f3Desc: 'Full rotation for a cinematic, distraction-free reading experience.',
+        f4Title: 'Word-by-Word', f4Desc: 'Interactive dots beneath every Arabic word for instant meaning.',
+        f5Title: 'Full Translation', f5Desc: 'High-quality translations for deeper contextual understanding.',
+        f6Title: 'Juz Selection', f6Desc: 'Navigate the Quran by traditional divisions (Juz 1-30).',
+        f7Title: 'Surah Navigation', f7Desc: 'Organized list for rapid jumping between chapters.',
+        f8Title: 'Verse Selection', f8Desc: 'Granular navigation down to the specific Ayah.',
+        f9Title: 'Visual Word Markers', f9Desc: 'Interactive dots to help anchor your memory during recitation.',
+        f10Title: 'Active Recall', f10Desc: 'UI layouts designed to test your memory without looking at translation.',
+        f11Title: 'Quranic Duas', f11Desc: 'Dedicated section for essential supplications found in the Quran.',
+        f12Title: 'Favourites', f12Desc: 'One-tap "hearting" of verses to build a personal collection.',
+        f13Title: 'Progress Tracking', f13Desc: 'Visual indicators of which Surahs or Juz you are memorizing.',
+        f14Title: 'Custom Ranges', f14Desc: 'Ability to focus on specific sections for repetitive loops.',
+        f15Title: 'Memorization Engine', f15Desc: 'Specialized logic for tracking memorization accuracy over time.',
+        f16Title: 'Reading Mode Toggle', f16Desc: 'Seamless switching between Study and Pure Recitation views.',
+        f17Title: 'Distraction-Free', f17Desc: 'Minimalist design that hides notifications during reading.',
+        f18Title: 'Premium Typography', f18Desc: 'Custom-tuned Arabic fonts for clarity across all sizes.',
+        f19Title: 'Modern Card Layout', f19Desc: 'Clean, mobile-first UI for browsing Surahs and verses.',
+        f20Title: 'Offline Access', f20Desc: 'Read and use core tools without an active internet connection.',
+        f21Title: 'Cross-Platform Sync', f21Desc: 'Uniform experience across both iOS and Android devices.',
+        f22Title: 'Minimalist UI/UX', f22Desc: '"Vibe-coded" design philosophy focused on elegance and calm.',
+        f23Title: 'Integrated Analytics', f23Desc: 'Insights into which features help you progress the most.',
+        f24Title: 'Multi-Language', f24Desc: 'Localized metadata and translations for global markets.',
     },
 
     ms: {
+        // Banner
+        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerCTA: 'Download Free →',
+
         // Navbar
         downloadNow: 'Muat Turun',
 
@@ -445,6 +566,8 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'Kami menawarkan pelbagai terjemahan dalam pelbagai bahasa termasuk Bahasa Inggeris (Asad, Pickthall, Sahih), Urdu, Tamil, Perancis, Hindi, dan banyak lagi.',
         faq4Q: 'Bolehkah saya jejak kemajuan Surah dan Juzuk?',
         faq4A: 'Sudah tentu. iHafidh membolehkan anda menjejaki kemajuan anda di peringkat Surah (semua 114) dan peringkat Juzuk (semua 30) secara serentak.',
+        faq5Q: 'How is iHafidh different from other Quran apps?',
+        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
         trustUsedBy: 'Digunakan oleh Muslim di 40+ negara',
         trustFree: 'Percuma untuk Dimuat Turun',
         ctaTailoredHow: 'Mula dalam Minit — Muat Turun Percuma',
@@ -476,6 +599,8 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'Dibina dengan kasih sayang untuk Umat.',
+        privacyPolicy: 'Privacy Policy',
+        support: 'Support',
 
         // Download Drawer
         downloadTitle: 'Muat Turun iHafidh',
@@ -490,19 +615,54 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "Putar telefon anda ke landskap untuk pengalaman emas premium.",
         wbwTitle: "Kata-demi-Kata",
         wbwDesc: "Terjemahan interaktif untuk setiap perkataan.",
+
+        // 24 Features
+        categoryRecitation: 'Recitation Experience',
+        categoryHifdh: 'Advanced Memorization',
+        categoryUI: 'Premium Experience',
+        categoryGrowth: 'Growth & Analytics',
+        f1Title: 'Golden Read Mode', f1Desc: 'High-contrast gold text on midnight background for immersive night reading.',
+        f2Title: 'Parchment Mode', f2Desc: 'Eye-friendly ivory canvas with espresso ink for a traditional feel.',
+        f3Title: 'Landscape Support', f3Desc: 'Full rotation for a cinematic, distraction-free reading experience.',
+        f4Title: 'Word-by-Word', f4Desc: 'Interactive dots beneath every Arabic word for instant meaning.',
+        f5Title: 'Full Translation', f5Desc: 'High-quality translations for deeper contextual understanding.',
+        f6Title: 'Juz Selection', f6Desc: 'Navigate the Quran by traditional divisions (Juz 1-30).',
+        f7Title: 'Surah Navigation', f7Desc: 'Organized list for rapid jumping between chapters.',
+        f8Title: 'Verse Selection', f8Desc: 'Granular navigation down to the specific Ayah.',
+        f9Title: 'Visual Word Markers', f9Desc: 'Interactive dots to help anchor your memory during recitation.',
+        f10Title: 'Active Recall', f10Desc: 'UI layouts designed to test your memory without looking at translation.',
+        f11Title: 'Quranic Duas', f11Desc: 'Dedicated section for essential supplications found in the Quran.',
+        f12Title: 'Favourites', f12Desc: 'One-tap "hearting" of verses to build a personal collection.',
+        f13Title: 'Progress Tracking', f13Desc: 'Visual indicators of which Surahs or Juz you are memorizing.',
+        f14Title: 'Custom Ranges', f14Desc: 'Ability to focus on specific sections for repetitive loops.',
+        f15Title: 'Memorization Engine', f15Desc: 'Specialized logic for tracking memorization accuracy over time.',
+        f16Title: 'Reading Mode Toggle', f16Desc: 'Seamless switching between Study and Pure Recitation views.',
+        f17Title: 'Distraction-Free', f17Desc: 'Minimalist design that hides notifications during reading.',
+        f18Title: 'Premium Typography', f18Desc: 'Custom-tuned Arabic fonts for clarity across all sizes.',
+        f19Title: 'Modern Card Layout', f19Desc: 'Clean, mobile-first UI for browsing Surahs and verses.',
+        f20Title: 'Offline Access', f20Desc: 'Read and use core tools without an active internet connection.',
+        f21Title: 'Cross-Platform Sync', f21Desc: 'Uniform experience across both iOS and Android devices.',
+        f22Title: 'Minimalist UI/UX', f22Desc: '"Vibe-coded" design philosophy focused on elegance and calm.',
+        f23Title: 'Integrated Analytics', f23Desc: 'Insights into which features help you progress the most.',
+        f24Title: 'Multi-Language', f24Desc: 'Localized metadata and translations for global markets.',
     },
     ur: {
+        // Banner
+        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerCTA: 'Download Free →',
+
         // Navbar
         downloadNow: 'ڈاؤن لوڈ کریں',
 
         // Hero
         ramadanText: 'اس رمضان ہر دن اور رات کو قیمتی بنائیں، حفظ کریں، تلاوت کریں اور غور و فکر کریں۔',
         versionBadge: 'رمضان 2026 ایڈیشن',
-        heroHeadline: 'اس رمضان کو بنائیں',
-        heroHeadlineHighlight: 'اپنا بہترین حفظ کا سال۔',
-        heroHeadlineTafsir: 'اس رمضان کو بنائیں',
-        heroHeadlineTafsirHighlight: 'اپنا بہترین تفسیر کا سفر۔',
-        heroSubheadline: '30 دنوں میں 0 سے 1 جزو تک۔ اپنی پیشرفت کو ٹریک کریں، تسلسل پیدا کریں، اور اپنے حفظ کے اہداف حاصل کریں۔',
+        heroHeadline: 'گولڈ میں پڑھیں.',
+        heroHeadlineHighlight: 'ہر لفظ کو سمجھیں۔',
+        heroHeadlineTafsir: 'گولڈ میں پڑھیں.',
+        heroHeadlineTafsirHighlight: 'ہر لفظ کو سمجھیں۔',
+        heroSubheadline: 'تلاوت کرنے والوں اور حفظ کرنے والوں دونوں کے لیے بہترین ٹول۔ iHafidh اب آپ کے لیے عمیق گولڈن لینڈ اسکیپ موڈ اور درست لفظ بہ لفظ ترجمہ لاتا ہے تاکہ آپ کے تعلق کو مزید گہرا کیا جا سکے۔',
+        availabilityText: 'گولڈن موڈ انگریزی، ملیالم، تمل اور اردو میں دستیاب ہے',
         appStoreRating: 'ایپ اسٹور پر 4.9 ریٹنگ',
         joinCommunity: '40 سے زائد ممالک کے مسلمان استعمال کر رہے ہیں',
         ctaFree: 'مفت ڈاؤن لوڈ کریں',
@@ -565,6 +725,8 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'ہم انگریزی، اردو، تمل، فرانسیسی، ہندی اور بہت سی زبانوں میں تراجم کی ایک وسیع رینج پیش کرتے ہیں۔',
         faq4Q: 'کیا میں سورہ اور جزو دونوں کی پیشرفت ٹریک کر سکتا ہوں؟',
         faq4A: 'بالکل۔ iHafidh آپ کو سورہ اور پارہ دونوں سطحوں پر بیک وقت اپنی پیشرفت ٹریک کرنے کی اجازت دیتا ہے۔',
+        faq5Q: 'How is iHafidh different from other Quran apps?',
+        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
         trustUsedBy: '40 سے زائد ممالک کے مسلمان استعمال کر رہے ہیں',
         trustFree: 'ڈاؤن لوڈ کرنے کے لیے مفت',
         ctaTailoredHow: 'منٹوں میں شروع کریں - مفت ڈاؤن لوڈ کریں',
@@ -596,6 +758,8 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Footer
         footerCopyright: 'امت کے لیے دل سے بنایا گیا۔',
+        privacyPolicy: 'Privacy Policy',
+        support: 'Support',
 
         // Download Drawer
         downloadTitle: 'iHafidh ڈاؤن لوڈ کریں',
@@ -610,5 +774,35 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "بہترین تجربے کے لیے اپنے فون کو لینڈ اسکیپ میں گھمائیں۔",
         wbwTitle: "لفظ بہ لفظ",
         wbwDesc: "ہر لفظ کے لیے انٹرایکٹو ترجمہ۔",
+
+        // 24 Features
+        categoryRecitation: 'Recitation Experience',
+        categoryHifdh: 'Advanced Memorization',
+        categoryUI: 'Premium Experience',
+        categoryGrowth: 'Growth & Analytics',
+        f1Title: 'Golden Read Mode', f1Desc: 'High-contrast gold text on midnight background for immersive night reading.',
+        f2Title: 'Parchment Mode', f2Desc: 'Eye-friendly ivory canvas with espresso ink for a traditional feel.',
+        f3Title: 'Landscape Support', f3Desc: 'Full rotation for a cinematic, distraction-free reading experience.',
+        f4Title: 'Word-by-Word', f4Desc: 'Interactive dots beneath every Arabic word for instant meaning.',
+        f5Title: 'Full Translation', f5Desc: 'High-quality translations for deeper contextual understanding.',
+        f6Title: 'Juz Selection', f6Desc: 'Navigate the Quran by traditional divisions (Juz 1-30).',
+        f7Title: 'Surah Navigation', f7Desc: 'Organized list for rapid jumping between chapters.',
+        f8Title: 'Verse Selection', f8Desc: 'Granular navigation down to the specific Ayah.',
+        f9Title: 'Visual Word Markers', f9Desc: 'Interactive dots to help anchor your memory during recitation.',
+        f10Title: 'Active Recall', f10Desc: 'UI layouts designed to test your memory without looking at translation.',
+        f11Title: 'Quranic Duas', f11Desc: 'Dedicated section for essential supplications found in the Quran.',
+        f12Title: 'Favourites', f12Desc: 'One-tap "hearting" of verses to build a personal collection.',
+        f13Title: 'Progress Tracking', f13Desc: 'Visual indicators of which Surahs or Juz you are memorizing.',
+        f14Title: 'Custom Ranges', f14Desc: 'Ability to focus on specific sections for repetitive loops.',
+        f15Title: 'Memorization Engine', f15Desc: 'Specialized logic for tracking memorization accuracy over time.',
+        f16Title: 'Reading Mode Toggle', f16Desc: 'Seamless switching between Study and Pure Recitation views.',
+        f17Title: 'Distraction-Free', f17Desc: 'Minimalist design that hides notifications during reading.',
+        f18Title: 'Premium Typography', f18Desc: 'Custom-tuned Arabic fonts for clarity across all sizes.',
+        f19Title: 'Modern Card Layout', f19Desc: 'Clean, mobile-first UI for browsing Surahs and verses.',
+        f20Title: 'Offline Access', f20Desc: 'Read and use core tools without an active internet connection.',
+        f21Title: 'Cross-Platform Sync', f21Desc: 'Uniform experience across both iOS and Android devices.',
+        f22Title: 'Minimalist UI/UX', f22Desc: '"Vibe-coded" design philosophy focused on elegance and calm.',
+        f23Title: 'Integrated Analytics', f23Desc: 'Insights into which features help you progress the most.',
+        f24Title: 'Multi-Language', f24Desc: 'Localized metadata and translations for global markets.',
     },
 };

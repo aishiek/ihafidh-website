@@ -177,7 +177,7 @@ export const translations: Record<Language, TranslationKeys> = {
         downloadNow: 'Download Now',
 
         // Hero
-        ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Study.',
+        ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Translation.',
         versionBadge: 'Golden Edition v2.1',
         heroHeadline: 'Read in Gold.',
         heroHeadlineHighlight: 'Understand Every Word.',

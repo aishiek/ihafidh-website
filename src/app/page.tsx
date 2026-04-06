@@ -194,7 +194,7 @@ function HomeContent() {
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
                 <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
-                <span className={`${styles.featuresBadge} animate-fade-in`} style={{ animationDelay: '0.1s' }}>{t('featuresCount')}</span>
+                <a href="#features" className={`${styles.featuresBadge} animate-fade-in`} style={{ animationDelay: '0.1s', textDecoration: 'none' }}>{t('featuresCount')}</a>
               </div>
               <div className={styles.dualHeadlineWrapper} style={{ justifyContent: 'center', textAlign: 'center', gridTemplateColumns: '1fr' }}>
                 <div className={styles.dualHeadlinePart} style={{ width: '100%', maxWidth: '100%' }}>

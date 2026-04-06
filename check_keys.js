@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const translations_1 = require("./src/i18n/translations");
+const enKeys = Object.keys(translations_1.translations.en);
+console.log('Total keys in en:', enKeys.length);
+const msKeys = Object.keys(translations_1.translations.ms);
+console.log('Total keys in ms:', msKeys.length);
+const taKeys = Object.keys(translations_1.translations.ta);
+console.log('Total keys in ta:', taKeys.length);
+const urKeys = Object.keys(translations_1.translations.ur);
+console.log('Total keys in ur:', urKeys.length);
+const missingInMs = enKeys.filter(k => !msKeys.includes(k));
+console.log('Missing in ms:', missingInMs);
+const extraInMs = msKeys.filter(k => !enKeys.includes(k));
+console.log('Extra in ms:', extraInMs);

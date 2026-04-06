@@ -1,181 +1,19 @@
-export type Language = 'en' | 'ta' | 'ms' | 'ur';
-
-export const LANGUAGES: { code: Language; label: string; nativeLabel: string; shortLabel: string }[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.translations = exports.LANGUAGES = void 0;
+exports.LANGUAGES = [
     { code: 'en', label: 'English', nativeLabel: 'English', shortLabel: 'Eng' },
     { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', shortLabel: 'தமி' },
     { code: 'ms', label: 'Malay', nativeLabel: 'Melayu', shortLabel: 'Mal' },
     { code: 'ur', label: 'Urdu', nativeLabel: 'اردو', shortLabel: 'اردو' },
 ];
-
-type TranslationKeys = {
-    // Banner
-    bannerText: string;
-    bannerCTA: string;
-
-    // Navbar
-    downloadNow: string;
-
-    // Hero
-    ramadanText: string;
-    versionBadge: string;
-    heroHeadline: string;
-    heroHeadlineHighlight: string;
-    heroHeadlineTafsir: string;
-    heroHeadlineTafsirHighlight: string;
-    heroSubheadline: string;
-    appStoreRating: string;
-    joinCommunity: string;
-    ctaFree: string;
-    sunnahFasting: string;
-    availabilityText: string;
-
-    // How It Works
-    howItWorksTitle: string;
-    howItWorksSubtitle: string;
-    step1Title: string;
-    step1Desc: string;
-    step2Title: string;
-    step2Desc: string;
-    step3Title: string;
-    step3Desc: string;
-    step4Title: string;
-    step4Desc: string;
-
-    // Features
-    featuresTitle: string;
-    featuresSubtitle: string;
-    feature1Title: string;
-    feature1Desc: string;
-    feature2Title: string;
-    feature2Desc: string;
-    feature3Title: string;
-    feature3Desc: string;
-    feature4Title: string;
-    feature4Desc: string;
-    feature5Title: string;
-    feature5Desc: string;
-    feature6Title: string;
-    feature6Desc: string;
-
-    // Stats
-    statsTitle: string;
-    statsDesc: string;
-    statsList1: string;
-    statsList2: string;
-    statsList3: string;
-
-    // Daily Recitation
-    dailyBadge: string;
-    dailyTitle: string;
-    dailyDesc: string;
-    dailyFeature1Title: string;
-    dailyFeature1Desc: string;
-    dailyFeature2Title: string;
-    dailyFeature2Desc: string;
-    dailyFeature3Title: string;
-    dailyFeature3Desc: string;
-
-    // FAQ
-    faqTitle: string;
-    faqSubtitle: string;
-    faq1Q: string;
-    faq1A: string;
-    faq2Q: string;
-    faq2A: string;
-    faq3Q: string;
-    faq3A: string;
-    faq4Q: string;
-    faq4A: string;
-    faq5Q: string;
-    faq5A: string;
-
-    // Latest Updates
-    updatesTitle: string;
-    update1Title: string;
-    update1Desc: string;
-    update2Title: string;
-    update2Desc: string;
-    update3Title: string;
-    update3Desc: string;
-    update4Title: string;
-    update4Desc: string;
-    update5Title: string;
-    update5Desc: string;
-
-    // Testimonials
-    testimonialsTitle: string;
-    testimonialsSubtitle: string;
-
-    // CTA
-    ctaTitle: string;
-    ctaDesc: string;
-
-    // Footer
-    footerCopyright: string;
-    privacyPolicy: string;
-    support: string;
-
-    // Download Drawer
-    downloadTitle: string;
-    downloadSubtitle: string;
-    noSignInRequired: string;
-    noDataCollection: string;
-    privacyNote: string;
-    orText: string;
-    noAds: string;
-    featuresCount: string;
-    goldenQuranTitle: string;
-    goldenQuranDesc: string;
-    wbwTitle: string;
-    wbwDesc: string;
-    trustUsedBy: string;
-    trustFree: string;
-    ctaTailoredHow: string;
-    ctaTailoredFeatures: string;
-    ctaTailoredTestimonials: string;
-    ctaTailoredFooter: string;
-    landscapeNudge: string;
-
-    // 24 Features
-    categoryRecitation: string;
-    categoryHifdh: string;
-    categoryUI: string;
-    categoryGrowth: string;
-    f1Title: string; f1Desc: string;
-    f2Title: string; f2Desc: string;
-    f3Title: string; f3Desc: string;
-    f4Title: string; f4Desc: string;
-    f5Title: string; f5Desc: string;
-    f6Title: string; f6Desc: string;
-    f7Title: string; f7Desc: string;
-    f8Title: string; f8Desc: string;
-    f9Title: string; f9Desc: string;
-    f10Title: string; f10Desc: string;
-    f11Title: string; f11Desc: string;
-    f12Title: string; f12Desc: string;
-    f13Title: string; f13Desc: string;
-    f14Title: string; f14Desc: string;
-    f15Title: string; f15Desc: string;
-    f16Title: string; f16Desc: string;
-    f17Title: string; f17Desc: string;
-    f18Title: string; f18Desc: string;
-    f19Title: string; f19Desc: string;
-    f20Title: string; f20Desc: string;
-    f21Title: string; f21Desc: string;
-    f22Title: string; f22Desc: string;
-    f23Title: string; f23Desc: string;
-    f24Title: string; f24Desc: string;
-};
-
-export const translations: Record<Language, TranslationKeys> = {
+exports.translations = {
     en: {
         // Banner
         bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
         bannerCTA: 'Download Free →',
-
         // Navbar
         downloadNow: 'Download Now',
-
         // Hero
         ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Study.',
         versionBadge: 'Golden Edition v2.1',
@@ -189,7 +27,6 @@ export const translations: Record<Language, TranslationKeys> = {
         joinCommunity: 'Used by Muslims in 40+ countries',
         ctaFree: "Download for Free",
         sunnahFasting: "Sunnah Fasting Calendar",
-
         // How It Works
         howItWorksTitle: 'How It Works',
         howItWorksSubtitle: 'Four simple steps to start your Quran journey today.',
@@ -201,7 +38,6 @@ export const translations: Record<Language, TranslationKeys> = {
         step3Desc: 'Mark verses as revised or memorized. Watch your progress rings fill up in real-time.',
         step4Title: 'Analyze & Improve',
         step4Desc: 'Use detailed statistics to identify patterns and stay consistent using spaced repetition.',
-
         // Features
         featuresTitle: 'Powerful Features for Every Hafidh',
         featuresSubtitle: 'Everything you need to stay consistent and achieve your memorization goals.',
@@ -217,14 +53,12 @@ export const translations: Record<Language, TranslationKeys> = {
         feature5Desc: 'High-quality verse-by-verse practice with customizable audio controls.',
         feature6Title: '24 Power Features',
         feature6Desc: 'From Sunnah Fasting to Word-by-Word study, explore all 24 features designed for the complete Islamic lifestyle.',
-
         // Stats
         statsTitle: 'Visualize Your Success',
         statsDesc: "They say what gets measured gets managed. iHafidh provides deep insights into your progress, helping you identify patterns and stay motivated.",
         statsList1: 'Daily & Weekly activity heatmaps',
         statsList2: 'Surah-wise completion metrics',
         statsList3: 'Achievement badges and milestones',
-
         // Daily Recitation
         dailyBadge: 'For Daily Readers',
         dailyTitle: 'Beyond Memorization',
@@ -235,7 +69,6 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature2Desc: 'Access high-quality translations in English, Urdu, Tamil, French, and many more.',
         dailyFeature3Title: 'Word-by-Word Translation',
         dailyFeature3Desc: 'Understand the depth of every single word in the Quran with our interactive WBW mode.',
-
         // FAQ
         faqTitle: 'Frequently Asked Questions',
         faqSubtitle: 'Everything you need to know about the iHafidh app.',
@@ -256,7 +89,6 @@ export const translations: Record<Language, TranslationKeys> = {
         ctaTailoredTestimonials: 'Join the Community — Download Now',
         ctaTailoredFooter: "Begin Your Hifdh Journey — It's Free",
         landscapeNudge: 'Rotate your device to landscape to unlock the full Golden experience',
-
         // Latest Updates
         updatesTitle: 'Latest Features (v2.1.0)',
         update1Title: 'Mushaf Audio Repeat',
@@ -269,20 +101,16 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'Customize your reading experience from 3 up to 20 verses per page.',
         update5Title: 'Quranic Duas Collection',
         update5Desc: 'Access authentic supplications from the Quran. Available in the menu for daily spiritual enrichment.',
-
         // Testimonials
         testimonialsTitle: 'Loved by the Ummah',
         testimonialsSubtitle: 'Join our growing community of dedicated Huffadh around the world.',
-
         // CTA
         ctaTitle: 'Start Your Hifdh Journey Now',
         ctaDesc: 'Join thousands of Muslims worldwide who are using iHafidh to master the Noble Quran.',
-
         // Footer
         footerCopyright: 'Built with heart for the Ummah.',
         privacyPolicy: 'Privacy Policy',
         support: 'Support',
-
         // Download Drawer
         downloadTitle: 'Download iHafidh',
         downloadSubtitle: 'Select your store to start your journey.',
@@ -296,7 +124,6 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "Rotate your phone to landscape for a premium golden experience.",
         wbwTitle: "Word-by-Word",
         wbwDesc: "Interactive translation for every single word.",
-
         // 24 Features
         categoryRecitation: 'Recitation Experience',
         categoryHifdh: 'Advanced Memorization',
@@ -327,15 +154,12 @@ export const translations: Record<Language, TranslationKeys> = {
         f23Title: 'Integrated Analytics', f23Desc: 'Insights into which features help you progress the most.',
         f24Title: 'Multi-Language', f24Desc: 'Localized metadata and translations for global markets.',
     },
-
     ta: {
         // Banner
         bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
         bannerCTA: 'Download Free →',
-
         // Navbar
         downloadNow: 'பதிவிறக்கம்',
-
         // Hero
         ramadanText: 'இந்த புனித ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
         versionBadge: 'ரமலான் 2026 பதிப்பு',
@@ -349,7 +173,6 @@ export const translations: Record<Language, TranslationKeys> = {
         joinCommunity: '40+ நாடுகளில் உள்ள முஸ்லிம்களால் பயன்படுத்தப்படுகிறது',
         ctaFree: 'இலவசமாக பதிவிறக்குங்கள்',
         sunnahFasting: 'சுன்னத் நோன்பு காலண்டர்',
-
         // How It Works
         howItWorksTitle: 'இயங்கும் முறை',
         howItWorksSubtitle: 'இன்றே உங்கள் குர்ஆன் பயணத்தைத் தொடங்க நான்கு எளிய படிகள்.',
@@ -361,7 +184,6 @@ export const translations: Record<Language, TranslationKeys> = {
         step3Desc: 'ஆயத்துக்களை திருப்பி ஓதியதாக அல்லது மனப்பாடம் செய்ததாகக் குறிக்கவும். உங்கள் முன்னேற்ற வளையங்கள் நிரம்புவதைப் பாருங்கள்.',
         step4Title: 'பகுப்பாய்வு செய்து மேம்படுத்துங்கள்',
         step4Desc: 'விரிவான புள்ளிவிவரங்களைப் பயன்படுத்தி முறைகளை அடையாளம் கண்டு, இடைவெளி மீள்நினைவு (Spaced Reptition) முறையைப் பயன்படுத்துங்கள்.',
-
         // Features
         featuresTitle: 'ஒவ்வொரு ஹாஃபிழுக்கும் சக்திவாய்ந்த அம்சங்கள்',
         featuresSubtitle: 'உங்கள் மனப்பாட இலக்குகளை அடையவும் தேவையான அனைத்து அம்சங்கள்.',
@@ -377,14 +199,12 @@ export const translations: Record<Language, TranslationKeys> = {
         feature5Desc: 'உங்களுக்கேற்ப ஆடியோ கட்டுப்பாடுகளுடன் தரமான ஆயத்து வாரியான பயிற்சி.',
         feature6Title: 'ஹிஃப்ழ் திட்டங்கள்',
         feature6Desc: 'உங்களுக்கேற்ப ஹிஃப்ழ் திட்டங்களை உருவாக்கி, உங்களை சரியான பாதையில் வைத்திருக்க நினைவூட்டல்களைப் (Reminders) பெறுங்கள்.',
-
         // Stats
         statsTitle: 'உங்கள் முன்னேற்ற பயணத்தை காணுங்கள்',
         statsDesc: ' iHafidh  உங்கள் முன்னேற்றத்தில் ஆழமான நுண்ணறிவுகளை வழங்குகிறது, முறைகளை அடையாளம் காணவும் ஊக்கமாக இருக்கவும் உதவுகிறது.',
         statsList1: 'தினசரி & வாராந்திர செயல்பாட்டு  வரைபடங்கள் (Heat Maps)',
         statsList2: 'சூரா வாரியான நிறைவு அளவீடுகள்',
         statsList3: 'சாதனை பேட்ஜ்கள் மற்றும் மைல்கற்கள்',
-
         // Daily Recitation
         dailyBadge: 'தினசரி குர்ஆன் ஓதுபவர்களுக்கு',
         dailyTitle: 'மனப்பாடத்திற்கு அப்பால்',
@@ -395,7 +215,6 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature2Desc: 'ஆங்கிலம், உருது, தமிழ், பிரெஞ்சு மற்றும் பல மொழிகளில் தரமான மொழிபெயர்ப்புகளை அணுகுங்கள்.',
         dailyFeature3Title: 'அறிஞர்களின் தஃப்சீர்கள்',
         dailyFeature3Desc: 'வாசகத்தில் நேரடியாக பல மொழி தஃப்சீர்களுடன் உங்கள் புனித குர்ஆனின் புரிதலை ஆழப்படுத்துங்கள்.',
-
         // FAQ
         faqTitle: 'அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)',
         faqSubtitle: 'iHafidh செயலி பற்றி நீங்கள் தெரிந்து கொள்ள வேண்டிய அனைத்தும்.',
@@ -416,7 +235,6 @@ export const translations: Record<Language, TranslationKeys> = {
         ctaTailoredTestimonials: 'சமூகத்தில் இணையுங்கள் - இப்போதே பதிவிறக்குங்கள்',
         ctaTailoredFooter: 'உங்கள் ஹிஃப்ழ் பயணத்தைத் தொடங்குங்கள் - இது இலவசம்',
         landscapeNudge: 'முழு கோல்டன் அனுபவத்தைப் பெற உங்கள் சாதனத்தைத் கிடைமட்டமாக மாற்றவும்',
-
         // Latest Updates
         updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.0.8)',
         update1Title: 'முஸ்ஹஃப் ஆடியோ இயக்கம்',
@@ -429,20 +247,16 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'உங்கள் வசதிக்கேற்ப ஒரு பக்கத்திற்கு 3 முதல் 20 ஆயத்துக்கள் வரை உங்கள் வாசிப்பு .',
         update5Title: 'குர்ஆன் துஆக்கள் தொகுப்பு',
         update5Desc: 'குர்ஆனில் இருந்து உண்மையான பிரார்த்தனைகளை அணுகவும். தினசரி ஆன்மீக வளர்ச்சிக்காக மெனுவில் கிடைக்கிறது.',
-
         // Testimonials
         testimonialsTitle: 'நற்சான்றிதழ்கள்',
         testimonialsSubtitle: 'உலகெங்கிலும் உள்ள வளர்ந்து வரும் ஹுஃப்பாழ்களின் சமூகத்தில் இணையுங்கள்.',
-
         // CTA
         ctaTitle: 'இப்போதே உங்கள் ஹிஃப்ழ் பயணத்தைத் தொடங்குங்கள்',
         ctaDesc: 'புனித குர்ஆனை ஓத iHafidh-ஐப் பயன்படுத்தும் உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்.',
-
         // Footer
         footerCopyright: 'உம்மத்திற்காக அன்புடன் உருவாக்கப்பட்டது.',
         privacyPolicy: 'Privacy Policy',
         support: 'Support',
-
         // Download Drawer
         downloadTitle: 'iHafidh-ஐ பதிவிறக்கவும்',
         downloadSubtitle: 'உங்கள் பயணத்தைத் தொடங்க உங்கள் ஸ்டோரைத் தேர்ந்தெடுக்கவும்.',
@@ -456,7 +270,6 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "சிறந்த அனுபவத்திற்காக உங்கள் போனை கிடைமட்டமாக மாற்றவும்.",
         wbwTitle: "வார்த்தைக்கு வார்த்தை",
         wbwDesc: "ஒவ்வொரு வார்த்தைக்கும் ஊடாடும் மொழிபெயர்ப்பு.",
-
         // 24 Features
         categoryRecitation: 'Recitation Experience',
         categoryHifdh: 'Advanced Memorization',
@@ -487,15 +300,12 @@ export const translations: Record<Language, TranslationKeys> = {
         f23Title: 'Integrated Analytics', f23Desc: 'Insights into which features help you progress the most.',
         f24Title: 'Multi-Language', f24Desc: 'Localized metadata and translations for global markets.',
     },
-
     ms: {
         // Banner
         bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
         bannerCTA: 'Download Free →',
-
         // Navbar
         downloadNow: 'Muat Turun',
-
         // Hero
         ramadanText: 'Ramadan ini, manfaatkan setiap siang dan malam. Hafal, Baca, Renungi.',
         versionBadge: 'Edisi Ramadan 2026',
@@ -509,7 +319,6 @@ export const translations: Record<Language, TranslationKeys> = {
         joinCommunity: 'Digunakan oleh Muslim di 40+ negara',
         ctaFree: 'Muat Turun Percuma',
         sunnahFasting: 'Kalendar Puasa Sunnah',
-
         // How It Works
         howItWorksTitle: 'Cara Ia Berfungsi',
         howItWorksSubtitle: 'Empat langkah mudah untuk memulakan perjalanan Al-Quran anda hari ini.',
@@ -521,7 +330,6 @@ export const translations: Record<Language, TranslationKeys> = {
         step3Desc: 'Tandakan ayat sebagai telah diulang atau dihafal. Lihat gelang kemajuan anda terisi secara langsung.',
         step4Title: 'Analisis & Tingkatkan',
         step4Desc: 'Gunakan statistik terperinci untuk mengenal pasti corak dan kekal konsisten menggunakan ulangan berjarak.',
-
         // Features
         featuresTitle: 'Ciri-ciri Berkuasa untuk Setiap Hafiz',
         featuresSubtitle: 'Semua yang anda perlukan untuk kekal konsisten dan mencapai matlamat hafazan anda.',
@@ -537,14 +345,12 @@ export const translations: Record<Language, TranslationKeys> = {
         feature5Desc: 'Latihan ayat demi ayat berkualiti tinggi dengan kawalan audio yang boleh disesuaikan.',
         feature6Title: 'Pelan Pengajian',
         feature6Desc: 'Cipta pelan pengajian yang boleh disesuaikan dan terima peringatan pintar untuk memastikan anda berada di landasan yang betul.',
-
         // Stats
         statsTitle: 'Visualisasikan Kejayaan Anda',
         statsDesc: 'Mereka berkata apa yang diukur akan diuruskan. iHafidh menyediakan pandangan mendalam tentang kemajuan anda, membantu anda mengenal pasti corak dan kekal bermotivasi.',
         statsList1: 'Peta haba aktiviti harian & mingguan',
         statsList2: 'Metrik penyelesaian mengikut surah',
         statsList3: 'Lencana pencapaian dan pencapaian penting',
-
         // Daily Recitation
         dailyBadge: 'Untuk Pembaca Harian',
         dailyTitle: 'Lebih Dari Sekadar Hafazan',
@@ -555,7 +361,6 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature2Desc: 'Akses terjemahan berkualiti tinggi dalam Bahasa Inggeris, Urdu, Tamil, Perancis, dan banyak lagi.',
         dailyFeature3Title: 'Tafsir Ilmiah',
         dailyFeature3Desc: 'Dalami pemahaman anda dengan tafsir pelbagai bahasa terus dalam pembaca.',
-
         // FAQ
         faqTitle: 'Soalan Lazim',
         faqSubtitle: 'Semua yang perlu anda tahu tentang aplikasi iHafidh.',
@@ -576,7 +381,6 @@ export const translations: Record<Language, TranslationKeys> = {
         ctaTailoredTestimonials: 'Sertai Komuniti — Muat Turun Sekarang',
         ctaTailoredFooter: 'Mulakan Perjalanan Hifdh Anda — Ia Percuma',
         landscapeNudge: 'Putar peranti anda ke landskap untuk membuka pengalaman Emas sepenuhnya',
-
         // Latest Updates
         updatesTitle: 'Kemas Kini Terkini (v2.0.8)',
         update1Title: 'Ulangan Audio Mushaf',
@@ -589,20 +393,16 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'Sesuaikan pengalaman bacaan anda dari 3 hingga 20 ayat setiap halaman.',
         update5Title: 'Koleksi Doa Quran',
         update5Desc: 'Akses doa-doa sahih dari Al-Quran. Tersedia dalam menu untuk pengayaan rohani harian.',
-
         // Testimonials
         testimonialsTitle: 'Dicintai Umat',
         testimonialsSubtitle: 'Sertai komuniti Huffaz yang berdedikasi yang semakin berkembang di seluruh dunia.',
-
         // CTA
         ctaTitle: 'Mulakan Perjalanan Hafazan Anda Sekarang',
         ctaDesc: 'Sertai ribuan Muslim di seluruh dunia yang menggunakan iHafidh untuk menguasai Al-Quran.',
-
         // Footer
         footerCopyright: 'Dibina dengan kasih sayang untuk Umat.',
         privacyPolicy: 'Privacy Policy',
         support: 'Support',
-
         // Download Drawer
         downloadTitle: 'Muat Turun iHafidh',
         downloadSubtitle: 'Pilih gedung aplikasi anda untuk memulakan perjalanan.',
@@ -616,7 +416,6 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "Putar telefon anda ke landskap untuk pengalaman emas premium.",
         wbwTitle: "Kata-demi-Kata",
         wbwDesc: "Terjemahan interaktif untuk setiap perkataan.",
-
         // 24 Features
         categoryRecitation: 'Recitation Experience',
         categoryHifdh: 'Advanced Memorization',
@@ -651,10 +450,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Banner
         bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
         bannerCTA: 'Download Free →',
-
         // Navbar
         downloadNow: 'ڈاؤن لوڈ کریں',
-
         // Hero
         ramadanText: 'اس رمضان ہر دن اور رات کو قیمتی بنائیں، حفظ کریں، تلاوت کریں اور غور و فکر کریں۔',
         versionBadge: 'رمضان 2026 ایڈیشن',
@@ -668,7 +465,6 @@ export const translations: Record<Language, TranslationKeys> = {
         joinCommunity: '40 سے زائد ممالک کے مسلمان استعمال کر رہے ہیں',
         ctaFree: 'مفت ڈاؤن لوڈ کریں',
         sunnahFasting: 'سنت روزہ کیلنڈر',
-
         // How It Works
         howItWorksTitle: 'یہ کیسے کام کرتا ہے',
         howItWorksSubtitle: 'آج ہی اپنا قرآنی سفر شروع کرنے کے لیے چار آسان اقدامات۔',
@@ -680,7 +476,6 @@ export const translations: Record<Language, TranslationKeys> = {
         step3Desc: 'آیات کو دہرائے گئے یا حفظ شدہ کے طور پر نشان زد کریں۔ اپنی پیشرفت کے حلقوں کو بھرتا ہوا دیکھیں۔',
         step4Title: 'تجزیہ اور بہتری',
         step4Desc: 'تفصیلی اعداد و شمار کا استعمال کرتے ہوئے پیٹرنز کی شناخت کریں اور اسپیسڈ ریپیٹیشن کے ذریعے مستقل مزاج رہیں۔',
-
         // Features
         featuresTitle: 'ہر حافظ کے لیے طاقتور خصوصیات',
         featuresSubtitle: 'وہ سب کچھ جو آپ کو مستقل مزاج رہنے اور اپنے حفظ کے اہداف حاصل کرنے کے لیے درکار ہے۔',
@@ -696,14 +491,12 @@ export const translations: Record<Language, TranslationKeys> = {
         feature5Desc: 'مرضی کے مطابق آڈیو کنٹرولز کے ساتھ اعلیٰ معیار کی آیت بہ آیت مشق۔',
         feature6Title: 'مطالعہ کے منصوبے',
         feature6Desc: 'اپنی مرضی کے مطابق اسٹڈی پلانز بنائیں اور ٹریک پر رہنے کے لیے اسمارٹ ریمائنڈرز حاصل کریں۔',
-
         // Stats
         statsTitle: 'اپنی کامیابی کو دیکھیں',
         statsDesc: 'iHafidh آپ کی پیشرفت کے بارے میں گہری بصیرت فراہم کرتا ہے، جو پیٹرنز کی شناخت اور تحریک میں مدد دیتا ہے۔',
         statsList1: 'روزانہ اور ہفتہ وار سرگرمی کے ہیٹ میپس',
         statsList2: 'سورہ وار تکمیل کے پیمانے',
         statsList3: 'کامیابی کے بیجز اور سنگ میل',
-
         // Daily Recitation
         dailyBadge: 'روزانہ تلاوت کرنے والوں کے لیے',
         dailyTitle: 'حفظ سے آگے',
@@ -714,7 +507,6 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature2Desc: 'انگریزی، اردو، تمل، فرانسیسی اور بہت سی زبانوں میں اعلیٰ معیار کے تراجم تک رسائی حاصل کریں۔',
         dailyFeature3Title: 'علمی تفاسیر',
         dailyFeature3Desc: 'تلاوت کے دوران براہ راست کثیر لسانی تفاسیر کے ساتھ اپنی سمجھ کو گہرا کریں۔',
-
         // FAQ
         faqTitle: 'اکثر پوچھے گئے سوالات',
         faqSubtitle: 'iHafidh ایپ کے بارے میں وہ سب کچھ جو آپ جاننا چاہتے ہیں۔',
@@ -735,7 +527,6 @@ export const translations: Record<Language, TranslationKeys> = {
         ctaTailoredTestimonials: 'کمیونٹی میں شامل ہوں - ابھی ڈاؤن لوڈ کریں',
         ctaTailoredFooter: 'اپنے حفظ کا سفر شروع کریں - یہ مفت ہے',
         landscapeNudge: 'مکمل گولڈن تجربہ حاصل کرنے کے لیے اپنے آلے کو لینڈ اسکیپ میں گھمائیں',
-
         // Latest Updates
         updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.0.8)',
         update1Title: 'مصحف آڈیو ریپیٹ',
@@ -748,20 +539,16 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'فی صفحہ 3 سے 20 آیات تک تلاوت کے تجربے کو اپنی مرضی کے مطابق بنائیں۔',
         update5Title: 'قرآنی دعاؤں کا مجموعہ',
         update5Desc: 'قرآن سے مستند دعاؤں تک رسائی حاصل کریں۔ روزانہ روحانی ترقی کے لیے مینو میں دستیاب ہے۔',
-
         // Testimonials
         testimonialsTitle: 'امت کی پسند',
         testimonialsSubtitle: 'دنیا بھر میں وقف حفظ کرنے والوں کی ہماری بڑھتی ہوئی کمیونٹی میں شامل ہوں۔',
-
         // CTA
         ctaTitle: 'اپنا حفظ کا سفر ابھی شروع کریں',
         ctaDesc: 'دنیا بھر کے ان ہزاروں مسلمانوں میں شامل ہوں جو قرآن پاک پر عبور حاصل کرنے کے لیے iHafidh کا استعمال کر رہے ہیں۔',
-
         // Footer
         footerCopyright: 'امت کے لیے دل سے بنایا گیا۔',
         privacyPolicy: 'Privacy Policy',
         support: 'Support',
-
         // Download Drawer
         downloadTitle: 'iHafidh ڈاؤن لوڈ کریں',
         downloadSubtitle: 'اپنا سفر شروع کرنے کے لیے اسٹور منتخب کریں۔',
@@ -775,7 +562,6 @@ export const translations: Record<Language, TranslationKeys> = {
         goldenQuranDesc: "بہترین تجربے کے لیے اپنے فون کو لینڈ اسکیپ میں گھمائیں۔",
         wbwTitle: "لفظ بہ لفظ",
         wbwDesc: "ہر لفظ کے لیے انٹرایکٹو ترجمہ۔",
-
         // 24 Features
         categoryRecitation: 'Recitation Experience',
         categoryHifdh: 'Advanced Memorization',

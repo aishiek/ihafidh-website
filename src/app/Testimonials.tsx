@@ -95,6 +95,15 @@ export default function Testimonials() {
                     <p>{t('testimonialsSubtitle')}</p>
                 </div>
 
+                <div className={styles.heroQuoteWrapper}>
+                    <div className={styles.heroQuote}>
+                        &quot;One of the Most Beautiful Quran Apps... Very Detailed yet so simple and user Friendly.&quot;
+                        <span className={styles.heroQuoteAuthor}>
+                            Dr. Mohamed Abdul Haleem • Nov 18, 2025
+                        </span>
+                    </div>
+                </div>
+
                 <div className={styles.carouselContainer}>
                     <button className={`${styles.arrowBtn} ${styles.prevBtn}`} onClick={prev} aria-label="Previous testimonial">
                         <ChevronLeft />
@@ -140,6 +149,10 @@ export default function Testimonials() {
                                         <div className={styles.content}>
                                             <Quote size={40} className={styles.quoteIcon} />
                                             <p>&quot;{item.text}&quot;</p>
+                                            <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.05)', fontSize: '0.75rem', color: '#64748b', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                                <span>Verified App Store Review</span>
+                                                <span style={{ color: '#C9A84C', fontWeight: 600 }}>4.9 ★</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

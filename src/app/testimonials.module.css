@@ -16,6 +16,46 @@
     margin-bottom: 1rem;
 }
 
+.heroQuoteWrapper {
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 32px;
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    position: relative;
+    text-align: center;
+}
+
+.heroQuoteWrapper::before {
+    content: '“';
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    font-size: 8rem;
+    color: #C9A84C;
+    opacity: 0.15;
+    font-family: serif;
+}
+
+.heroQuote {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.heroQuoteAuthor {
+    display: block;
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+
 .carouselContainer {
     position: relative;
     max-width: 1200px;
@@ -134,10 +174,10 @@
 
 .quoteIcon {
     position: absolute;
-    top: -10px;
-    left: -10px;
-    opacity: 0.1;
-    color: var(--primary);
+    top: -15px;
+    left: -15px;
+    opacity: 0.08;
+    color: #C9A84C;
     pointer-events: none;
 }
 

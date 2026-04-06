@@ -12,6 +12,7 @@ import {
   Layers,
   Mail,
   Music,
+  RotateCw,
   Search,
   Settings,
   Sparkles,
@@ -38,6 +39,10 @@ function HomeContent() {
 
   return (
     <main className={styles.main} dir={language === 'ur' ? 'rtl' : 'ltr'} data-lang={language}>
+      {/* Launch Banner */}
+      <div className={styles.launchBanner}>
+        🎉 <strong>Golden Edition v2.1 is live</strong> — New Tajweed fonts, audio repeat & more. <a href="#download">Download Free →</a>
+      </div>
       {/* Navbar */}
       <nav className={styles.navbar}>
         <div className={`${styles.navContainer} container`}>
@@ -90,39 +95,32 @@ function HomeContent() {
                     {t('heroHeadline')} <span className="gradient-text">{t('heroHeadlineHighlight')}</span>
                   </h1>
                 </div>
-                <div className={styles.dualHeadlineDivider}>
-                  <span>{t('orText')}</span>
-                </div>
-                <div className={styles.dualHeadlinePart}>
-                  <h1 className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                    {t('heroHeadlineTafsir')} <span className="gradient-text">{t('heroHeadlineTafsirHighlight')}</span>
-                  </h1>
-                </div>
               </div>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '1.5rem' }}>
                 {t('heroSubheadline')}
               </p>
 
-              {/* Social Proof Text */}
-              <div className="animate-fade-in" style={{ animationDelay: '0.15s', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', background: 'rgba(255,255,255,0.05)', padding: '0.4rem 0.8rem', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                  <div style={{ display: 'flex', gap: '2px' }}>
-                    {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} fill="#fbbf24" strokeWidth={0} />)}
-                  </div>
-                  <span style={{ fontWeight: 600, fontSize: '0.9rem' }}>{t('appStoreRating')}</span>
-                </div>
-                <span style={{ fontSize: '0.9rem', color: '#94a3b8' }}>{t('joinCommunity')}</span>
+              {/* Trust Bar below Headline on Mobile, Trust Bar below CTAs on Desktop */}
+              <div className={`${styles.trustBar} animate-fade-in`} style={{ animationDelay: '0.15s' }}>
+                <span><Star size={16} fill="#fbbf24" strokeWidth={0} /> {t('appStoreRating')}</span>
+                <span className={styles.trustDivider}>•</span>
+                <span>{t('trustUsedBy')}</span>
+                <span className={styles.trustDivider}>•</span>
+                <span>{t('trustFree')}</span>
               </div>
 
+
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
-                <a href="#" onClick={openDrawer} className={styles.downloadButton}>
+                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/playstore-badge.png" alt="Download iHafidh on the Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
                   <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={190} height={56} style={{ height: 'auto' }} />
                 </a>
-                <a href="#" onClick={openDrawer} className={styles.downloadButton}>
-                  <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
-                </a>
               </div>
-              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic' }}>{t('ctaFree')}</p>
+              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Clock size={14} /> {t('trustFree')}
+              </p>
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
@@ -259,13 +257,13 @@ function HomeContent() {
               </p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="var(--primary)" /> {t('statsList1')}
+                  <CheckCircle2 color="#C9A84C" /> {t('statsList1')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="var(--primary)" /> {t('statsList2')}
+                  <CheckCircle2 color="#C9A84C" /> {t('statsList2')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="var(--primary)" /> {t('statsList3')}
+                  <CheckCircle2 color="#C9A84C" /> {t('statsList3')}
                 </li>
               </ul>
             </div>
@@ -280,9 +278,12 @@ function HomeContent() {
             <div className={styles.statsContent}>
               <div className={styles.badge}>{t('dailyBadge')}</div>
               <h2 className="gradient-text">{t('dailyTitle')}</h2>
-              <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
-                {t('dailyDesc')}
-              </p>
+                <p style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>
+                  {t('dailyDesc')}
+                </p>
+                <div style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#D4AF37', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <RotateCw size={14} /> {t('landscapeNudge')}
+                </div>
 
               <div className={styles.readerFeatures}>
                 <div className={styles.readerFeatureItem}>
@@ -356,46 +357,51 @@ function HomeContent() {
               <h4>{t('faq4Q')}</h4>
               <p>{t('faq4A')}</p>
             </div>
+
+            <div className={styles.faqItem}>
+              <h4>How is iHafidh different from other Quran apps?</h4>
+              <p>Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It&apos;s a tool for those serious about their Hifdh journey, not just daily reading.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className={styles.changelog} id="whats-new">
         <div className="container glass" style={{ padding: '4rem 2rem' }}>
-          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>{t('updatesTitle')}</h2>
+          <h2 className="gradient-text" style={{ textAlign: 'center', marginBottom: '3rem' }}>What&apos;s New in v2.1 — Golden Edition</h2>
           <div className={styles.featureGrid}>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Music size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>{t('update1Title')}</h4>
+                <h4 style={{ color: '#fff' }}>Repeat any verse or page until it sticks — perfect for deep Hifdh practice</h4>
                 <p>{t('update1Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>{t('update2Title')}</h4>
+                <h4 style={{ color: '#fff' }}>Read effortlessly with premium fonts designed for clarity and Tajweed</h4>
                 <p>{t('update2Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Settings size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>{t('update3Title')}</h4>
+                <h4 style={{ color: '#fff' }}>Tailor your reading from 3 to 20 verses — your Hifdh, your rules</h4>
                 <p>{t('update3Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><Layers size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>{t('update4Title')}</h4>
+                <h4 style={{ color: '#fff' }}>Beautiful landscape mode for deep, undistracted Quran contemplation</h4>
                 <p>{t('update4Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
               <div className={styles.readerFeatureIcon}><HandHeart size={20} /></div>
               <div>
-                <h4 style={{ color: '#fff' }}>{t('update5Title')}</h4>
+                <h4 style={{ color: '#fff' }}>Keep your focus with a 100% ad-free experience, forever</h4>
                 <p>{t('update5Desc')}</p>
               </div>
             </div>
@@ -406,23 +412,29 @@ function HomeContent() {
       {/* Testimonials Section */}
       <Testimonials />
 
-      {/* CTA Section */}
-      <section className={styles.cta}>
-        <div className="container glass" style={{ padding: '6rem 2rem' }}>
-          <h2>{t('ctaTitle')}</h2>
-          <p style={{ maxWidth: '600px', margin: '1rem auto 3rem' }}>
-            {t('ctaDesc')}
-          </p>
-          <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
-            <a href="#" onClick={openDrawer} className={styles.downloadButton}>
-              <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={175} height={48} style={{ height: 'auto' }} />
-            </a>
-            <a href="#" onClick={openDrawer} className={styles.downloadButton}>
-              <Image src="/playstore-badge.png" alt="Download iHafidh on Apple App Store" width={160} height={48} style={{ height: 'auto' }} />
+          <div className={styles.primaryCtaContainer}>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#D4AF37' }}>
+              {t('ctaTailoredTestimonials')} <ChevronRight size={20} />
             </a>
           </div>
-        </div>
-      </section>
+          {/* CTA Section */}
+          <section className={styles.cta}>
+            <div className="container glass" style={{ padding: '6rem 2rem' }}>
+              <h2>{t('ctaTitle')}</h2>
+              <p style={{ maxWidth: '600px', margin: '1rem auto 3rem' }}>
+                {t('ctaDesc')}
+              </p>
+              <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
+                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/playstore-badge.png" alt="Download iHafidh on the Apple App Store" width={175} height={48} style={{ height: 'auto' }} />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
+                  <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={160} height={48} style={{ height: 'auto' }} />
+                </a>
+              </div>
+              <p style={{ marginTop: '2rem', fontWeight: 600 }}>{t('ctaTailoredFooter')}</p>
+            </div>
+          </section>
 
       {/* Footer */}
       <footer className={styles.footer}>

@@ -1,13 +1,13 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --primary: #10b981; /* Emerald 500 */
-  --primary-dark: #065f46;
-  --secondary: #334155;
+  --primary: #C9A84C;
+  --primary-rgb: 201, 168, 76;
+  --secondary: #101828;
   --accent: #f59e0b; /* Amber 500 */
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.1);
-  --selection: rgba(16, 185, 129, 0.3);
+  --selection: rgba(201, 168, 76, 0.3);
 }
 
 * {

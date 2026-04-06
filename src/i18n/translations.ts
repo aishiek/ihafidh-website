@@ -119,6 +119,13 @@ type TranslationKeys = {
     goldenQuranDesc: string;
     wbwTitle: string;
     wbwDesc: string;
+    trustUsedBy: string;
+    trustFree: string;
+    ctaTailoredHow: string;
+    ctaTailoredFeatures: string;
+    ctaTailoredTestimonials: string;
+    ctaTailoredFooter: string;
+    landscapeNudge: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
@@ -129,14 +136,14 @@ export const translations: Record<Language, TranslationKeys> = {
         // Hero
         ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Study.',
         versionBadge: 'Golden Edition v2.1',
-        heroHeadline: 'Experience the',
-        heroHeadlineHighlight: 'Golden Quran Mode.',
-        heroHeadlineTafsir: 'Master every word with',
-        heroHeadlineTafsirHighlight: 'Word-by-Word Study.',
+        heroHeadline: 'Master the Quran.',
+        heroHeadlineHighlight: 'One Verse at a Time.',
+        heroHeadlineTafsir: 'Master the Quran.',
+        heroHeadlineTafsirHighlight: 'One Verse at a Time.',
         heroSubheadline: 'The ultimate tool for both Reciters and the Memorizing crowd. iHafidh now brings you immersive Golden Landscape mode and precise Word-by-Word translation to deepen your connection.',
-        appStoreRating: '4.8 on App Store',
-        joinCommunity: 'Join thousands of dedicated Muslims worldwide',
-        ctaFree: "Get the Golden Experience",
+        appStoreRating: '4.9 on the App Store',
+        joinCommunity: 'Used by Muslims in 40+ countries',
+        ctaFree: "Download for Free",
         sunnahFasting: "Sunnah Fasting Calendar",
 
         // How It Works
@@ -196,6 +203,13 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'We offer a wide range of translations in various languages including English (Asad, Pickthall, Sahih), Urdu, Tamil, French, Hindi, and more.',
         faq4Q: 'Can I track both Surah and Juz progress?',
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
+        trustUsedBy: 'Used by Muslims in 40+ countries',
+        trustFree: 'Free to Download',
+        ctaTailoredHow: 'Start in Minutes — Download Free',
+        ctaTailoredFeatures: 'Try iHafidh Free Today',
+        ctaTailoredTestimonials: 'Join the Community — Download Now',
+        ctaTailoredFooter: "Begin Your Hifdh Journey — It's Free",
+        landscapeNudge: 'Rotate your device to landscape to unlock the full Golden experience',
 
         // Latest Updates
         updatesTitle: 'Latest Features (v2.1.0)',
@@ -248,9 +262,9 @@ export const translations: Record<Language, TranslationKeys> = {
         heroHeadlineTafsir: 'இந்த ரமலானை உங்கள்',
         heroHeadlineTafsirHighlight: 'ஆழமான தப்ஸீர் ரமலானாக ஆக்குங்கள்.',
         heroSubheadline: 'உங்கள் பாதையைத் தேர்வுசெய்யுங்கள்: 30 நாட்களில் உங்கள் முதல் ஜுஸை மனப்பாடம் செய்யுங்கள் அல்லது முழுமையான தஃப்ஸீரை முடியுங்கள். தினசரி முன்னேற்றத்தைக் கண்காணியுங்கள், நிலையான பழக்கங்களை உருவாக்குங்கள், இந்த ரமலானில் குர்ஆனுடனான உங்கள் தொடர்பை மாற்றுங்கள்.',
-        appStoreRating: 'App Store-இல் 4.8 மதிப்பீடு',
-        joinCommunity: 'உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்',
-        ctaFree: 'இப்போதே தொடங்குங்கள்',
+        appStoreRating: 'App Store-இல் 4.9 மதிப்பீடு',
+        joinCommunity: '40+ நாடுகளில் உள்ள முஸ்லிம்களால் பயன்படுத்தப்படுகிறது',
+        ctaFree: 'இலவசமாக பதிவிறக்குங்கள்',
         sunnahFasting: 'சுன்னத் நோன்பு காலண்டர்',
 
         // How It Works
@@ -310,6 +324,13 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'ஆங்கிலம் (அசத், பிக்தால், ஸஹீஹ்), உருது, தமிழ், பிரெஞ்சு, இந்தி மற்றும் பல மொழிகளில் பரந்த அளவிலான மொழிபெயர்ப்புகளை நாங்கள் வழங்குகிறோம்.',
         faq4Q: 'சூரா மற்றும் ஜுஸ் முன்னேற்றம் இரண்டையும் கண்காணிக்க முடியுமா?',
         faq4A: 'நிச்சயமாக. iHafidh சூரா நிலை (அனைத்து 114) மற்றும் ஜுஸ் நிலை (அனைத்து 30) இரண்டிலும் ஒரே நேரத்தில் உங்கள் முன்னேற்றத்தைக் காணலாம்.',
+        trustUsedBy: '40+ நாடுகளில் உள்ள முஸ்லிம்களால் பயன்படுத்தப்படுகிறது',
+        trustFree: 'பதிவிறக்கம் செய்ய இலவசம்',
+        ctaTailoredHow: 'நிமிடங்களில் தொடங்குங்கள் - இலவசமாக பதிவிறக்குங்கள்',
+        ctaTailoredFeatures: 'இன்று iHafidh-ஐ இலவசமாக முயற்சிக்கவும்',
+        ctaTailoredTestimonials: 'சமூகத்தில் இணையுங்கள் - இப்போதே பதிவிறக்குங்கள்',
+        ctaTailoredFooter: 'உங்கள் ஹிஃப்ழ் பயணத்தைத் தொடங்குங்கள் - இது இலவசம்',
+        landscapeNudge: 'முழு கோல்டன் அனுபவத்தைப் பெற உங்கள் சாதனத்தைத் கிடைமட்டமாக மாற்றவும்',
 
         // Latest Updates
         updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.0.8)',
@@ -362,9 +383,9 @@ export const translations: Record<Language, TranslationKeys> = {
         heroHeadlineTafsir: 'Jadikan Ramadan ini',
         heroHeadlineTafsirHighlight: 'tafsir paling mendalam anda.',
         heroSubheadline: 'Dari 0 ke 1 Juzuk dalam 30 hari. Jejaki kemajuan anda, bina konsistensi, dan capai matlamat hafazan anda.',
-        appStoreRating: '4.8 di App Store',
-        joinCommunity: 'Sertai ribuan Muslim di seluruh dunia',
-        ctaFree: 'Percuma, Mula Sekarang',
+        appStoreRating: '4.9 di App Store',
+        joinCommunity: 'Digunakan oleh Muslim di 40+ negara',
+        ctaFree: 'Muat Turun Percuma',
         sunnahFasting: 'Kalendar Puasa Sunnah',
 
         // How It Works
@@ -424,6 +445,13 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'Kami menawarkan pelbagai terjemahan dalam pelbagai bahasa termasuk Bahasa Inggeris (Asad, Pickthall, Sahih), Urdu, Tamil, Perancis, Hindi, dan banyak lagi.',
         faq4Q: 'Bolehkah saya jejak kemajuan Surah dan Juzuk?',
         faq4A: 'Sudah tentu. iHafidh membolehkan anda menjejaki kemajuan anda di peringkat Surah (semua 114) dan peringkat Juzuk (semua 30) secara serentak.',
+        trustUsedBy: 'Digunakan oleh Muslim di 40+ negara',
+        trustFree: 'Percuma untuk Dimuat Turun',
+        ctaTailoredHow: 'Mula dalam Minit — Muat Turun Percuma',
+        ctaTailoredFeatures: 'Cuba iHafidh Percuma Hari Ini',
+        ctaTailoredTestimonials: 'Sertai Komuniti — Muat Turun Sekarang',
+        ctaTailoredFooter: 'Mulakan Perjalanan Hifdh Anda — Ia Percuma',
+        landscapeNudge: 'Putar peranti anda ke landskap untuk membuka pengalaman Emas sepenuhnya',
 
         // Latest Updates
         updatesTitle: 'Kemas Kini Terkini (v2.0.8)',
@@ -475,9 +503,9 @@ export const translations: Record<Language, TranslationKeys> = {
         heroHeadlineTafsir: 'اس رمضان کو بنائیں',
         heroHeadlineTafsirHighlight: 'اپنا بہترین تفسیر کا سفر۔',
         heroSubheadline: '30 دنوں میں 0 سے 1 جزو تک۔ اپنی پیشرفت کو ٹریک کریں، تسلسل پیدا کریں، اور اپنے حفظ کے اہداف حاصل کریں۔',
-        appStoreRating: 'ایپ اسٹور پر 4.8 ریٹنگ',
-        joinCommunity: 'دنیا بھر کے ہزاروں مسلمانوں میں شامل ہوں',
-        ctaFree: 'ابھی شروع کریں',
+        appStoreRating: 'ایپ اسٹور پر 4.9 ریٹنگ',
+        joinCommunity: '40 سے زائد ممالک کے مسلمان استعمال کر رہے ہیں',
+        ctaFree: 'مفت ڈاؤن لوڈ کریں',
         sunnahFasting: 'سنت روزہ کیلنڈر',
 
         // How It Works
@@ -537,6 +565,13 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'ہم انگریزی، اردو، تمل، فرانسیسی، ہندی اور بہت سی زبانوں میں تراجم کی ایک وسیع رینج پیش کرتے ہیں۔',
         faq4Q: 'کیا میں سورہ اور جزو دونوں کی پیشرفت ٹریک کر سکتا ہوں؟',
         faq4A: 'بالکل۔ iHafidh آپ کو سورہ اور پارہ دونوں سطحوں پر بیک وقت اپنی پیشرفت ٹریک کرنے کی اجازت دیتا ہے۔',
+        trustUsedBy: '40 سے زائد ممالک کے مسلمان استعمال کر رہے ہیں',
+        trustFree: 'ڈاؤن لوڈ کرنے کے لیے مفت',
+        ctaTailoredHow: 'منٹوں میں شروع کریں - مفت ڈاؤن لوڈ کریں',
+        ctaTailoredFeatures: 'آج ہی iHafidh مفت آزمائیں',
+        ctaTailoredTestimonials: 'کمیونٹی میں شامل ہوں - ابھی ڈاؤن لوڈ کریں',
+        ctaTailoredFooter: 'اپنے حفظ کا سفر شروع کریں - یہ مفت ہے',
+        landscapeNudge: 'مکمل گولڈن تجربہ حاصل کرنے کے لیے اپنے آلے کو لینڈ اسکیپ میں گھمائیں',
 
         // Latest Updates
         updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.0.8)',

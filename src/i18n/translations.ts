@@ -22,6 +22,7 @@ type TranslationKeys = {
     appStoreRating: string;
     joinCommunity: string;
     ctaFree: string;
+    sunnahFasting: string;
 
     // How It Works
     howItWorksTitle: string;
@@ -113,6 +114,11 @@ type TranslationKeys = {
     privacyNote: string;
     orText: string;
     noAds: string;
+    featuresCount: string;
+    goldenQuranTitle: string;
+    goldenQuranDesc: string;
+    wbwTitle: string;
+    wbwDesc: string;
 };
 
 export const translations: Record<Language, TranslationKeys> = {
@@ -121,16 +127,17 @@ export const translations: Record<Language, TranslationKeys> = {
         downloadNow: 'Download Now',
 
         // Hero
-        ramadanText: 'This Ramadan Make every day & night count , Memorize , Recite, Reflect.',
-        versionBadge: 'Ramadan 2026 Edition',
-        heroHeadline: 'Make this Ramadan',
-        heroHeadlineHighlight: 'your Hifdh breakthrough.',
-        heroHeadlineTafsir: 'Make this Ramadan',
-        heroHeadlineTafsirHighlight: 'your Tafsir journey.',
-        heroSubheadline: 'Choose your path: Memorize your first Juz in 30 days OR complete a full Tafsir study. Track daily progress, build lasting habits, and transform your relationship with the Quran this Ramadan.',
+        ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Study.',
+        versionBadge: 'Golden Edition v2.1',
+        heroHeadline: 'Experience the',
+        heroHeadlineHighlight: 'Golden Quran Mode.',
+        heroHeadlineTafsir: 'Master every word with',
+        heroHeadlineTafsirHighlight: 'Word-by-Word Study.',
+        heroSubheadline: 'The ultimate tool for both Reciters and the Memorizing crowd. iHafidh now brings you immersive Golden Landscape mode and precise Word-by-Word translation to deepen your connection.',
         appStoreRating: '4.8 on App Store',
-        joinCommunity: 'Join thousands of Muslims worldwide',
-        ctaFree: "It's Free, Start Now",
+        joinCommunity: 'Join thousands of dedicated Muslims worldwide',
+        ctaFree: "Get the Golden Experience",
+        sunnahFasting: "Sunnah Fasting Calendar",
 
         // How It Works
         howItWorksTitle: 'How It Works',
@@ -147,8 +154,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // Features
         featuresTitle: 'Powerful Features for Every Hafidh',
         featuresSubtitle: 'Everything you need to stay consistent and achieve your memorization goals.',
-        feature1Title: 'Custom Page Mode',
-        feature1Desc: 'Customize reading from 3 to 20 Ayahs. Create and track your own pages with page-level audio repetition for easier memorization.',
+        feature1Title: 'Golden Read Mode',
+        feature1Desc: 'Transform your screen into a premium landscape Golden Mushaf. Perfect for focused recitation and immersive study.',
         feature2Title: 'Comprehensive Tracking',
         feature2Desc: 'Monitor your journey across all 114 Surahs and 30 Juz with visual progress indicators.',
         feature3Title: 'Advanced Analytics',
@@ -157,8 +164,8 @@ export const translations: Record<Language, TranslationKeys> = {
         feature4Desc: 'Smart review system designed for optimal retention and long-term memorization.',
         feature5Title: 'Audio Recitations',
         feature5Desc: 'High-quality verse-by-verse practice with customizable audio controls.',
-        feature6Title: 'Study Plans',
-        feature6Desc: 'Create customizable study plans and receive smart reminders to keep you on track.',
+        feature6Title: '24 Power Features',
+        feature6Desc: 'From Sunnah Fasting to Word-by-Word study, explore all 24 features designed for the complete Islamic lifestyle.',
 
         // Stats
         statsTitle: 'Visualize Your Success',
@@ -175,8 +182,8 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature1Desc: 'Start your morning with a beautiful verse and reflection delivered to your device.',
         dailyFeature2Title: 'Multi-Language Tarjuma',
         dailyFeature2Desc: 'Access high-quality translations in English, Urdu, Tamil, French, and many more.',
-        dailyFeature3Title: 'Scholarly Tafsirs',
-        dailyFeature3Desc: 'Deepen your understanding with multi-language tafsirs directly in the reader.',
+        dailyFeature3Title: 'Word-by-Word Translation',
+        dailyFeature3Desc: 'Understand the depth of every single word in the Quran with our interactive WBW mode.',
 
         // FAQ
         faqTitle: 'Frequently Asked Questions',
@@ -191,7 +198,7 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
 
         // Latest Updates
-        updatesTitle: 'Latest Updates (v2.0.8)',
+        updatesTitle: 'Latest Features (v2.1.0)',
         update1Title: 'Mushaf Audio Repeat',
         update1Desc: 'Repeat audio by Verse or Page level for effective Hifdh repetition.',
         update2Title: 'Tajweed Fonts',
@@ -222,6 +229,11 @@ export const translations: Record<Language, TranslationKeys> = {
         privacyNote: 'Your progress stays private on your device.',
         orText: 'OR',
         noAds: 'No Ads',
+        featuresCount: '24 Features',
+        goldenQuranTitle: "Golden Read Mode",
+        goldenQuranDesc: "Rotate your phone to landscape for a premium golden experience.",
+        wbwTitle: "Word-by-Word",
+        wbwDesc: "Interactive translation for every single word.",
     },
 
     ta: {
@@ -239,6 +251,7 @@ export const translations: Record<Language, TranslationKeys> = {
         appStoreRating: 'App Store-இல் 4.8 மதிப்பீடு',
         joinCommunity: 'உலகெங்கிலும் உள்ள ஆயிரக்கணக்கான முஸ்லிம்களுடன் இணையுங்கள்',
         ctaFree: 'இப்போதே தொடங்குங்கள்',
+        sunnahFasting: 'சுன்னத் நோன்பு காலண்டர்',
 
         // How It Works
         howItWorksTitle: 'இயங்கும் முறை',
@@ -330,6 +343,11 @@ export const translations: Record<Language, TranslationKeys> = {
         privacyNote: 'உங்கள் முன்னேற்றம் உங்கள் சாதனத்திலேயே இருக்கும்.',
         orText: 'அல்லது',
         noAds: 'விளம்பரங்கள் இல்லை',
+        featuresCount: '24 அம்சங்கள்',
+        goldenQuranTitle: "தங்க குர்ஆன் முறை",
+        goldenQuranDesc: "சிறந்த அனுபவத்திற்காக உங்கள் போனை கிடைமட்டமாக மாற்றவும்.",
+        wbwTitle: "வார்த்தைக்கு வார்த்தை",
+        wbwDesc: "ஒவ்வொரு வார்த்தைக்கும் ஊடாடும் மொழிபெயர்ப்பு.",
     },
 
     ms: {
@@ -347,6 +365,7 @@ export const translations: Record<Language, TranslationKeys> = {
         appStoreRating: '4.8 di App Store',
         joinCommunity: 'Sertai ribuan Muslim di seluruh dunia',
         ctaFree: 'Percuma, Mula Sekarang',
+        sunnahFasting: 'Kalendar Puasa Sunnah',
 
         // How It Works
         howItWorksTitle: 'Cara Ia Berfungsi',
@@ -438,6 +457,11 @@ export const translations: Record<Language, TranslationKeys> = {
         privacyNote: 'Kemajuan anda kekal peribadi pada peranti anda.',
         orText: 'ATAU',
         noAds: 'Tiada Iklan',
+        featuresCount: '24 Ciri',
+        goldenQuranTitle: "Mod Quran Emas",
+        goldenQuranDesc: "Putar telefon anda ke landskap untuk pengalaman emas premium.",
+        wbwTitle: "Kata-demi-Kata",
+        wbwDesc: "Terjemahan interaktif untuk setiap perkataan.",
     },
     ur: {
         // Navbar
@@ -454,6 +478,7 @@ export const translations: Record<Language, TranslationKeys> = {
         appStoreRating: 'ایپ اسٹور پر 4.8 ریٹنگ',
         joinCommunity: 'دنیا بھر کے ہزاروں مسلمانوں میں شامل ہوں',
         ctaFree: 'ابھی شروع کریں',
+        sunnahFasting: 'سنت روزہ کیلنڈر',
 
         // How It Works
         howItWorksTitle: 'یہ کیسے کام کرتا ہے',
@@ -545,5 +570,10 @@ export const translations: Record<Language, TranslationKeys> = {
         privacyNote: 'آپ کی پیشرفت آپ کے آلے پر محفوظ رہتی ہے۔',
         orText: 'یا',
         noAds: 'کوئی اشتہار نہیں',
+        featuresCount: '24 خصوصیات',
+        goldenQuranTitle: "گولڈن قرآن موڈ",
+        goldenQuranDesc: "بہترین تجربے کے لیے اپنے فون کو لینڈ اسکیپ میں گھمائیں۔",
+        wbwTitle: "لفظ بہ لفظ",
+        wbwDesc: "ہر لفظ کے لیے انٹرایکٹو ترجمہ۔",
     },
 };

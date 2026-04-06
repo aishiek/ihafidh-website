@@ -23,7 +23,6 @@ import Link from "next/link";
 import { useState } from "react";
 import styles from "./page.module.css";
 import Testimonials from "./Testimonials";
-import RamadanCountdown from "./RamadanCountdown";
 import DownloadDrawer from "./DownloadDrawer";
 import LanguageSelector from "./LanguageSelector";
 import { LanguageProvider, useLanguage } from "@/i18n/LanguageContext";
@@ -58,8 +57,9 @@ function HomeContent() {
               <a href="#" onClick={openDrawer} className={styles.ctaButton}>
                 {t('downloadNow')}
               </a>
-              <div className={styles.navCountdown}>
-                <RamadanCountdown />
+              <div className={styles.navSunnahBadge}>
+                <Clock size={16} color="var(--primary)" />
+                <span>{t('sunnahFasting')}</span>
               </div>
             </div>
           </div>
@@ -81,9 +81,8 @@ function HomeContent() {
                 {t('ramadanText')}
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-                <a href="#whats-new">
-                  <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
-                </a>
+                <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
+                <span className={`${styles.featuresBadge} animate-fade-in`} style={{ animationDelay: '0.1s' }}>{t('featuresCount')}</span>
               </div>
               <div className={styles.dualHeadlineWrapper}>
                 <div className={styles.dualHeadlinePart}>
@@ -314,14 +313,16 @@ function HomeContent() {
 
             <div className={styles.heroImageArea} style={{ flex: 1 }}>
               <div className={styles.heroGlow}></div>
-              <Image
-                src="/daily-preview.png"
-                alt="iHafidh Daily Ayah and Multi-language Translation Interface"
-                width={350}
-                height={700}
-                className="glass animate-float"
-                style={{ borderRadius: '40px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto' }}
-              />
+              <div className={styles.landscapeImageWrapper}>
+                <Image
+                  src="/daily-preview.png"
+                  alt="iHafidh Golden Quran Mode Landscape"
+                  width={700}
+                  height={350}
+                  className="glass animate-float"
+                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(212, 175, 55, 0.4)' }}
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -17,16 +17,16 @@ export const metadata: Metadata = {
   keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker"],
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
-    title: "iHafidh - Quran Memorization Simplified",
-    description: "Track your Hifdh progress with beautiful statistics and verse-by-verse audio. Join thousands mastering the Quran.",
+    title: "iHafidh Golden Quran - Master Your Hifdh",
+    description: "Master your Quran memorization with our exclusive Golden Mode. Beautiful statistics and premium tracking for your Hifdh journey.",
     url: "https://ihafidh.vercel.app",
     siteName: "iHafidh",
     images: [
       {
-        url: "https://ihafidh-website.vercel.app/banner.png",
-        width: 1200,
-        height: 630,
-        alt: "iHafidh App - Master Quran Memorization",
+        url: "/og-golden-landscape.jpg",
+        width: 1024,
+        height: 1024,
+        alt: "iHafidh Golden Quran - Master Quran Memorization",
       },
     ],
     locale: "en_US",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "iHafidh - Quran Memorization Simplified",
-    description: "Beautiful statistics and progress tracking for your Quran memorization journey.",
-    images: ["https://ihafidh-website.vercel.app/og-image.png"],
+    title: "iHafidh Golden Quran - Master Your Hifdh",
+    description: "Beautiful statistics and Golden Mode progress tracking for your Quran memorization journey.",
+    images: ["/og-golden-landscape.jpg"],
   },
   robots: {
     index: true,
@@ -64,10 +64,10 @@ export default function RootLayout({
     <html lang="en" prefix="og: https://ogp.me/ns#">
       <head>
         <link rel="canonical" href="https://ihafidh-website.vercel.app" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-image.png" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-golden-landscape.jpg" />
       </head>
       <body className={outfit.className}>
         {children}

@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "iHafidh",
     images: [
       {
-        url: "/og-golden-landscape.jpg",
+        url: "/og-golden-landscape-v2.jpg",
         width: 1024,
         height: 1024,
         alt: "iHafidh Golden Quran - Master Quran Memorization",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "iHafidh Golden Quran - Master Your Hifdh",
     description: "Beautiful statistics and Golden Mode progress tracking for your Quran memorization journey.",
-    images: ["/og-golden-landscape.jpg"],
+    images: ["/og-golden-landscape-v2.jpg"],
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export default function RootLayout({
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="1024" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-golden-landscape.jpg" />
+        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-golden-landscape-v2.jpg" />
       </head>
       <body className={outfit.className}>
         {children}

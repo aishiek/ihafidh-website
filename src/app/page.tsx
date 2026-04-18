@@ -185,7 +185,7 @@ function HomeContent() {
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
               <p className="animate-fade-in" style={{
-                color: '#D4AF37',
+                color: '#06b6d4',
                 fontSize: '1.1rem',
                 fontWeight: 500,
                 marginBottom: '1rem',
@@ -200,14 +200,14 @@ function HomeContent() {
               <div className={styles.dualHeadlineWrapper} style={{ justifyContent: 'center', textAlign: 'center', gridTemplateColumns: '1fr' }}>
                 <div className={styles.dualHeadlinePart} style={{ width: '100%', maxWidth: '100%' }}>
                   <h1 className="animate-fade-in" style={{ fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', color: '#fff' }}>
-                    <span className={styles.goldGradientText}>{t('heroHeadline')}</span> {t('heroHeadlineHighlight')}
+                    <span className={styles.goldGradientText}>{t('aiSectionTitle')}</span>
                   </h1>
                 </div>
               </div>
               <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '0.5rem' }}>
-                {t('heroSubheadline')}
+                {t('aiSectionDesc')}
               </p>
-              <p className="animate-fade-in" style={{ animationDelay: '0.12s', fontSize: '1rem', color: '#D4AF37', fontWeight: 600, marginBottom: '1.5rem' }}>
+              <p className="animate-fade-in" style={{ animationDelay: '0.12s', fontSize: '1rem', color: '#06b6d4', fontWeight: 600, marginBottom: '1.5rem' }}>
                 {t('availabilityText')}
               </p>
 
@@ -238,9 +238,9 @@ function HomeContent() {
             <div className={styles.heroGlow}></div>
             <div className={styles.heroImageWrapper}>
               <Image
-                src="/hero-preview.png"
-                alt="iHafidh App Main Dashboard Preview"
-                width={350}
+                src="/ai-quiz-scorecard.png"
+                alt="iHafidh AI Intelligent Quiz Evaluation"
+                width={700}
                 height={700}
                 className="animate-float"
                 style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
@@ -294,39 +294,39 @@ function HomeContent() {
 
       <FeaturesExplorer openDrawer={openDrawer} />
 
-      {/* AI Scorecard Highlight */}
-      <section className={styles.dailySection} id="ai-quiz">
+      {/* Golden Mode Highlight */}
+      <section className={styles.dailySection} id="golden-mode">
         <div className="container">
           <div className={styles.statsSection} style={{ flexDirection: 'row' }}>
             <div className={styles.statsContent}>
               <div className={styles.badge} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981', borderColor: 'rgba(16, 185, 129, 0.3)' }}>{t('aiSectionBadge')}</div>
-              <h2 className={styles.goldGradientText} style={{ background: 'linear-gradient(to right, #10b981, #a7f3d0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{t('aiSectionTitle')}</h2>
+              <h2 className={styles.goldGradientText} style={{ background: 'linear-gradient(to right, #10b981, #a7f3d0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{t('heroHeadline')} {t('heroHeadlineHighlight')}</h2>
               <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
-                {t('aiSectionDesc')}
+                {t('heroSubheadline')}
               </p>
 
               <div className={styles.readerFeatures}>
                 <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Brain size={20} /></div>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Moon size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>{t('aiFeature1Title')}</h4>
-                    <p>{t('aiFeature1Desc')}</p>
+                    <h4 style={{ color: '#fff' }}>{t('f1Title')}</h4>
+                    <p>{t('f1Desc')}</p>
                   </div>
                 </div>
 
                 <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Activity size={20} /></div>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Type size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>{t('aiFeature2Title')}</h4>
-                    <p>{t('aiFeature2Desc')}</p>
+                    <h4 style={{ color: '#fff' }}>{t('f4Title')}</h4>
+                    <p>{t('f4Desc')}</p>
                   </div>
                 </div>
 
                 <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Target size={20} /></div>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Maximize size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>{t('aiFeature3Title')}</h4>
-                    <p>{t('aiFeature3Desc')}</p>
+                    <h4 style={{ color: '#fff' }}>{t('f3Title')}</h4>
+                    <p>{t('f3Desc')}</p>
                   </div>
                 </div>
               </div>
@@ -336,9 +336,9 @@ function HomeContent() {
               <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(16, 185, 129, 0.4) 0%, transparent 70%)' }}></div>
               <div className={styles.landscapeImageWrapper}>
                 <Image
-                  src="/ai-quiz-scorecard.png"
-                  alt="iHafidh AI Intelligent Quiz Scorecard"
-                  width={700}
+                  src="/hero-preview.png"
+                  alt="iHafidh App Main Dashboard Preview"
+                  width={350}
                   height={700}
                   className="glass animate-float"
                   style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(16, 185, 129, 0.4)' }}
@@ -370,13 +370,13 @@ function HomeContent() {
               </p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="#C9A84C" /> {t('statsList1')}
+                  <CheckCircle2 color="#10b981" /> {t('statsList1')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="#C9A84C" /> {t('statsList2')}
+                  <CheckCircle2 color="#10b981" /> {t('statsList2')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="#C9A84C" /> {t('statsList3')}
+                  <CheckCircle2 color="#10b981" /> {t('statsList3')}
                 </li>
               </ul>
             </div>
@@ -394,7 +394,7 @@ function HomeContent() {
                 <p style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>
                   {t('dailyDesc')}
                 </p>
-                <div style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#D4AF37', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#06b6d4', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <RotateCw size={14} /> {t('landscapeNudge')}
                 </div>
 
@@ -434,7 +434,7 @@ function HomeContent() {
                   width={700}
                   height={350}
                   className="glass animate-float"
-                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(212, 175, 55, 0.4)' }}
+                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(16, 185, 129, 0.4)' }}
                 />
               </div>
             </div>
@@ -526,7 +526,7 @@ function HomeContent() {
       <Testimonials />
 
           <div className={styles.primaryCtaContainer}>
-            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#D4AF37' }}>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#10b981' }}>
               {t('ctaTailoredTestimonials')} <ChevronRight size={20} />
             </a>
           </div>

@@ -13,7 +13,7 @@
 }
 
 .launchBanner {
-  background: #C9A84C;
+  background: #10b981;
   color: #1a1a1a;
   text-align: center;
   padding: 0.6rem 1rem;
@@ -31,7 +31,7 @@
   margin-bottom: 3rem;
   position: relative;
   padding-left: 2rem;
-  border-left: 4px solid #C9A84C;
+  border-left: 4px solid #10b981;
 }
 
 .heroQuoteAuthor {
@@ -464,7 +464,7 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   background: rgba(212, 175, 55, 0.1);
-  color: #D4AF37;
+  color: #06b6d4;
   border-radius: 100px;
   font-size: 0.875rem;
   font-weight: 600;
@@ -506,7 +506,7 @@
 }
 
 .ctaButton {
-  background: #C9A84C;
+  background: #10b981;
   color: #1a1a1a;
   padding: 1rem 2.5rem;
   border-radius: 100px;
@@ -608,7 +608,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: #C9A84C;
+  color: #10b981;
 }
 
 .featureCard h3 {
@@ -672,7 +672,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #C9A84C;
+  color: #10b981;
 }
 
 .readerFeatureItem h4 {
@@ -868,7 +868,7 @@
 
 .tabButton.active {
   background: rgba(201, 168, 76, 0.15);
-  border-color: #C9A84C;
+  border-color: #10b981;
   color: #fff;
   box-shadow: 0 0 15px rgba(201, 168, 76, 0.2);
 }
@@ -902,7 +902,7 @@
 }
 
 .fIcon {
-  color: #C9A84C;
+  color: #10b981;
   background: rgba(201, 168, 76, 0.1);
   width: 48px;
   height: 48px;
@@ -953,7 +953,7 @@
 
 /* Golden Gradient Text */
 .goldGradientText {
-  background: linear-gradient(135deg, #f59e0b 0%, #D4AF37 50%, #f59e0b 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #0ea5e9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

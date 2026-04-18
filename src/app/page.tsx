@@ -226,14 +226,7 @@ function HomeContent() {
                 {t('aiDisclaimer')}
               </p>
 
-              <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s', justifyContent: 'flex-start' }} id="download">
-                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/playstore-badge.png" alt="Download iHafidh on the Apple App Store" width={175} height={56} style={{ height: 'auto' }} />
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={190} height={56} style={{ height: 'auto' }} />
-                </a>
-              </div>
+
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>

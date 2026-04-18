@@ -17,16 +17,16 @@ export const metadata: Metadata = {
   keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker", "AI Recitation", "Intelligent Quiz"],
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
-    title: "iHafidh AI Edition v2.1.1 - Master Your Hifdh",
-    description: "Master your Quran memorization with our exclusive AI Intelligent Quiz. Beautiful statistics and premium tracking for your Hifdh journey.",
+    title: "iHafidh AI Edition v2.1.1 — Recite & Evaluate Your Quran",
+    description: "Speak a verse and get a word-by-word AI accuracy scorecard instantly. The first Quran app with AI-powered recitation evaluation.",
     url: "https://ihafidh.vercel.app",
     siteName: "iHafidh",
     images: [
       {
-        url: "/og-ai-edition-v2.jpg",
+        url: "/ai-quiz-scorecard.png",
         width: 1200,
         height: 630,
-        alt: "iHafidh AI Edition v2.1.1 - Intelligent Quiz",
+        alt: "iHafidh AI Quiz — Word-by-Word Recitation Scorecard",
       },
     ],
     locale: "en_US",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "iHafidh AI Edition v2.1.1 - Master Your Hifdh",
-    description: "Beautiful statistics and AI Intelligent Quiz progress tracking for your Quran memorization journey.",
-    images: ["/og-ai-edition-v2.jpg"],
+    title: "iHafidh AI Edition v2.1.1 — Recite & Evaluate Your Quran",
+    description: "Speak a verse and get a word-by-word AI accuracy scorecard instantly. Download free.",
+    images: ["/ai-quiz-scorecard.png"],
   },
   robots: {
     index: true,

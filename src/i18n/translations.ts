@@ -183,7 +183,7 @@ type TranslationKeys = {
 export const translations: Record<Language, TranslationKeys> = {
     en: {
         // Banner
-        bannerText: '🎙️ New in v2.1.1 — Intelligent Quiz now evaluates your recitation word by word.',
+        bannerText: '🎙️ New in v2.1.1 — Intelligent Quiz now evaluates your recitation word by word using AI.',
         bannerCTA: 'Download Free →',
 
         // Navbar

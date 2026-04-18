@@ -518,7 +518,7 @@ function HomeContent() {
       <Testimonials />
 
           <div className={styles.primaryCtaContainer}>
-            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#D4AF37' }}>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#2DD4BF', color: '#000' }}>
               {t('ctaTailoredTestimonials')} <ChevronRight size={20} />
             </a>
           </div>
@@ -552,10 +552,10 @@ function HomeContent() {
               height={60}
               style={{
                 borderRadius: '12px',
-                boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)'
+                boxShadow: '0 0 20px rgba(45, 212, 191, 0.4)'
               }}
             />
-            <span style={{ fontSize: '1.5rem', background: 'linear-gradient(to right, #fff, #a7f3d0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>iHafidh</span>
+            <span style={{ fontSize: '1.5rem', background: 'linear-gradient(to right, #fff, #2DD4BF)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>iHafidh</span>
           </div>
 
           <p>

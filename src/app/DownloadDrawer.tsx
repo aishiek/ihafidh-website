@@ -60,7 +60,7 @@ export default function DownloadDrawer({ isOpen, onClose }: DownloadDrawerProps)
                 style={{
                     pointerEvents: 'auto',
                     background: '#0f172a', /* Dark bg matching theme */
-                    border: '1px solid rgba(212, 175, 55, 0.3)',
+                    border: '1px solid rgba(45, 212, 191, 0.3)',
                     borderRadius: '24px 24px 0 0',
                     padding: '2rem',
                     width: '100%',

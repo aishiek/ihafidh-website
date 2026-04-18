@@ -356,7 +356,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
     ta: {
         // Banner
-        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
+        bannerText: '🎙️ புதிய வெளியீடு v2.1.1 — Intelligent Quiz இப்போது உங்கள் ஓதுதலை AI மூலம் வார்த்தைக்கு வார்த்தை மதிப்பிடுகிறது.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -529,7 +529,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
     ms: {
         // Banner
-        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
+        bannerText: '🎙️ Baru di v2.1.1 — Kuiz AI Pintar kini menilai bacaan anda perkataan demi perkataan menggunakan AI.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -701,7 +701,7 @@ export const translations: Record<Language, TranslationKeys> = {
     },
     ur: {
         // Banner
-        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
+        bannerText: '🎙️ v2.1.1 میں نیا — ذہین کوئز اب آپ کی تلاوت کا لفظ بہ لفظ AI کے ساتھ جائزہ لیتا ہے۔',
         bannerCTA: 'Download Free →',
 
         // Navbar

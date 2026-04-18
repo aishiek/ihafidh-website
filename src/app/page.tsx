@@ -300,8 +300,8 @@ function HomeContent() {
               <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(212,175,55,0.25) 0%, transparent 70%)' }}></div>
               <div className={styles.landscapeImageWrapper} style={{ border: '2px solid rgba(212,175,55,0.3)' }}>
                 <Image
-                  src="/daily-preview.png"
-                  alt="iHafidh Golden Quran Mode Landscape"
+                  src="/hero-preview.png"
+                  alt="iHafidh Golden Quran Edition Preview"
                   width={700}
                   height={350}
                   className="glass animate-float"

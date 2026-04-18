@@ -313,6 +313,48 @@ function HomeContent() {
         </div>
       </section>
 
+      {/* How It Works Section — Restored in AI Teal Theme */}
+      <section className={styles.howItWorks} id="how-it-works" style={{ padding: '6rem 0', background: 'rgba(255, 255, 255, 0.01)' }}>
+        <div className="container">
+          <div className={styles.sectionHeader} style={{ marginBottom: '4rem' }}>
+            <h2 className={styles.goldGradientText} style={{ textAlign: 'center' }}>{t('howItWorksTitle')}</h2>
+            <p style={{ textAlign: 'center', maxWidth: '600px', margin: '1rem auto' }}>{t('howItWorksSubtitle')}</p>
+          </div>
+
+          <div className={styles.stepGrid}>
+            <div className={styles.stepCard} style={{ textAlign: 'center' }}>
+              <div className={styles.stepNumber} style={{ background: '#2DD4BF', boxShadow: '0 0 25px rgba(45, 212, 191, 0.4)' }}>1</div>
+              <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>{t('step1Title')}</h3>
+              <p style={{ color: '#94a3b8' }}>{t('step1Desc')}</p>
+            </div>
+
+            <div className={styles.stepCard} style={{ textAlign: 'center' }}>
+              <div className={styles.stepNumber} style={{ background: '#2DD4BF', boxShadow: '0 0 25px rgba(45, 212, 191, 0.4)' }}>2</div>
+              <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>{t('step2Title')}</h3>
+              <p style={{ color: '#94a3b8' }}>{t('step2Desc')}</p>
+            </div>
+
+            <div className={styles.stepCard} style={{ textAlign: 'center' }}>
+              <div className={styles.stepNumber} style={{ background: '#2DD4BF', boxShadow: '0 0 25px rgba(45, 212, 191, 0.4)' }}>3</div>
+              <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>{t('step3Title')}</h3>
+              <p style={{ color: '#94a3b8' }}>{t('step3Desc')}</p>
+            </div>
+
+            <div className={styles.stepCard} style={{ textAlign: 'center' }}>
+              <div className={styles.stepNumber} style={{ background: '#2DD4BF', boxShadow: '0 0 25px rgba(45, 212, 191, 0.4)' }}>4</div>
+              <h3 style={{ color: '#fff', fontSize: '1.25rem', marginBottom: '0.75rem' }}>{t('step4Title')}</h3>
+              <p style={{ color: '#94a3b8' }}>{t('step4Desc')}</p>
+            </div>
+          </div>
+
+          <div className={styles.primaryCtaContainer} style={{ marginTop: '3rem' }}>
+            <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#2DD4BF', color: '#000' }}>
+              {t('ctaFree')} <ChevronRight size={20} />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Highlight */}
       <section className={styles.stats}>
         <div className="container">

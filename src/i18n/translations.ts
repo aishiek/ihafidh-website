@@ -86,6 +86,7 @@ type TranslationKeys = {
     aiFeature3Title: string;
     aiFeature3Desc: string;
     aiDisclaimer: string;
+    aiHeroTagline: string;
 
     // FAQ
     faqTitle: string;
@@ -182,7 +183,7 @@ type TranslationKeys = {
 export const translations: Record<Language, TranslationKeys> = {
     en: {
         // Banner
-        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
+        bannerText: '🎙️ New in v2.1.1 — Intelligent Quiz now evaluates your recitation word by word.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -195,8 +196,8 @@ export const translations: Record<Language, TranslationKeys> = {
         heroHeadlineHighlight: 'Understand Every Word.',
         heroHeadlineTafsir: 'Read in Gold.',
         heroHeadlineTafsirHighlight: 'Understand Every Word.',
-        heroSubheadline: 'The ultimate tool for both Reciters and the Memorizing crowd. iHafidh now brings you immersive Golden Landscape mode and precise Word-by-Word translation to deepen your connection.',
-        availabilityText: 'Word by Word Translations is available in English, Malay, Tamil and Urdu',
+        heroSubheadline: 'The ultimate Quran companion for memorizers and reciters. Track every Surah, quiz your recall with AI, and master your Hifdh journey.',
+        availabilityText: 'Word by Word Translations available in English, Malay, Tamil & Urdu',
         appStoreRating: '4.9 on the App Store',
         joinCommunity: 'Used by Muslims in 40+ countries',
         ctaFree: "Download for Free",
@@ -238,8 +239,8 @@ export const translations: Record<Language, TranslationKeys> = {
         statsList3: 'Achievement badges and milestones',
 
         // Daily Recitation
-        dailyBadge: 'For Daily Readers',
-        dailyTitle: 'Beyond Memorization',
+        dailyBadge: 'For Every Muslim',
+        dailyTitle: 'Read. Reflect. Understand.',
         dailyDesc: "Whether you're aiming for Hifdh or just want a meaningful daily recitation, iHafidh provides a premium reading experience for every Muslim.",
         dailyFeature1Title: 'Daily Ayah Notifications',
         dailyFeature1Desc: 'Start your morning with a beautiful verse and reflection delivered to your device.',
@@ -250,15 +251,16 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // AI Intelligent Quiz
         aiSectionBadge: 'New AI Capability',
-        aiSectionTitle: 'Intelligent Quiz',
-        aiSectionDesc: 'Test your memorization accurately. Recite to the app and our advanced AI evaluates your correctness with a word-by-word percentage scorecard.',
-        aiFeature1Title: 'Word-by-Word Analysis',
-        aiFeature1Desc: 'Receive a percentage score for every single word you recite.',
-        aiFeature2Title: 'Smart Recall Scoring',
-        aiFeature2Desc: 'Overall accuracy and confidence metrics generated instantly.',
-        aiFeature3Title: 'Pinpoint Mistakes',
-        aiFeature3Desc: 'Visually identify which words need more practice based on AI confidence.',
-        aiDisclaimer: '* Disclaimer: AI can make mistakes. Tajweed rules and Quran recitation accuracy evaluation may differ from human review.',
+        aiSectionTitle: 'Recite. Evaluate. Perfect.',
+        aiSectionDesc: 'Speak a verse — our AI instantly evaluates your recitation with a word-by-word accuracy scorecard.',
+        aiHeroTagline: 'Recite in AI — speak a verse, get a word-by-word accuracy scorecard instantly.',
+        aiFeature1Title: '🎙️ Word-by-Word Scorecard',
+        aiFeature1Desc: 'AI grades each Arabic word individually — see exactly which words you nailed and which need work.',
+        aiFeature2Title: '✅ Auto-Mark Correct',
+        aiFeature2Desc: 'Score 80% or above and the verse is automatically marked correct — no manual tapping needed.',
+        aiFeature3Title: '🔄 Instant Retry',
+        aiFeature3Desc: 'Re-record any verse without losing your progress on the others.',
+        aiDisclaimer: '* AI can make mistakes. Tajweed rules and Quran recitation accuracy may differ from expert human review.',
 
         // FAQ
         faqTitle: 'Frequently Asked Questions',
@@ -272,27 +274,27 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4Q: 'Can I track both Surah and Juz progress?',
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
         faq5Q: 'How is iHafidh different from other Quran apps?',
-        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
+        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. Now with AI-powered recitation evaluation — the first Quran memorization app to give you a word-by-word accuracy scorecard from your own voice. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
         trustUsedBy: 'Used by Muslims in 40+ countries',
         trustFree: 'Free to Download',
         ctaTailoredHow: 'Start in Minutes — Download Free',
         ctaTailoredFeatures: 'Try iHafidh Free Today',
         ctaTailoredTestimonials: 'Join the Community — Download Now',
         ctaTailoredFooter: "Begin Your Hifdh Journey — It's Free",
-        landscapeNudge: 'Rotate your device to landscape to unlock the full Golden experience',
+        landscapeNudge: 'Rotate to landscape for a cinematic, distraction-free Quran experience',
 
         // Latest Updates
         updatesTitle: 'Latest Features (v2.1.1)',
         update1Title: 'Intelligent AI Quiz',
-        update1Desc: 'Recite a verse and get a word-by-word AI scorecard on your accuracy.',
-        update2Title: 'Tajweed Fonts',
-        update2Desc: 'New color-coded Tajweed fonts in settings to perfect your pronunciation.',
-        update3Title: 'Preview Reciter',
-        update3Desc: 'Listen to audio samples when selecting your preferred Qari in settings.',
-        update4Title: 'Custom Page Mode',
-        update4Desc: 'Customize your reading experience from 3 up to 20 verses per page.',
-        update5Title: 'Quranic Duas Collection',
-        update5Desc: 'Access authentic supplications from the Quran. Available in the menu for daily spiritual enrichment.',
+        update1Desc: 'Recite a verse and get an instant word-by-word AI accuracy scorecard.',
+        update2Title: 'AI Auto-Mark',
+        update2Desc: 'Verses scoring 80%+ are automatically marked correct — no manual tapping needed.',
+        update3Title: 'Tajweed Fonts',
+        update3Desc: 'New color-coded Tajweed fonts in settings to perfect your pronunciation.',
+        update4Title: 'Preview Reciter',
+        update4Desc: 'Listen to audio samples when selecting your preferred Qari in settings.',
+        update5Title: 'Custom Page Mode',
+        update5Desc: 'Customize your reading experience from 3 up to 20 verses per page.',
 
         // Testimonials
         testimonialsTitle: 'Loved by the Ummah',
@@ -410,8 +412,8 @@ export const translations: Record<Language, TranslationKeys> = {
         statsList3: 'சாதனை பேட்ஜ்கள் மற்றும் மைல்கற்கள்',
 
         // Daily Recitation
-        dailyBadge: 'தினசரி குர்ஆன் ஓதுபவர்களுக்கு',
-        dailyTitle: 'மனப்பாடத்திற்கு அப்பால்',
+        dailyBadge: 'ஒவ்வொரு முஸ்லிமுக்கும்',
+        dailyTitle: 'படி. சிந்தி. புரிந்துகொள்.',
         dailyDesc: 'நீங்கள் ஹிஃப்ழ் செய்ய விரும்புகிறீர்களா?அல்லது அர்த்தமுள்ள தினசரி ஓதுதலை விரும்புகிறீர்களா? iHafidh ஒவ்வொரு முஸ்லிமுக்கும் உயர்தர வாசிப்பு அனுபவத்தை வழங்குகிறது.',
         dailyFeature1Title: 'தினசரி ஆயத் அறிவிப்புகள்',
         dailyFeature1Desc: 'உங்கள் காலையை ஒரு அழகான ஆயத்துடனும் சிந்தனையுடனும் தொடங்குங்கள், Daily Notifications.',
@@ -422,15 +424,16 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // AI Intelligent Quiz
         aiSectionBadge: 'புதிய AI அம்சம்',
-        aiSectionTitle: 'அறிவார்ந்த AI வினாடி வினா',
-        aiSectionDesc: 'உங்கள் மனப்பாடத்தை துல்லியமாக சோதிக்கவும். செயலிக்கு ஓதிக் காட்டவும், வார்த்தைக்கு வார்த்தை சதவீத மதிப்பெண் மூலம் உங்கள் துல்லியத்தை எங்கள் AI மதிப்பிடும்.',
-        aiFeature1Title: 'வார்த்தைக்கு வார்த்தை பகுப்பாய்வு',
-        aiFeature1Desc: 'நீங்கள் ஓதும் ஒவ்வொரு வார்த்தைக்கும் ஒரு சதவீத மதிப்பெண்ணைப் பெறுங்கள்.',
-        aiFeature2Title: 'ஸ்மார்ட் ரீகால் ஸ்கோரிங்',
-        aiFeature2Desc: 'ஒட்டுமொத்த துல்லியம் மற்றும் நம்பிக்கை அளவீடுகள் உடனடியாக உருவாக்கப்படும்.',
-        aiFeature3Title: 'தவறுகளை சுட்டிக்காட்டுங்கள்',
-        aiFeature3Desc: 'AI நம்பிக்கையின் அடிப்படையில் எந்த வார்த்தைகளுக்கு அதிக பயிற்சி தேவை என்பதை காட்சி மூலம் அடையாளம் காணவும்.',
-        aiDisclaimer: '* மறுப்பு: AI தவறுகளைச் செய்யலாம். தஜ்வீத் விதிகள் மற்றும் குர்ஆன் ஓதுதல் துல்லிய மதிப்பீடு மனித மதிப்பாய்விலிருந்து மாறுபடலாம்.',
+        aiSectionTitle: 'ஓது. மதிப்பிடு. திருத்து.',
+        aiSectionDesc: 'ஒரு வசனத்தை ஓதிக் காட்டுங்கள் — எங்கள் AI உங்கள் ஓதுதலை வார்த்தைக்கு வார்த்தை சதவீத மதிப்பெண்ணுடன் உடனடியாக மதிப்பிடும்.',
+        aiHeroTagline: 'AI-உடன் ஓதுங்கள் — ஒரு வசனத்தை ஓதி, வார்த்தைக்கு வார்த்தை துல்லிய மதிப்பெண்ணை உடனடியாகப் பெறுங்கள்.',
+        aiFeature1Title: '🎙️ வார்த்தைக்கு வார்த்தை மதிப்பெண்',
+        aiFeature1Desc: 'AI ஒவ்வொரு அரபி வார்த்தையையும் தனிதநிலையில் மதிப்பிடும் — எந்த வார்த்தைகளை சரியாக ஓதினீர் என்பதையும் எத்தையும் பாருங்கள்.',
+        aiFeature2Title: '✅ தானியல் சரி என்று குறிக்குங்கள்',
+        aiFeature2Desc: '80% அல்லது அதிகமான மதிப்பெண் பெற்றால், ஆயத் தானியல் சரி என்று குறிக்கப்படும் — கையடி தேவையில்லை.',
+        aiFeature3Title: '🔄 மறுபடியும் முயற்சி',
+        aiFeature3Desc: 'மற்ற வசனஙகளில் உங்கள் முன்னேற்றத்தை இழகாமல் எந்த வசனத்தையும் மறுபடியும் முயற்சியுங்கள்.',
+        aiDisclaimer: '* AI தவறுகளைச் செய்யலாம். தஜ்வீத் விதிகள் மற்றும் குர்ஆன் ஓதுதல் துல்லிய மதிப்பீடு மனித மதிப்பாய்விலிருந்து மாறுபடலாம்.',
 
         // FAQ
         faqTitle: 'அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)',
@@ -582,8 +585,8 @@ export const translations: Record<Language, TranslationKeys> = {
         statsList3: 'Lencana pencapaian dan pencapaian penting',
 
         // Daily Recitation
-        dailyBadge: 'Untuk Pembaca Harian',
-        dailyTitle: 'Lebih Dari Sekadar Hafazan',
+        dailyBadge: 'Untuk Semua Muslim',
+        dailyTitle: 'Baca. Renungi. Fahami.',
         dailyDesc: 'Sama ada anda menyasarkan hafazan atau hanya mahukan bacaan harian yang bermakna, iHafidh menyediakan pengalaman bacaan premium untuk setiap Muslim.',
         dailyFeature1Title: 'Pemberitahuan Ayat Harian',
         dailyFeature1Desc: 'Mulakan pagi anda dengan ayat yang indah dan renungan yang dihantar ke peranti anda.',
@@ -594,15 +597,16 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // AI Intelligent Quiz
         aiSectionBadge: 'Keupayaan AI Baru',
-        aiSectionTitle: 'Kuiz AI Pintar',
-        aiSectionDesc: 'Uji hafazan anda dengan tepat. Baca ke aplikasi dan AI canggih kami menilai ketepatan anda dengan kad skor peratusan perkataan demi perkataan.',
-        aiFeature1Title: 'Analisis Perkataan Demi Perkataan',
-        aiFeature1Desc: 'Terima skor peratusan untuk setiap satu perkataan yang anda baca.',
-        aiFeature2Title: 'Pemarkahan Ingatan Pintar',
-        aiFeature2Desc: 'Metrik ketepatan keseluruhan dan keyakinan dijana serta-merta.',
-        aiFeature3Title: 'Kenal Pasti Kesilapan',
-        aiFeature3Desc: 'Kenal pasti secara visual perkataan yang memerlukan lebih latihan berdasarkan keyakinan AI.',
-        aiDisclaimer: '* Penafian: AI boleh membuat kesilapan. Hukum Tajwid dan penilaian ketepatan bacaan Al-Quran mungkin berbeza daripada semakan manusia.',
+        aiSectionTitle: 'Baca. Nilai. Sempurnakan.',
+        aiSectionDesc: 'Tuturkan satu ayat — AI kami terus menilai bacaan anda dengan kad skor ketepatan perkataan demi perkataan.',
+        aiHeroTagline: 'Baca dengan AI — tuturkan ayat, dapatkan kad skor ketepatan perkataan demi perkataan serta-merta.',
+        aiFeature1Title: '🎙️ Kad Skor Perkataan Demi Perkataan',
+        aiFeature1Desc: 'AI menilai setiap perkataan Arab secara individu — lihat tepat perkataan mana yang betul dan mana yang perlu latihan.',
+        aiFeature2Title: '✅ Tanda Betul Automatik',
+        aiFeature2Desc: 'Skor 80% atau lebih dan ayat ditanda betul secara automatik — tiada ketukan manual diperlukan.',
+        aiFeature3Title: '🔄 Cuba Semula Serta-merta',
+        aiFeature3Desc: 'Rakam semula mana-mana ayat tanpa kehilangan kemajuan anda pada ayat lain.',
+        aiDisclaimer: '* AI boleh membuat kesilapan. Hukum Tajwid dan penilaian ketepatan bacaan Al-Quran mungkin berbeza daripada semakan manusia.',
 
         // FAQ
         faqTitle: 'Soalan Lazim',
@@ -753,8 +757,8 @@ export const translations: Record<Language, TranslationKeys> = {
         statsList3: 'کامیابی کے بیجز اور سنگ میل',
 
         // Daily Recitation
-        dailyBadge: 'روزانہ تلاوت کرنے والوں کے لیے',
-        dailyTitle: 'حفظ سے آگے',
+        dailyBadge: 'ہر مسلمان کے لیے',
+        dailyTitle: 'پڑھیں۔ غور کریں۔ سمجھیں۔',
         dailyDesc: 'چاہے آپ کا مقصد حفظ ہو یا صرف روزانہ کی بامقصد تلاوت، iHafidh ہر مسلمان کے لیے تلاوت کا بہترین تجربہ فراہم کرتا ہے۔',
         dailyFeature1Title: 'روزانہ آیت کے نوٹیفیکیشن',
         dailyFeature1Desc: 'اپنے دن کا آغاز ایک خوبصورت آیت اور اس کے ہمراہ نصیحت کے ساتھ کریں۔',
@@ -765,15 +769,16 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // AI Intelligent Quiz
         aiSectionBadge: 'نئی AI صلاحیت',
-        aiSectionTitle: 'ذہین AI کوئز',
-        aiSectionDesc: 'اپنے حفظ کو درستگی کے ساتھ جانچیں۔ ایپ کو پڑھ کر سنائیں اور ہماری جدید AI ایک لفظ بہ لفظ فیصد اسکور کارڈ کے ساتھ آپ کی درستگی کا جائزہ لیتی ہے۔',
-        aiFeature1Title: 'لفظ بہ لفظ تجزیہ',
-        aiFeature1Desc: 'آپ کے پڑھے گئے ہر ایک لفظ کے لیے فیصد اسکور حاصل کریں۔',
-        aiFeature2Title: 'اسمارٹ ریکال اسکورنگ',
-        aiFeature2Desc: 'مجموعی درستگی اور اعتماد کی پیمائش فوری طور پر تیار کی گئی۔',
-        aiFeature3Title: 'غلطیوں کی نشاندہی کریں',
-        aiFeature3Desc: 'بصری طور پر شناخت کریں کہ کن الفاظ کو AI کے اعتماد کی بنیاد پر مزید مشق کی ضرورت ہے۔',
-        aiDisclaimer: '* دستبرداری: AI غلطیاں کر سکتا ہے۔ تجوید کے قواعد اور قرآن کی تلاوت کی درستگی کا جائزہ انسانی جائزے سے مختلف ہو سکتا ہے۔',
+        aiSectionTitle: 'پڑھیں۔ جائزہ لیں۔ مکمل کریں۔',
+        aiSectionDesc: 'ایک آیت پڑھ کر سنائیں — ہماری AI فوری لفظ بہ لفظ درستگی اسکور کارڈ کے ساتھ آپ کی تلاوت کا جائزہ لیتی ہے۔',
+        aiHeroTagline: 'AI کے ساتھ تلاوت کریں — آیت پڑھیں اور فوری لفظ بہ لفظ درستگی اسکور پائیں۔',
+        aiFeature1Title: '🎙️ لفظ بہ لفظ اسکور کارڈ',
+        aiFeature1Desc: 'AI ہر عربی لفظ کو انفرادی طور پر جانچتی ہے — دیکھیں کون سے الفاظ آپ نے صحیح پڑھے اور کون سے توجہ چاہتے ہیں۔',
+        aiFeature2Title: '✅ خودکار درست نشاندہی',
+        aiFeature2Desc: '80% یا زیادہ اسکور ملی تو آیت خودکار درست نشان کر دی جاتی ہے — ہاتھ سے تفصیل کی ضرورت نہیں۔',
+        aiFeature3Title: '🔄 فوری دوبارہ کوشش',
+        aiFeature3Desc: 'دوسری آیات میں آپ کی ترقی کھوئے بغیر کسی بھی آیت کو دوبارہ ریکارڈ کریں۔',
+        aiDisclaimer: '* AI غلطیاں کر سکتا ہے۔ تجوید کے قواعد اور قرآن کی تلاوت کی درستگی انسانی جائزے سے مختلف ہو سکتی ہے۔',
 
         // FAQ
         faqTitle: 'اکثر پوچھے گئے سوالات',

@@ -204,14 +204,15 @@ function HomeContent() {
                   </h1>
                 </div>
               </div>
-              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '0.5rem' }}>
+              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.25rem', marginBottom: '0.25rem', color: '#94a3b8' }}>
                 {t('heroSubheadline')}
               </p>
-              <p className="animate-fade-in" style={{ animationDelay: '0.12s', fontSize: '1rem', color: '#D4AF37', fontWeight: 600, marginBottom: '1.5rem' }}>
-                {t('availabilityText')}
+              <p className="animate-fade-in" style={{ animationDelay: '0.11s', fontSize: '1.05rem', marginBottom: '1.5rem', fontWeight: 600 }}>
+                <span style={{ color: '#2DD4BF' }}>Recite in AI</span>
+                <span style={{ color: '#94a3b8' }}> — {t('aiHeroTagline').replace('Recite in AI — ', '').replace('AI-உடன் ஓதுங்கள் — ', '').replace('Baca dengan AI — ', '').replace('AI کے ساتھ تلاوت کریں — ', '')}</span>
               </p>
 
-              {/* Trust Bar below Headline on Mobile, Trust Bar below CTAs on Desktop */}
+              {/* Trust Bar */}
               <div className={`${styles.trustBar} animate-fade-in`} style={{ animationDelay: '0.15s' }}>
                 <span><Star size={16} fill="#fbbf24" strokeWidth={0} /> {t('appStoreRating')}</span>
                 <span className={styles.trustDivider}>•</span>
@@ -219,7 +220,6 @@ function HomeContent() {
                 <span className={styles.trustDivider}>•</span>
                 <span>{t('trustFree')}</span>
               </div>
-
 
               <div className={`${styles.downloadButtons} animate-fade-in`} style={{ animationDelay: '0.2s' }} id="download">
                 <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
@@ -294,20 +294,25 @@ function HomeContent() {
 
       <FeaturesExplorer openDrawer={openDrawer} />
 
+      {/* Teal AI Tagline Anchor */}
+      <div style={{ textAlign: 'center', padding: '2rem 0 0', letterSpacing: '0.15em', fontSize: '1.1rem', fontWeight: 700, color: '#2DD4BF', textShadow: '0 0 30px rgba(45,212,191,0.5)' }}>
+        ✦&nbsp; Recite in AI &nbsp;✦
+      </div>
+
       {/* AI Scorecard Highlight */}
       <section className={styles.dailySection} id="ai-quiz">
         <div className="container">
           <div className={styles.statsSection} style={{ flexDirection: 'row' }}>
             <div className={styles.statsContent}>
-              <div className={styles.badge} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981', borderColor: 'rgba(16, 185, 129, 0.3)' }}>{t('aiSectionBadge')}</div>
-              <h2 className={styles.goldGradientText} style={{ background: 'linear-gradient(to right, #10b981, #a7f3d0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{t('aiSectionTitle')}</h2>
+              <div className={styles.badge} style={{ background: 'rgba(45, 212, 191, 0.12)', color: '#2DD4BF', borderColor: 'rgba(45, 212, 191, 0.35)' }}>{t('aiSectionBadge')}</div>
+              <h2 style={{ background: 'linear-gradient(to right, #2DD4BF, #67e8f9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{t('aiSectionTitle')}</h2>
               <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
                 {t('aiSectionDesc')}
               </p>
 
               <div className={styles.readerFeatures}>
                 <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Brain size={20} /></div>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(45, 212, 191, 0.12)', color: '#2DD4BF' }}><Brain size={20} /></div>
                   <div>
                     <h4 style={{ color: '#fff' }}>{t('aiFeature1Title')}</h4>
                     <p>{t('aiFeature1Desc')}</p>
@@ -315,7 +320,7 @@ function HomeContent() {
                 </div>
 
                 <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Activity size={20} /></div>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(45, 212, 191, 0.12)', color: '#2DD4BF' }}><CheckCircle2 size={20} /></div>
                   <div>
                     <h4 style={{ color: '#fff' }}>{t('aiFeature2Title')}</h4>
                     <p>{t('aiFeature2Desc')}</p>
@@ -323,7 +328,7 @@ function HomeContent() {
                 </div>
 
                 <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Target size={20} /></div>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(45, 212, 191, 0.12)', color: '#2DD4BF' }}><RotateCw size={20} /></div>
                   <div>
                     <h4 style={{ color: '#fff' }}>{t('aiFeature3Title')}</h4>
                     <p>{t('aiFeature3Desc')}</p>
@@ -331,13 +336,13 @@ function HomeContent() {
                 </div>
               </div>
 
-              <p className="animate-fade-in" style={{ fontSize: '0.85rem', color: '#64748b', fontStyle: 'italic', marginTop: '2rem' }}>
+              <p className="animate-fade-in" style={{ fontSize: '0.85rem', color: '#64748b', fontStyle: 'italic', marginTop: '1.5rem' }}>
                 {t('aiDisclaimer')}
               </p>
             </div>
 
             <div className={styles.heroImageArea} style={{ flex: 1 }}>
-              <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(16, 185, 129, 0.4) 0%, transparent 70%)' }}></div>
+              <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(45, 212, 191, 0.3) 0%, transparent 70%)' }}></div>
               <div className={styles.landscapeImageWrapper}>
                 <Image
                   src="/ai-quiz-scorecard.png"
@@ -345,7 +350,7 @@ function HomeContent() {
                   width={700}
                   height={700}
                   className="glass animate-float"
-                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(16, 185, 129, 0.4)' }}
+                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(45, 212, 191, 0.4)' }}
                 />
               </div>
             </div>
@@ -488,35 +493,35 @@ function HomeContent() {
           <h2 className={styles.goldGradientText} style={{ textAlign: 'center', marginBottom: '3rem' }}>{t('updatesTitle')}</h2>
           <div className={styles.featureGrid}>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><Music size={20} /></div>
+              <div className={styles.readerFeatureIcon}><Brain size={20} /></div>
               <div>
                 <h4 style={{ color: '#fff' }}>{t('update1Title')}</h4>
                 <p>{t('update1Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
+              <div className={styles.readerFeatureIcon}><CheckCircle2 size={20} /></div>
               <div>
                 <h4 style={{ color: '#fff' }}>{t('update2Title')}</h4>
                 <p>{t('update2Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><Settings2 size={20} /></div>
+              <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
               <div>
                 <h4 style={{ color: '#fff' }}>{t('update3Title')}</h4>
                 <p>{t('update3Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><Layers size={20} /></div>
+              <div className={styles.readerFeatureIcon}><Settings2 size={20} /></div>
               <div>
                 <h4 style={{ color: '#fff' }}>{t('update4Title')}</h4>
                 <p>{t('update4Desc')}</p>
               </div>
             </div>
             <div className={styles.readerFeatureItem}>
-              <div className={styles.readerFeatureIcon}><HandHeart size={20} /></div>
+              <div className={styles.readerFeatureIcon}><Layers size={20} /></div>
               <div>
                 <h4 style={{ color: '#fff' }}>{t('update5Title')}</h4>
                 <p>{t('update5Desc')}</p>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
     title: "iHafidh — Quran Memorization & AI Recitation",
-    description: "Recite a verse aloud in Quiz mode and get a word-by-word AI accuracy scorecard instantly. The first Quran app with AI evaluation.",
+    description: "Recite a verse aloud in Quiz mode and get a word-by-word AI accuracy scorecard instantly. iHafidh now provides AI evaluation in Quiz mode.",
     url: "https://ihafidh.vercel.app",
     siteName: "iHafidh",
     images: [

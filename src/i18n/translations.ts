@@ -252,8 +252,8 @@ export const translations: Record<Language, TranslationKeys> = {
         // AI Intelligent Quiz
         aiSectionBadge: 'New AI Capability',
         aiSectionTitle: 'Recite. Evaluate. Perfect.',
-        aiSectionDesc: 'Speak a verse — our AI instantly evaluates your recitation with a word-by-word accuracy scorecard.',
-        aiHeroTagline: 'Recite in AI — speak a verse, get a word-by-word accuracy scorecard instantly.',
+        aiSectionDesc: 'Recite verse aloud — our AI instantly evaluates your recitation with a word-by-word accuracy scorecard.',
+        aiHeroTagline: 'Recite in AI — recite verse aloud, get a word-by-word accuracy scorecard instantly.',
         aiFeature1Title: '🎙️ Word-by-Word Scorecard',
         aiFeature1Desc: 'AI grades each Arabic word individually — see exactly which words you nailed and which need work.',
         aiFeature2Title: '✅ Auto-Mark Correct',

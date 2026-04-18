@@ -151,7 +151,7 @@ export default function Testimonials() {
                                             <p>&quot;{item.text}&quot;</p>
                                             <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '1px solid rgba(255,255,255,0.05)', fontSize: '0.75rem', color: '#64748b', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                                 <span>Verified App Store Review</span>
-                                                <span style={{ color: '#C9A84C', fontWeight: 600 }}>4.9 ★</span>
+                                                <span style={{ color: '#2DD4BF', fontWeight: 600 }}>4.9 ★</span>
                                             </div>
                                         </div>
                                     </div>

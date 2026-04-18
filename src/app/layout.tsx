@@ -14,19 +14,19 @@ export const metadata: Metadata = {
     template: "%s | iHafidh"
   },
   description: "iHafidh is your companion for Quran memorization. Track progress, build consistency, and achieve your Hifdh goals with beautiful statistics and detailed tracking.",
-  keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker"],
+  keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker", "AI Recitation", "Intelligent Quiz"],
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
-    title: "iHafidh Golden Quran - Master Your Hifdh",
-    description: "Master your Quran memorization with our exclusive Golden Mode. Beautiful statistics and premium tracking for your Hifdh journey.",
+    title: "iHafidh AI Edition v2.1.1 - Master Your Hifdh",
+    description: "Master your Quran memorization with our exclusive AI Intelligent Quiz. Beautiful statistics and premium tracking for your Hifdh journey.",
     url: "https://ihafidh.vercel.app",
     siteName: "iHafidh",
     images: [
       {
-        url: "/og-golden-edition.jpg",
+        url: "/og-ai-edition-v2.jpg",
         width: 1200,
         height: 630,
-        alt: "iHafidh Golden Quran Edition - Landscapes Mode",
+        alt: "iHafidh AI Edition v2.1.1 - Intelligent Quiz",
       },
     ],
     locale: "en_US",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "iHafidh Golden Quran - Master Your Hifdh",
-    description: "Beautiful statistics and Golden Mode progress tracking for your Quran memorization journey.",
-    images: ["/og-golden-edition.jpg"],
+    title: "iHafidh AI Edition v2.1.1 - Master Your Hifdh",
+    description: "Beautiful statistics and AI Intelligent Quiz progress tracking for your Quran memorization journey.",
+    images: ["/og-ai-edition-v2.jpg"],
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-golden-edition.jpg" />
+        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-ai-edition-v2.jpg" />
       </head>
       <body className={outfit.className}>
         {children}

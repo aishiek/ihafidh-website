@@ -75,6 +75,17 @@ type TranslationKeys = {
     dailyFeature3Title: string;
     dailyFeature3Desc: string;
 
+    // AI Intelligent Quiz
+    aiSectionBadge: string;
+    aiSectionTitle: string;
+    aiSectionDesc: string;
+    aiFeature1Title: string;
+    aiFeature1Desc: string;
+    aiFeature2Title: string;
+    aiFeature2Desc: string;
+    aiFeature3Title: string;
+    aiFeature3Desc: string;
+
     // FAQ
     faqTitle: string;
     faqSubtitle: string;
@@ -170,7 +181,7 @@ type TranslationKeys = {
 export const translations: Record<Language, TranslationKeys> = {
     en: {
         // Banner
-        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -178,7 +189,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Translation.',
-        versionBadge: 'Golden Edition v2.1',
+        versionBadge: 'v2.1.1',
         heroHeadline: 'Read in Gold.',
         heroHeadlineHighlight: 'Understand Every Word.',
         heroHeadlineTafsir: 'Read in Gold.',
@@ -236,6 +247,17 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature3Title: 'Word-by-Word Translation',
         dailyFeature3Desc: 'Understand the depth of every single word in the Quran with our interactive WBW mode.',
 
+        // AI Intelligent Quiz
+        aiSectionBadge: 'New AI Capability',
+        aiSectionTitle: 'Intelligent Quiz',
+        aiSectionDesc: 'Test your memorization accurately. Recite to the app and our advanced AI evaluates your correctness with a word-by-word percentage scorecard.',
+        aiFeature1Title: 'Word-by-Word Analysis',
+        aiFeature1Desc: 'Receive a percentage score for every single word you recite.',
+        aiFeature2Title: 'Smart Recall Scoring',
+        aiFeature2Desc: 'Overall accuracy and confidence metrics generated instantly.',
+        aiFeature3Title: 'Pinpoint Mistakes',
+        aiFeature3Desc: 'Visually identify which words need more practice based on AI confidence.',
+
         // FAQ
         faqTitle: 'Frequently Asked Questions',
         faqSubtitle: 'Everything you need to know about the iHafidh app.',
@@ -258,9 +280,9 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'Rotate your device to landscape to unlock the full Golden experience',
 
         // Latest Updates
-        updatesTitle: 'Latest Features (v2.1.0)',
-        update1Title: 'Mushaf Audio Repeat',
-        update1Desc: 'Repeat audio by Verse or Page level for effective Hifdh repetition.',
+        updatesTitle: 'Latest Features (v2.1.1)',
+        update1Title: 'Intelligent AI Quiz',
+        update1Desc: 'Recite a verse and get a word-by-word AI scorecard on your accuracy.',
         update2Title: 'Tajweed Fonts',
         update2Desc: 'New color-coded Tajweed fonts in settings to perfect your pronunciation.',
         update3Title: 'Preview Reciter',
@@ -330,7 +352,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
     ta: {
         // Banner
-        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -338,7 +360,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'இந்த புனித ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
-        versionBadge: 'ரமலான் 2026 பதிப்பு',
+        versionBadge: 'v2.1.1',
         heroHeadline: 'தங்கத்தில் ஓதுங்கள்.',
         heroHeadlineHighlight: 'ஒவ்வொரு வார்த்தையையும் புரிந்து கொள்ளுங்கள்.',
         heroHeadlineTafsir: 'தங்கத்தில் ஓதுங்கள்.',
@@ -396,6 +418,17 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature3Title: 'அறிஞர்களின் தஃப்சீர்கள்',
         dailyFeature3Desc: 'வாசகத்தில் நேரடியாக பல மொழி தஃப்சீர்களுடன் உங்கள் புனித குர்ஆனின் புரிதலை ஆழப்படுத்துங்கள்.',
 
+        // AI Intelligent Quiz
+        aiSectionBadge: 'புதிய AI அம்சம்',
+        aiSectionTitle: 'அறிவார்ந்த AI வினாடி வினா',
+        aiSectionDesc: 'உங்கள் மனப்பாடத்தை துல்லியமாக சோதிக்கவும். செயலிக்கு ஓதிக் காட்டவும், வார்த்தைக்கு வார்த்தை சதவீத மதிப்பெண் மூலம் உங்கள் துல்லியத்தை எங்கள் AI மதிப்பிடும்.',
+        aiFeature1Title: 'வார்த்தைக்கு வார்த்தை பகுப்பாய்வு',
+        aiFeature1Desc: 'நீங்கள் ஓதும் ஒவ்வொரு வார்த்தைக்கும் ஒரு சதவீத மதிப்பெண்ணைப் பெறுங்கள்.',
+        aiFeature2Title: 'ஸ்மார்ட் ரீகால் ஸ்கோரிங்',
+        aiFeature2Desc: 'ஒட்டுமொத்த துல்லியம் மற்றும் நம்பிக்கை அளவீடுகள் உடனடியாக உருவாக்கப்படும்.',
+        aiFeature3Title: 'தவறுகளை சுட்டிக்காட்டுங்கள்',
+        aiFeature3Desc: 'AI நம்பிக்கையின் அடிப்படையில் எந்த வார்த்தைகளுக்கு அதிக பயிற்சி தேவை என்பதை காட்சி மூலம் அடையாளம் காணவும்.',
+
         // FAQ
         faqTitle: 'அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)',
         faqSubtitle: 'iHafidh செயலி பற்றி நீங்கள் தெரிந்து கொள்ள வேண்டிய அனைத்தும்.',
@@ -418,9 +451,9 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'முழு கோல்டன் அனுபவத்தைப் பெற உங்கள் சாதனத்தைத் கிடைமட்டமாக மாற்றவும்',
 
         // Latest Updates
-        updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.0.8)',
-        update1Title: 'முஸ்ஹஃப் ஆடியோ இயக்கம்',
-        update1Desc: 'திறமையான ஹிஃப்ழ் Revision ஆயத்து அல்லது பக்க அளவில் ஆடியோவை  இயக்குங்கள்.',
+        updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.1.1)',
+        update1Title: 'அறிவார்ந்த AI வினாடி வினா',
+        update1Desc: 'ஒரு வசனத்தை ஓதி, உங்கள் துல்லியத்தின் அடிப்படையில் வார்த்தைக்கு வார்த்தை AI மதிப்பெண்ணைப் பெறுங்கள்.',
         update2Title: 'தஜ்வீத் எழுத்துருக்கள்',
         update2Desc: 'உங்கள் உச்சரிப்பை சரியாக்க அமைப்புகளில் புதிய வண்ணக் குறியீட்டு தஜ்வீத் எழுத்துருக்கள்.',
         update3Title: 'காரி முன்னோட்டம்',
@@ -490,7 +523,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
     ms: {
         // Banner
-        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -498,7 +531,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'Ramadan ini, manfaatkan setiap siang dan malam. Hafal, Baca, Renungi.',
-        versionBadge: 'Edisi Ramadan 2026',
+        versionBadge: 'v2.1.1',
         heroHeadline: 'Jadikan Ramadan ini',
         heroHeadlineHighlight: 'hafazan terkuat anda.',
         heroHeadlineTafsir: 'Jadikan Ramadan ini',
@@ -556,6 +589,17 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature3Title: 'Tafsir Ilmiah',
         dailyFeature3Desc: 'Dalami pemahaman anda dengan tafsir pelbagai bahasa terus dalam pembaca.',
 
+        // AI Intelligent Quiz
+        aiSectionBadge: 'Keupayaan AI Baru',
+        aiSectionTitle: 'Kuiz AI Pintar',
+        aiSectionDesc: 'Uji hafazan anda dengan tepat. Baca ke aplikasi dan AI canggih kami menilai ketepatan anda dengan kad skor peratusan perkataan demi perkataan.',
+        aiFeature1Title: 'Analisis Perkataan Demi Perkataan',
+        aiFeature1Desc: 'Terima skor peratusan untuk setiap satu perkataan yang anda baca.',
+        aiFeature2Title: 'Pemarkahan Ingatan Pintar',
+        aiFeature2Desc: 'Metrik ketepatan keseluruhan dan keyakinan dijana serta-merta.',
+        aiFeature3Title: 'Kenal Pasti Kesilapan',
+        aiFeature3Desc: 'Kenal pasti secara visual perkataan yang memerlukan lebih latihan berdasarkan keyakinan AI.',
+
         // FAQ
         faqTitle: 'Soalan Lazim',
         faqSubtitle: 'Semua yang perlu anda tahu tentang aplikasi iHafidh.',
@@ -578,9 +622,9 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'Putar peranti anda ke landskap untuk membuka pengalaman Emas sepenuhnya',
 
         // Latest Updates
-        updatesTitle: 'Kemas Kini Terkini (v2.0.8)',
-        update1Title: 'Ulangan Audio Mushaf',
-        update1Desc: 'Ulang audio mengikut ayat atau halaman untuk ulangan hafazan yang berkesan.',
+        updatesTitle: 'Kemas Kini Terkini (v2.1.1)',
+        update1Title: 'Kuiz AI Pintar',
+        update1Desc: 'Baca ayat dan dapatkan kad skor AI untuk ketepatan anda, satu perkataan demi satu perkataan.',
         update2Title: 'Fon Tajwid',
         update2Desc: 'Fon Tajwid berkod warna baharu dalam tetapan untuk menyempurnakan sebutan anda.',
         update3Title: 'Pratonton Qari',
@@ -649,7 +693,7 @@ export const translations: Record<Language, TranslationKeys> = {
     },
     ur: {
         // Banner
-        bannerText: 'Golden Edition v2.1 is live — New Tajweed fonts, audio repeat & more.',
+        bannerText: 'iHafidh v2.1.1 is live — New Intelligent AI Quiz & more.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -657,7 +701,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'اس رمضان ہر دن اور رات کو قیمتی بنائیں، حفظ کریں، تلاوت کریں اور غور و فکر کریں۔',
-        versionBadge: 'رمضان 2026 ایڈیشن',
+        versionBadge: 'v2.1.1',
         heroHeadline: 'گولڈ میں پڑھیں.',
         heroHeadlineHighlight: 'ہر لفظ کو سمجھیں۔',
         heroHeadlineTafsir: 'گولڈ میں پڑھیں.',
@@ -715,6 +759,17 @@ export const translations: Record<Language, TranslationKeys> = {
         dailyFeature3Title: 'علمی تفاسیر',
         dailyFeature3Desc: 'تلاوت کے دوران براہ راست کثیر لسانی تفاسیر کے ساتھ اپنی سمجھ کو گہرا کریں۔',
 
+        // AI Intelligent Quiz
+        aiSectionBadge: 'نئی AI صلاحیت',
+        aiSectionTitle: 'ذہین AI کوئز',
+        aiSectionDesc: 'اپنے حفظ کو درستگی کے ساتھ جانچیں۔ ایپ کو پڑھ کر سنائیں اور ہماری جدید AI ایک لفظ بہ لفظ فیصد اسکور کارڈ کے ساتھ آپ کی درستگی کا جائزہ لیتی ہے۔',
+        aiFeature1Title: 'لفظ بہ لفظ تجزیہ',
+        aiFeature1Desc: 'آپ کے پڑھے گئے ہر ایک لفظ کے لیے فیصد اسکور حاصل کریں۔',
+        aiFeature2Title: 'اسمارٹ ریکال اسکورنگ',
+        aiFeature2Desc: 'مجموعی درستگی اور اعتماد کی پیمائش فوری طور پر تیار کی گئی۔',
+        aiFeature3Title: 'غلطیوں کی نشاندہی کریں',
+        aiFeature3Desc: 'بصری طور پر شناخت کریں کہ کن الفاظ کو AI کے اعتماد کی بنیاد پر مزید مشق کی ضرورت ہے۔',
+
         // FAQ
         faqTitle: 'اکثر پوچھے گئے سوالات',
         faqSubtitle: 'iHafidh ایپ کے بارے میں وہ سب کچھ جو آپ جاننا چاہتے ہیں۔',
@@ -737,9 +792,9 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'مکمل گولڈن تجربہ حاصل کرنے کے لیے اپنے آلے کو لینڈ اسکیپ میں گھمائیں',
 
         // Latest Updates
-        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.0.8)',
-        update1Title: 'مصحف آڈیو ریپیٹ',
-        update1Desc: 'موثر حفظ کے لیے آیت یا صفحہ کی سطح پر آڈیو دہرائیں۔',
+        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.1.1)',
+        update1Title: 'ذہین AI کوئز',
+        update1Desc: 'آیت پڑھ کر سنائیں اور ہر لفظ کی درستگی پر AI اسکور کارڈ حاصل کریں۔',
         update2Title: 'تجویدی فونٹس',
         update2Desc: 'اپنے تلفظ کو درست کرنے کے لیے سیٹنگز میں نئے رنگین تجویدی فونٹس۔',
         update3Title: 'قاری کا پریویو',

@@ -34,6 +34,7 @@ import {
   Sparkles,
   Star,
   Sun,
+  Target,
   ToggleLeft,
   Twitter,
   Type,
@@ -292,6 +293,61 @@ function HomeContent() {
       </section>
 
       <FeaturesExplorer openDrawer={openDrawer} />
+
+      {/* AI Scorecard Highlight */}
+      <section className={styles.dailySection} id="ai-quiz">
+        <div className="container">
+          <div className={styles.statsSection} style={{ flexDirection: 'row' }}>
+            <div className={styles.statsContent}>
+              <div className={styles.badge} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981', borderColor: 'rgba(16, 185, 129, 0.3)' }}>{t('aiSectionBadge')}</div>
+              <h2 className={styles.goldGradientText} style={{ background: 'linear-gradient(to right, #10b981, #a7f3d0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{t('aiSectionTitle')}</h2>
+              <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
+                {t('aiSectionDesc')}
+              </p>
+
+              <div className={styles.readerFeatures}>
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Brain size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>{t('aiFeature1Title')}</h4>
+                    <p>{t('aiFeature1Desc')}</p>
+                  </div>
+                </div>
+
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Activity size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>{t('aiFeature2Title')}</h4>
+                    <p>{t('aiFeature2Desc')}</p>
+                  </div>
+                </div>
+
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981' }}><Target size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>{t('aiFeature3Title')}</h4>
+                    <p>{t('aiFeature3Desc')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.heroImageArea} style={{ flex: 1 }}>
+              <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(16, 185, 129, 0.4) 0%, transparent 70%)' }}></div>
+              <div className={styles.landscapeImageWrapper}>
+                <Image
+                  src="/ai-quiz-scorecard.png"
+                  alt="iHafidh AI Intelligent Quiz Scorecard"
+                  width={700}
+                  height={700}
+                  className="glass animate-float"
+                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(16, 185, 129, 0.4)' }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Stats Highlight */}
       <section className={styles.stats}>

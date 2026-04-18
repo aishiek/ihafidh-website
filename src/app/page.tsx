@@ -479,12 +479,9 @@ function HomeContent() {
               <p style={{ maxWidth: '600px', margin: '1rem auto 3rem' }}>
                 {t('ctaDesc')}
               </p>
-              <div className={styles.downloadButtons} style={{ justifyContent: 'center' }}>
-                <a href="https://apps.apple.com/sg/app/ihafidh/id6752505055" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/playstore-badge.png" alt="Download iHafidh on the Apple App Store" width={175} height={48} style={{ height: 'auto' }} />
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.ihafidh" target="_blank" rel="noopener noreferrer" className={styles.downloadButton}>
-                  <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={160} height={48} style={{ height: 'auto' }} />
+              <div className={styles.primaryCtaContainer} style={{ marginTop: '2rem' }}>
+                <a href="#" onClick={openDrawer} className={styles.ctaButton} style={{ background: '#2DD4BF', color: '#000', margin: '0 auto' }}>
+                  {t('downloadNow')} <ChevronRight size={20} />
                 </a>
               </div>
               <p style={{ marginTop: '2rem', fontWeight: 600 }}>{t('ctaTailoredFooter')}</p>

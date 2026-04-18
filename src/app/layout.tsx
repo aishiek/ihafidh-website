@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   keywords: ["iHafidh", "Hafidh", "Quran", "Memorization", "Hifz", "Hafil", "Hifl", "Hifdh", "Quran App", "Islamic Tracker", "AI Recitation", "Intelligent Quiz"],
   authors: [{ name: "iHafidh Team" }],
   openGraph: {
-    title: "iHafidh AI Edition v2.1.1 — Recite & Evaluate Your Quran",
-    description: "Speak a verse and get a word-by-word AI accuracy scorecard instantly. The first Quran app with AI-powered recitation evaluation.",
+    title: "iHafidh — Quran Memorization & AI Recitation",
+    description: "Recite a verse aloud in Quiz mode and get a word-by-word AI accuracy scorecard instantly. The first Quran app with AI evaluation.",
     url: "https://ihafidh.vercel.app",
     siteName: "iHafidh",
     images: [
       {
-        url: "/ai-quiz-scorecard.png",
+        url: "/og-ai-edition-v2.jpg?v=1",
         width: 1200,
         height: 630,
         alt: "iHafidh AI Quiz — Word-by-Word Recitation Scorecard",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "iHafidh AI Edition v2.1.1 — Recite & Evaluate Your Quran",
-    description: "Speak a verse and get a word-by-word AI accuracy scorecard instantly. Download free.",
-    images: ["/ai-quiz-scorecard.png"],
+    title: "iHafidh — Quran Memorization & AI Recitation",
+    description: "Recite a verse aloud in Quiz mode and get a word-by-word AI accuracy scorecard instantly. Download free.",
+    images: ["/og-ai-edition-v2.jpg?v=1"],
   },
   robots: {
     index: true,
@@ -67,7 +67,8 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:secure_url" content="https://ihafidh-website.vercel.app/og-ai-edition-v2.jpg" />
+        <meta property="og:secure_url" content="https://ihafidh-website.vercel.app/og-ai-edition-v2.jpg?v=1" />
+        <meta property="og:image" content="https://ihafidh-website.vercel.app/og-ai-edition-v2.jpg?v=1" />
       </head>
       <body className={outfit.className}>
         {children}

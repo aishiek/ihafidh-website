@@ -274,7 +274,7 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4Q: 'Can I track both Surah and Juz progress?',
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
         faq5Q: 'How is iHafidh different from other Quran apps?',
-        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. Now with AI-powered recitation evaluation — the first Quran memorization app to give you a word-by-word accuracy scorecard from your own voice. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
+        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. Now with AI-powered recitation evaluation — iHafidh app gives you a word-by-word accuracy scorecard from your own voice. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
         trustUsedBy: 'Used by Muslims in 40+ countries',
         trustFree: 'Free to Download',
         ctaTailoredHow: 'Start in Minutes — Download Free',

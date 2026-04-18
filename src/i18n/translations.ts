@@ -101,6 +101,8 @@ type TranslationKeys = {
     faq4A: string;
     faq5Q: string;
     faq5A: string;
+    goldenLandscapeTitle: string;
+    goldenLandscapeDesc: string;
 
     // Latest Updates
     updatesTitle: string;
@@ -275,6 +277,8 @@ export const translations: Record<Language, TranslationKeys> = {
         faq4A: 'Absolutely. iHafidh allows you to track your progress at both the Surah level (all 114) and Juz level (all 30) simultaneously.',
         faq5Q: 'How is iHafidh different from other Quran apps?',
         faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. Now with AI-powered recitation evaluation — iHafidh app gives you a word-by-word accuracy scorecard from your own voice. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
+        goldenLandscapeTitle: 'Adaptive Landscape',
+        goldenLandscapeDesc: 'Designed for large tablets and smartphone orientation changes.',
         trustUsedBy: 'Used by Muslims in 40+ countries',
         trustFree: 'Free to Download',
         ctaTailoredHow: 'Start in Minutes — Download Free',
@@ -446,8 +450,10 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'ஆங்கிலம் (அசத், பிக்தால், ஸஹீஹ்), உருது, தமிழ், பிரெஞ்சு, இந்தி மற்றும் பல மொழிகளில் பரந்த அளவிலான மொழிபெயர்ப்புகளை நாங்கள் வழங்குகிறோம்.',
         faq4Q: 'சூரா மற்றும் ஜுஸ் முன்னேற்றம் இரண்டையும் கண்காணிக்க முடியுமா?',
         faq4A: 'நிச்சயமாக. iHafidh சூரா நிலை (அனைத்து 114) மற்றும் ஜுஸ் நிலை (அனைத்து 30) இரண்டிலும் ஒரே நேரத்தில் உங்கள் முன்னேற்றத்தைக் காணலாம்.',
-        faq5Q: 'How is iHafidh different from other Quran apps?',
-        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
+        faq5Q: 'மற்ற குர்ஆன் செயலிகளிலிருந்து iHafidh எவ்வாறு வேறுபடுகிறது?',
+        faq5A: 'பெரும்பாலான குர்ஆன் செயலிகள் ஓதுவதில் கவனம் செலுத்துகின்றன. iHafidh குறிப்பாக மனப்பாடம் செய்வதற்காக உருவாக்கப்பட்டது — அனைத்து 114 சூராக்கள் மற்றும் 30 ஜூஸ்கள் முழுவதும் முன்னேற்றத்தைக் கண்காணித்தல், இடைவெளி மறுபடியும் (spaced repetition), விரிவான பகுப்பாய்வு மற்றும் அதிவேக கோல்டன் குர்ஆன் பயன்முறை ஆகியவற்றை இணைக்கிறது. இது தினசரி வாசிப்புக்கு மட்டுமின்றி, தங்கள் ஹிஃப்ழ் பயணத்தில் தீவிரமாக இருப்பவர்களுக்கான ஒரு கருவியாகும்.',
+        goldenLandscapeTitle: 'தழுவல் நிலப்பரப்பு',
+        goldenLandscapeDesc: 'பெரிய டேப்லெட்டுகள் மற்றும் ஸ்மார்ட்போன் நோக்குநிலை மாற்றங்களுக்காக வடிவமைக்கப்பட்டது.',
         trustUsedBy: '40+ நாடுகளில் உள்ள முஸ்லிம்களால் பயன்படுத்தப்படுகிறது',
         trustFree: 'பதிவிறக்கம் செய்ய இலவசம்',
         ctaTailoredHow: 'நிமிடங்களில் தொடங்குங்கள் - இலவசமாக பதிவிறக்குங்கள்',
@@ -619,8 +625,10 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'Kami menawarkan pelbagai terjemahan dalam pelbagai bahasa termasuk Bahasa Inggeris (Asad, Pickthall, Sahih), Urdu, Tamil, Perancis, Hindi, dan banyak lagi.',
         faq4Q: 'Bolehkah saya jejak kemajuan Surah dan Juzuk?',
         faq4A: 'Sudah tentu. iHafidh membolehkan anda menjejaki kemajuan anda di peringkat Surah (semua 114) dan peringkat Juzuk (semua 30) secara serentak.',
-        faq5Q: 'How is iHafidh different from other Quran apps?',
-        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
+        faq5Q: 'Bagaimana iHafidh berbeza daripada aplikasi Al-Quran yang lain?',
+        faq5A: 'Kebanyakan aplikasi Al-Quran fokus kepada pembacaan. iHafidh dibina khusus untuk hafalan — menggabungkan penjejakan kemajuan merangkumi semua 114 Surah dan 30 Juz, pengulangan jarak (spaced repetition), analitik terperinci, dan Mod Emas Al-Quran yang imersif. Ia adalah alat untuk mereka yang serius dengan perjalanan Hifz mereka, bukan sekadar bacaan harian.',
+        goldenLandscapeTitle: 'Landskap Adaptif',
+        goldenLandscapeDesc: 'Direka untuk tablet besar dan perubahan orientasi telefon pintar.',
         trustUsedBy: 'Digunakan oleh Muslim di 40+ negara',
         trustFree: 'Percuma untuk Dimuat Turun',
         ctaTailoredHow: 'Mula dalam Minit — Muat Turun Percuma',
@@ -791,8 +799,10 @@ export const translations: Record<Language, TranslationKeys> = {
         faq3A: 'ہم انگریزی، اردو، تمل، فرانسیسی، ہندی اور بہت سی زبانوں میں تراجم کی ایک وسیع رینج پیش کرتے ہیں۔',
         faq4Q: 'کیا میں سورہ اور جزو دونوں کی پیشرفت ٹریک کر سکتا ہوں؟',
         faq4A: 'بالکل۔ iHafidh آپ کو سورہ اور پارہ دونوں سطحوں پر بیک وقت اپنی پیشرفت ٹریک کرنے کی اجازت دیتا ہے۔',
-        faq5Q: 'How is iHafidh different from other Quran apps?',
-        faq5A: 'Most Quran apps focus on reading. iHafidh is built specifically for memorization — combining progress tracking across all 114 Surahs and 30 Juz, spaced repetition, detailed analytics, and the immersive Golden Quran Mode. It\'s a tool for those serious about their Hifdh journey, not just daily reading.',
+        faq5Q: 'آئی حافظ (iHafidh) دیگر قرآن ایپس سے کیسے مختلف ہے؟',
+        faq5A: 'زیادہ تر قرآن ایپس تلاوت پر توجہ مرکوز کرتی ہیں۔ آئی حافظ خاص طور پر حفظ کے لیے بنایا گیا ہے — جو تمام 114 سورتوں اور 30 پاروں میں پیشرفت سے باخبر رہنے، سپیسڈ ریپیٹیشن، تفصیلی تجزیات، اور عمیق گولڈن قرآن موڈ کو یکجا کرتا ہے۔ یہ ان لوگوں کے لیے ایک بہترین ذریعہ ہے جو اپنے سفرِ حفظ کے بارے میں سنجیدہ ہیں، نہ کہ صرف روزانہ کی تلاوت کے لیے۔',
+        goldenLandscapeTitle: 'اڈاپٹیو لینڈ اسکیپ',
+        goldenLandscapeDesc: 'بڑے ٹیبلٹس اور اسمارٹ فون کی تبدیلیوں کے لیے ڈیزائن کیا گیا ہے۔',
         trustUsedBy: '40 سے زائد ممالک کے مسلمان استعمال کر رہے ہیں',
         trustFree: 'ڈاؤن لوڈ کرنے کے لیے مفت',
         ctaTailoredHow: 'منٹوں میں شروع کریں - مفت ڈاؤن لوڈ کریں',

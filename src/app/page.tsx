@@ -271,8 +271,8 @@ function HomeContent() {
                 <div className={styles.readerFeatureItem}>
                   <div className={styles.readerFeatureIcon} style={{ background: 'rgba(212,175,55,0.1)', color: '#D4AF37' }}><Maximize size={20} /></div>
                   <div>
-                    <h4 style={{ color: '#fff' }}>Adaptive Landscape</h4>
-                    <p>Designed for large tablets and smartphone orientation changes.</p>
+                    <h4 style={{ color: '#fff' }}>{t('goldenLandscapeTitle')}</h4>
+                    <p>{t('goldenLandscapeDesc')}</p>
                   </div>
                 </div>
 

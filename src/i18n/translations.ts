@@ -85,6 +85,7 @@ type TranslationKeys = {
     aiFeature2Desc: string;
     aiFeature3Title: string;
     aiFeature3Desc: string;
+    aiDisclaimer: string;
 
     // FAQ
     faqTitle: string;
@@ -257,6 +258,7 @@ export const translations: Record<Language, TranslationKeys> = {
         aiFeature2Desc: 'Overall accuracy and confidence metrics generated instantly.',
         aiFeature3Title: 'Pinpoint Mistakes',
         aiFeature3Desc: 'Visually identify which words need more practice based on AI confidence.',
+        aiDisclaimer: '* Disclaimer: AI can make mistakes. Tajweed rules and Quran recitation accuracy evaluation may differ from human review.',
 
         // FAQ
         faqTitle: 'Frequently Asked Questions',
@@ -428,6 +430,7 @@ export const translations: Record<Language, TranslationKeys> = {
         aiFeature2Desc: 'ஒட்டுமொத்த துல்லியம் மற்றும் நம்பிக்கை அளவீடுகள் உடனடியாக உருவாக்கப்படும்.',
         aiFeature3Title: 'தவறுகளை சுட்டிக்காட்டுங்கள்',
         aiFeature3Desc: 'AI நம்பிக்கையின் அடிப்படையில் எந்த வார்த்தைகளுக்கு அதிக பயிற்சி தேவை என்பதை காட்சி மூலம் அடையாளம் காணவும்.',
+        aiDisclaimer: '* மறுப்பு: AI தவறுகளைச் செய்யலாம். தஜ்வீத் விதிகள் மற்றும் குர்ஆன் ஓதுதல் துல்லிய மதிப்பீடு மனித மதிப்பாய்விலிருந்து மாறுபடலாம்.',
 
         // FAQ
         faqTitle: 'அடிக்கடி கேட்கப்படும் கேள்விகள் (FAQ)',
@@ -599,6 +602,7 @@ export const translations: Record<Language, TranslationKeys> = {
         aiFeature2Desc: 'Metrik ketepatan keseluruhan dan keyakinan dijana serta-merta.',
         aiFeature3Title: 'Kenal Pasti Kesilapan',
         aiFeature3Desc: 'Kenal pasti secara visual perkataan yang memerlukan lebih latihan berdasarkan keyakinan AI.',
+        aiDisclaimer: '* Penafian: AI boleh membuat kesilapan. Hukum Tajwid dan penilaian ketepatan bacaan Al-Quran mungkin berbeza daripada semakan manusia.',
 
         // FAQ
         faqTitle: 'Soalan Lazim',
@@ -769,6 +773,7 @@ export const translations: Record<Language, TranslationKeys> = {
         aiFeature2Desc: 'مجموعی درستگی اور اعتماد کی پیمائش فوری طور پر تیار کی گئی۔',
         aiFeature3Title: 'غلطیوں کی نشاندہی کریں',
         aiFeature3Desc: 'بصری طور پر شناخت کریں کہ کن الفاظ کو AI کے اعتماد کی بنیاد پر مزید مشق کی ضرورت ہے۔',
+        aiDisclaimer: '* دستبرداری: AI غلطیاں کر سکتا ہے۔ تجوید کے قواعد اور قرآن کی تلاوت کی درستگی کا جائزہ انسانی جائزے سے مختلف ہو سکتا ہے۔',
 
         // FAQ
         faqTitle: 'اکثر پوچھے گئے سوالات',

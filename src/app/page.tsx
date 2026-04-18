@@ -207,6 +207,9 @@ function HomeContent() {
               <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.35rem', marginBottom: '0.5rem' }}>
                 {t('aiSectionDesc')}
               </p>
+              <p className="animate-fade-in" style={{ animationDelay: '0.11s', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic', marginBottom: '1.5rem', maxWidth: '90%', marginInline: 'auto' }}>
+                {t('aiDisclaimer')}
+              </p>
               <p className="animate-fade-in" style={{ animationDelay: '0.12s', fontSize: '1rem', color: '#06b6d4', fontWeight: 600, marginBottom: '1.5rem' }}>
                 {t('availabilityText')}
               </p>

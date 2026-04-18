@@ -170,46 +170,33 @@ function HomeContent() {
               <a href="#" onClick={openDrawer} className={styles.ctaButton}>
                 {t('downloadNow')}
               </a>
-              <div className={styles.navSunnahBadge}>
-                <Clock size={16} color="var(--primary)" />
-                <span>{t('sunnahFasting')}</span>
-              </div>
             </div>
           </div>
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section — AI Quiz Focus */}
       <section className={styles.hero}>
         <div className={`${styles.heroContainer} container`}>
           <div className={styles.heroContent}>
             <div className={styles.heroInfo}>
-              <p className="animate-fade-in" style={{
-                color: '#D4AF37',
-                fontSize: '1.1rem',
-                fontWeight: 500,
-                marginBottom: '1rem',
-                fontFamily: 'var(--font-heading)'
-              }}>
-                {t('ramadanText')}
-              </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '1.5rem' }}>
-                <span className={`${styles.badge} animate-fade-in`}>{t('versionBadge')}</span>
-                <a href="#features" className={`${styles.featuresBadge} animate-fade-in`} style={{ animationDelay: '0.1s', textDecoration: 'none' }}>{t('featuresCount')}</a>
-              </div>
-              <div className={styles.dualHeadlineWrapper} style={{ justifyContent: 'center', textAlign: 'center', gridTemplateColumns: '1fr' }}>
-                <div className={styles.dualHeadlinePart} style={{ width: '100%', maxWidth: '100%' }}>
-                  <h1 className="animate-fade-in" style={{ fontSize: 'clamp(2.5rem, 8vw, 4.5rem)', color: '#fff' }}>
-                    <span className={styles.goldGradientText}>{t('heroHeadline')}</span> {t('heroHeadlineHighlight')}
-                  </h1>
+                <div className={styles.badge} style={{ background: 'rgba(45,212,191,0.12)', color: '#2DD4BF', borderColor: 'rgba(45,212,191,0.35)' }}>
+                  🎙️ {t('aiSectionBadge')}
                 </div>
+                <span className={`${styles.featuresBadge} animate-fade-in`}>{t('versionBadge')}</span>
               </div>
-              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.25rem', marginBottom: '0.25rem', color: '#94a3b8' }}>
-                {t('heroSubheadline')}
+              <div style={{ marginBottom: '1.5rem' }}>
+                <h1 className="animate-fade-in" style={{ fontSize: 'clamp(2.5rem, 8vw, 4.2rem)', color: '#fff', lineHeight: 1.15 }}>
+                  <span style={{ background: 'linear-gradient(135deg, #2DD4BF 0%, #67e8f9 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: 800 }}>{t('aiSectionTitle')}</span>
+                </h1>
+              </div>
+              <p className="animate-fade-in" style={{ animationDelay: '0.1s', fontSize: '1.25rem', marginBottom: '0.5rem', color: '#94a3b8' }}>
+                {t('aiSectionDesc')}
               </p>
-              <p className="animate-fade-in" style={{ animationDelay: '0.11s', fontSize: '1.05rem', marginBottom: '1.5rem', fontWeight: 600 }}>
+              <p className="animate-fade-in" style={{ animationDelay: '0.11s', fontSize: '1rem', marginBottom: '1.75rem', fontWeight: 600 }}>
                 <span style={{ color: '#2DD4BF' }}>Recite in AI</span>
-                <span style={{ color: '#94a3b8' }}> — {t('aiHeroTagline').replace('Recite in AI — ', '').replace('AI-உடன் ஓதுங்கள் — ', '').replace('Baca dengan AI — ', '').replace('AI کے ساتھ تلاوت کریں — ', '')}</span>
+                <span style={{ color: '#64748b' }}> — {t('aiHeroTagline').replace('Recite in AI — ', '').replace('AI-உடன் ஓதுங்கள் — ', '').replace('Baca dengan AI — ', '').replace('AI کے ساتھ تلاوت کریں — ', '')}</span>
               </p>
 
               {/* Trust Bar */}
@@ -229,21 +216,18 @@ function HomeContent() {
                   <Image src="/appstore-badge.png" alt="Get iHafidh on Google Play Store" width={190} height={56} style={{ height: 'auto' }} />
                 </a>
               </div>
-              <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#64748b', fontStyle: 'italic', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Clock size={14} /> {t('trustFree')}
-              </p>
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
-            <div className={styles.heroGlow}></div>
+            <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(45,212,191,0.35) 0%, transparent 70%)' }}></div>
             <div className={styles.heroImageWrapper}>
               <Image
-                src="/hero-preview.png"
-                alt="iHafidh App Main Dashboard Preview"
-                width={350}
-                height={700}
+                src="/ai-quiz-scorecard.png"
+                alt="iHafidh AI Intelligent Quiz Scorecard"
+                width={380}
+                height={760}
                 className="animate-float"
-                style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto' }}
+                style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto', borderRadius: '24px', border: '2px solid rgba(45,212,191,0.35)' }}
               />
             </div>
           </div>
@@ -299,13 +283,13 @@ function HomeContent() {
         ✦&nbsp; Recite in AI &nbsp;✦
       </div>
 
-      {/* AI Scorecard Highlight */}
+      {/* AI Scorecard Feature Detail */}
       <section className={styles.dailySection} id="ai-quiz">
         <div className="container">
           <div className={styles.statsSection} style={{ flexDirection: 'row' }}>
             <div className={styles.statsContent}>
               <div className={styles.badge} style={{ background: 'rgba(45, 212, 191, 0.12)', color: '#2DD4BF', borderColor: 'rgba(45, 212, 191, 0.35)' }}>{t('aiSectionBadge')}</div>
-              <h2 style={{ background: 'linear-gradient(to right, #2DD4BF, #67e8f9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{t('aiSectionTitle')}</h2>
+              <h2 style={{ background: 'linear-gradient(to right, #2DD4BF, #67e8f9)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: 800, fontSize: '2rem', marginBottom: '1rem' }}>{t('aiSectionTitle')}</h2>
               <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>
                 {t('aiSectionDesc')}
               </p>
@@ -358,6 +342,63 @@ function HomeContent() {
         </div>
       </section>
 
+      {/* Golden Read Mode Section */}
+      <section className={styles.dailySection} id="golden-mode">
+        <div className="container">
+          <div className={styles.statsSection} style={{ flexDirection: 'row-reverse' }}>
+            <div className={styles.statsContent}>
+              <div className={styles.badge} style={{ background: 'rgba(212,175,55,0.12)', color: '#D4AF37', borderColor: 'rgba(212,175,55,0.3)' }}>{t('heroHeadline').replace('.', '')}</div>
+              <h2 style={{ background: 'linear-gradient(135deg, #f59e0b 0%, #D4AF37 50%, #f59e0b 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', fontWeight: 800, fontSize: '2rem', marginBottom: '1rem' }}>
+                {t('heroHeadline')} {t('heroHeadlineHighlight')}
+              </h2>
+              <p style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>
+                {t('heroSubheadline')}
+              </p>
+
+              <div className={styles.readerFeatures}>
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(212,175,55,0.1)', color: '#D4AF37' }}><Sparkles size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>{t('dailyFeature1Title')}</h4>
+                    <p>{t('dailyFeature1Desc')}</p>
+                  </div>
+                </div>
+
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(212,175,55,0.1)', color: '#D4AF37' }}><Languages size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>{t('dailyFeature2Title')}</h4>
+                    <p>{t('dailyFeature2Desc')}</p>
+                  </div>
+                </div>
+
+                <div className={styles.readerFeatureItem}>
+                  <div className={styles.readerFeatureIcon} style={{ background: 'rgba(212,175,55,0.1)', color: '#D4AF37' }}><Search size={20} /></div>
+                  <div>
+                    <h4 style={{ color: '#fff' }}>{t('dailyFeature3Title')}</h4>
+                    <p>{t('dailyFeature3Desc')}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.heroImageArea} style={{ flex: 1 }}>
+              <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(212,175,55,0.25) 0%, transparent 70%)' }}></div>
+              <div className={styles.landscapeImageWrapper} style={{ border: '1px solid rgba(212,175,55,0.3)' }}>
+                <Image
+                  src="/daily-preview.png"
+                  alt="iHafidh Golden Quran Mode Landscape"
+                  width={700}
+                  height={350}
+                  className="glass animate-float"
+                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto' }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Highlight */}
       <section className={styles.stats}>
         <div className="container">
@@ -379,73 +420,15 @@ function HomeContent() {
               </p>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="#C9A84C" /> {t('statsList1')}
+                  <CheckCircle2 color="#2DD4BF" /> {t('statsList1')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="#C9A84C" /> {t('statsList2')}
+                  <CheckCircle2 color="#2DD4BF" /> {t('statsList2')}
                 </li>
                 <li style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem', color: '#fff' }}>
-                  <CheckCircle2 color="#C9A84C" /> {t('statsList3')}
+                  <CheckCircle2 color="#2DD4BF" /> {t('statsList3')}
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Daily Recitation Section */}
-      <section className={styles.dailySection} id="daily-recitation">
-        <div className="container">
-          <div className={styles.statsSection} style={{ flexDirection: 'row-reverse' }}>
-            <div className={styles.statsContent}>
-              <div className={styles.badge}>{t('dailyBadge')}</div>
-              <h2 className={styles.goldGradientText}>{t('dailyTitle')}</h2>
-                <p style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>
-                  {t('dailyDesc')}
-                </p>
-                <div style={{ fontStyle: 'italic', fontSize: '0.9rem', color: '#D4AF37', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <RotateCw size={14} /> {t('landscapeNudge')}
-                </div>
-
-              <div className={styles.readerFeatures}>
-                <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon}><Sparkles size={20} /></div>
-                  <div>
-                    <h4 style={{ color: '#fff' }}>{t('dailyFeature1Title')}</h4>
-                    <p>{t('dailyFeature1Desc')}</p>
-                  </div>
-                </div>
-
-                <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon}><Languages size={20} /></div>
-                  <div>
-                    <h4 style={{ color: '#fff' }}>{t('dailyFeature2Title')}</h4>
-                    <p>{t('dailyFeature2Desc')}</p>
-                  </div>
-                </div>
-
-                <div className={styles.readerFeatureItem}>
-                  <div className={styles.readerFeatureIcon}><Search size={20} /></div>
-                  <div>
-                    <h4 style={{ color: '#fff' }}>{t('dailyFeature3Title')}</h4>
-                    <p>{t('dailyFeature3Desc')}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.heroImageArea} style={{ flex: 1 }}>
-              <div className={styles.heroGlow}></div>
-              <div className={styles.landscapeImageWrapper}>
-                <Image
-                  src="/daily-preview.png"
-                  alt="iHafidh Golden Quran Mode Landscape"
-                  width={700}
-                  height={350}
-                  className="glass animate-float"
-                  style={{ borderRadius: '24px', objectFit: 'cover', zIndex: 2, position: 'relative', maxWidth: '100%', height: 'auto', border: '2px solid rgba(212, 175, 55, 0.4)' }}
-                />
-              </div>
             </div>
           </div>
         </div>

@@ -13,8 +13,8 @@
 }
 
 .launchBanner {
-  background: #C9A84C;
-  color: #1a1a1a;
+  background: #0d9488;
+  color: #fff;
   text-align: center;
   padding: 0.6rem 1rem;
   font-size: 0.9rem;
@@ -31,7 +31,7 @@
   margin-bottom: 3rem;
   position: relative;
   padding-left: 2rem;
-  border-left: 4px solid #C9A84C;
+  border-left: 4px solid #2DD4BF;
 }
 
 .heroQuoteAuthor {
@@ -79,10 +79,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(201, 168, 76, 0.1);
+  background: rgba(45, 212, 191, 0.1);
   padding: 0.4rem 0.8rem;
   border-radius: 100px;
-  border: 1px solid rgba(201, 168, 76, 0.2);
+  border: 1px solid rgba(45, 212, 191, 0.2);
   font-size: 0.8rem;
   font-weight: 500;
   color: #fff;
@@ -128,8 +128,8 @@
   padding-bottom: 1rem;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at top right, rgba(201, 168, 76, 0.15), transparent),
-              radial-gradient(circle at bottom left, rgba(201, 168, 76, 0.05), transparent);
+  background: radial-gradient(circle at top right, rgba(45, 212, 191, 0.12), transparent),
+              radial-gradient(circle at bottom left, rgba(45, 212, 191, 0.05), transparent);
 }
 
 .hero::after {
@@ -139,7 +139,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0l10 30h30l-25 20 10 30-25-20-25 20 10-30-25-20h30z' fill='%23C9A84C' fill-opacity='0.05'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0l10 30h30l-25 20 10 30-25-20-25 20 10-30-25-20h30z' fill='%232DD4BF' fill-opacity='0.04'/%3E%3C/svg%3E");
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
@@ -152,7 +152,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0 C70 30 90 30 120 40 C90 50 70 50 60 80 C50 50 30 50 0 40 C30 30 50 30 60 0' fill='%23C9A84C' fill-opacity='0.03'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M60 0 C70 30 90 30 120 40 C90 50 70 50 60 80 C50 50 30 50 0 40 C30 30 50 30 60 0' fill='%232DD4BF' fill-opacity='0.03'/%3E%3C/svg%3E");
   opacity: 1;
   pointer-events: none;
   z-index: 0;
@@ -175,7 +175,7 @@
 .faqItem,
 .stepCard,
 .card {
-  border-color: rgba(212, 175, 55, 0.3);
+  border-color: rgba(45, 212, 191, 0.25);
 }
 
 .navCountdown {
@@ -225,8 +225,8 @@
 }
 
 .featureCard:hover {
-  border-color: rgba(212, 175, 55, 0.6);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+  border-color: rgba(45, 212, 191, 0.5);
+  box-shadow: 0 10px 30px rgba(45, 212, 191, 0.08);
 }
 
 /* Footer Logo Enlarge */
@@ -463,13 +463,13 @@
 .featuresBadge {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(212, 175, 55, 0.1);
-  color: #D4AF37;
+  background: rgba(45, 212, 191, 0.1);
+  color: #2DD4BF;
   border-radius: 100px;
   font-size: 0.875rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(45, 212, 191, 0.2);
 }
 
 /* .hero h1 {
@@ -506,8 +506,8 @@
 }
 
 .ctaButton {
-  background: #C9A84C;
-  color: #1a1a1a;
+  background: #2DD4BF;
+  color: #0a0a0a;
   padding: 1rem 2.5rem;
   border-radius: 100px;
   font-weight: 700;
@@ -517,15 +517,15 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+  box-shadow: 0 4px 20px rgba(45, 212, 191, 0.35);
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .ctaButton:hover {
   transform: translateY(-2px);
-  background: #B0923E;
-  box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
+  background: #14b8a6;
+  box-shadow: 0 6px 25px rgba(45, 212, 191, 0.5);
 }
 
 
@@ -561,7 +561,7 @@
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(45, 212, 191, 0.25);
   transition: transform 0.3s ease;
 }
 
@@ -602,13 +602,13 @@
 .featureIcon {
   width: 60px;
   height: 60px;
-  background: rgba(201, 168, 76, 0.1);
+  background: rgba(45, 212, 191, 0.1);
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: #C9A84C;
+  color: #2DD4BF;
 }
 
 .featureCard h3 {
@@ -632,7 +632,7 @@
 
 .cta {
   text-align: center;
-  background: linear-gradient(rgba(201, 168, 76, 0.1), transparent);
+  background: linear-gradient(rgba(45, 212, 191, 0.08), transparent);
 }
 
 .footer {
@@ -667,12 +667,12 @@
   flex-shrink: 0;
   width: 40px;
   height: 40px;
-  background: rgba(201, 168, 76, 0.1);
+  background: rgba(45, 212, 191, 0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #C9A84C;
+  color: #2DD4BF;
 }
 
 .readerFeatureItem h4 {
@@ -867,10 +867,10 @@
 }
 
 .tabButton.active {
-  background: rgba(201, 168, 76, 0.15);
-  border-color: #C9A84C;
+  background: rgba(45, 212, 191, 0.12);
+  border-color: #2DD4BF;
   color: #fff;
-  box-shadow: 0 0 15px rgba(201, 168, 76, 0.2);
+  box-shadow: 0 0 15px rgba(45, 212, 191, 0.2);
 }
 
 .tabButton:hover:not(.active) {
@@ -897,13 +897,13 @@
 
 .fCard:hover {
   transform: translateY(-5px);
-  border-color: rgba(212, 175, 55, 0.6);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(212, 175, 55, 0.1);
+  border-color: rgba(45, 212, 191, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(45, 212, 191, 0.1);
 }
 
 .fIcon {
-  color: #C9A84C;
-  background: rgba(201, 168, 76, 0.1);
+  color: #2DD4BF;
+  background: rgba(45, 212, 191, 0.1);
   width: 48px;
   height: 48px;
   border-radius: 12px;
@@ -951,8 +951,17 @@
   animation: shimmer 3s infinite;
 }
 
-/* Golden Gradient Text */
+/* AI Teal Gradient Text — used for all primary headings */
 .goldGradientText {
+  background: linear-gradient(135deg, #2DD4BF 0%, #67e8f9 50%, #2DD4BF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+/* Gold gradient kept separately for Golden Mode section */
+.goldAccentText {
   background: linear-gradient(135deg, #f59e0b 0%, #D4AF37 50%, #f59e0b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

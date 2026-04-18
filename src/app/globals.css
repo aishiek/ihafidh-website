@@ -1,13 +1,14 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
-  --primary: #C9A84C;
-  --primary-rgb: 201, 168, 76;
+  --primary: #2DD4BF;
+  --primary-rgb: 45, 212, 191;
   --secondary: #101828;
-  --accent: #f59e0b; /* Amber 500 */
+  --accent: #14b8a6; /* Teal 500 */
+  --gold: #D4AF37;   /* Keep gold for Golden Mode section */
   --card-bg: rgba(255, 255, 255, 0.03);
   --card-border: rgba(255, 255, 255, 0.1);
-  --selection: rgba(201, 168, 76, 0.3);
+  --selection: rgba(45, 212, 191, 0.25);
 }
 
 * {

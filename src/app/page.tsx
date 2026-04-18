@@ -237,15 +237,15 @@ function HomeContent() {
             </div>
           </div>
           <div className={`${styles.heroImageArea} animate-fade-in`} style={{ animationDelay: '0.3s' }}>
-            <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(45,212,191,0.35) 0%, transparent 70%)', width: '500px', height: '500px' }}></div>
-            <div className={styles.heroImageWrapper}>
+            <div className={styles.heroGlow} style={{ background: 'radial-gradient(circle, rgba(45,212,191,0.35) 0%, transparent 70%)', width: '600px', height: '600px' }}></div>
+            <div className={styles.heroImageWrapper} style={{ border: '2px solid rgba(45,212,191,0.3)' }}>
               <Image
-                src="/ai-quiz-scorecard.png"
-                alt="iHafidh AI Intelligent Quiz Scorecard"
-                width={420}
-                height={840}
+                src="/og-ai-edition-v2.jpg"
+                alt="iHafidh AI Intelligent Quiz Evaluation"
+                width={720}
+                height={380}
                 className="animate-float"
-                style={{ objectFit: 'contain', maxWidth: '100%', height: 'auto', borderRadius: '24px', border: '2px solid rgba(45,212,191,0.35)' }}
+                style={{ objectFit: 'cover', maxWidth: '100%', height: 'auto', borderRadius: '32px' }}
               />
             </div>
           </div>

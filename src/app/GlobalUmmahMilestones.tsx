@@ -114,7 +114,7 @@ const SECTION_TRANSLATIONS = {
     quizzesDesc: 'Tajweed & Hifdh verification sessions',
     audioTitle: 'Audio Recitations Played',
     audioDesc: 'Repetition & active listening sessions',
-    footerCaption: 'These aspirational milestones reflect our sincere goal for the global iHafidh community. Please make Du\'a that Allah (SWT) helps our Ummah achieve and surpass these numbers together!',
+    footerCaption: 'While these milestone numbers reflect our aspirational vision for the Ummah, the actual real-time Community Stats and an interactive Surah bubble map tracking all 114 chapters of the Holy Quran are LIVE inside the iHafidh app right now! Please make Du\'a that we achieve and surpass these aspirational goals together!',
     aspirationalNote: 'Aspirational Vision • Make Du\'a For Us 🤲',
   },
   ur: {
@@ -134,7 +134,7 @@ const SECTION_TRANSLATIONS = {
     quizzesDesc: 'تجوید اور حفظ کی فوری تصدیق',
     audioTitle: 'آڈیو تلاوتیں سنی گئیں',
     audioDesc: 'تکرار اور سننے کے سیشنز',
-    footerCaption: 'یہ خواہش مندانہ سنگ میل عالمی iHafidh کمیونٹی کے لیے ہمارے مخلصانہ وژن اور ہدف کی عکاسی کرتے ہیں۔ براہِ کرم دعا کریں کہ اللہ سبحانہ وتعالیٰ ہماری امت کو مل کر ان اہداف تک پہنچنے کی توفیق عطا فرمائے!',
+    footerCaption: 'اگرچہ اوپر دیے گئے اعداد و شمار ہماری امت کے لیے خواہش مندانہ وژن ہیں، لیکن اصل لائیو کمیونٹی اعداد و شمار اور قرآن مجید کی 114 سورتوں کی تلاوت کا انٹرایکٹو ببل میپ iHafidh ایپ کے اندر لائیو دستیاب ہے! براہ کرم دعا کریں کہ ہم مل کر ان اہداف کو حاصل کریں!',
     aspirationalNote: 'خواہش مندانہ وژن • ہمارے لیے دعا کریں 🤲',
   },
   ta: {
@@ -154,7 +154,7 @@ const SECTION_TRANSLATIONS = {
     quizzesDesc: 'தஜ்வீத் & ஹிஃப்ழ் சரிபார்ப்பு அமர்வுகள்',
     audioTitle: 'ஒலிபரப்பப்படும் ஓதுதல்கள்',
     audioDesc: 'கேட்டல் மற்றும் திரும்ப ஓதும் அமர்வுகள்',
-    footerCaption: 'இந்த லட்சிய மைல்கற்கள் உலகளாவிய iHafidh சமூகத்திற்கான எங்கள் உண்மையான இலக்கைப் பிரதிபலிக்கின்றன. அல்லாஹ் (SWT) நாம் உம்மத்தாக இந்த இலக்குகளை எட்ட உதவ துவா செய்யுங்கள்!',
+    footerCaption: 'மேலே உள்ள எண்கள் நமது உம்மத்திற்கான லட்சிய இலக்குகளாக இருந்தாலும், குர்ஆனின் 114 அத்தியாயங்களின் ஓதுதல்களைக் கண்காணிக்கும் உண்மையான நேரலை சமூக புள்ளிவிவரங்கள் மற்றும் ஊடாடும் சூரா வரைபடம் iHafidh செயலியில் நேரலையில் உள்ளது! அல்லாஹ் (SWT) நாம் உம்மத்தாக இந்த இலக்குகளை எட்ட உதவ துவா செய்யுங்கள்!',
     aspirationalNote: 'லட்சிய இலக்கு • எங்களுக்காக துவா செய்யுங்கள் 🤲',
   },
   ms: {
@@ -174,7 +174,7 @@ const SECTION_TRANSLATIONS = {
     quizzesDesc: 'Sesi pengesahan Tajwid & Hafazan',
     audioTitle: 'Bacan Audio Dimainkan',
     audioDesc: 'Sesi ulangan & mendengarkan bacaan',
-    footerCaption: 'Pencapaian aspirasi ini mencerminkan matlamat ikhlas kami untuk komuniti iHafidh global. Sila doakan agar Allah (SWT) membantu Ummah kita mencapai angka-angka ini bersama-sama!',
+    footerCaption: 'Walaupun angka-angka di atas mencerminkan visi aspirasi kami untuk Ummah, Statistik Komuniti masa nyata serta peta buih interaktif yang menjejaki bacaan 114 surah Al-Quran kini LIVE di dalam aplikasi iHafidh! Sila doakan agar kita mencapai matlamat aspirasi ini bersama-sama!',
     aspirationalNote: 'Visi Aspirasi • Doakan Kami 🤲',
   },
 };

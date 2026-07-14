@@ -98,7 +98,7 @@ function AnimatedCounter({
 
 const SECTION_TRANSLATIONS = {
   en: {
-    badge: 'Our Vision for the Ummah • Aspirational Milestones',
+    badge: 'Global Ummah Stats • Real memorization progress, tracked across every verse, surah & Juz',
     titleMain: 'Memorizing Together',
     titleHighlight: 'as an Ummah',
     subtitle: 'Our sincere vision and milestones for what the global iHafidh community will achieve together, insha\'Allah.',
@@ -118,7 +118,7 @@ const SECTION_TRANSLATIONS = {
     aspirationalNote: 'Aspirational Vision • Make Du\'a For Us 🤲',
   },
   ur: {
-    badge: 'امت کے لیے ہمارا وژن • خواہش مندانہ سنگ میل',
+    badge: 'گلوبل امت اسکورز • ہر آیت، سورہ اور پارے پر ٹریک کی جانے والی حقیقی حفظ کی پیشرفت',
     titleMain: 'امت کے طور پر',
     titleHighlight: 'مل کر حفظ کرنا',
     subtitle: 'عالمی iHafidh کمیونٹی کے لیے ہمارا مخلصانہ وژن اور اہداف، جنہیں ہم ان شاء اللہ مل کر حاصل کریں گے۔',
@@ -138,7 +138,7 @@ const SECTION_TRANSLATIONS = {
     aspirationalNote: 'خواہش مندانہ وژن • ہمارے لیے دعا کریں 🤲',
   },
   ta: {
-    badge: 'உம்மத்திற்கான எங்கள் இலக்கு • லட்சிய மைல்கற்கள்',
+    badge: 'உலகளாவிய உம்மத் புள்ளிவிவரங்கள் • ஒவ்வொரு வசனம், சூரா & ஜுஸ் முழுவதும் கண்காணிக்கப்படும் உண்மையான மனன முன்னேற்றம்',
     titleMain: 'உம்மத்தாக இணைந்து',
     titleHighlight: 'மனனம் செய்வோம்',
     subtitle: 'உலகளாவிய iHafidh சமூகம் இணைந்து எட்டவுள்ள எங்கள் உண்மையான லட்சிய இலக்குகள், இன்ஷா அல்லாஹ்.',
@@ -158,7 +158,7 @@ const SECTION_TRANSLATIONS = {
     aspirationalNote: 'லட்சிய இலக்கு • எங்களுக்காக துவா செய்யுங்கள் 🤲',
   },
   ms: {
-    badge: 'Visi Kami untuk Ummah • Pencapaian Aspirasi',
+    badge: 'Statistik Ummah Global • Perkembangan hafazan nyata, dijejaki merentasi setiap ayat, surah & Juzuk',
     titleMain: 'Menghafal Bersama',
     titleHighlight: 'sebagai Satu Ummah',
     subtitle: 'Visi ikhlas dan matlamat pencapaian yang akan dicapai bersama oleh komuniti iHafidh global, insya-Allah.',

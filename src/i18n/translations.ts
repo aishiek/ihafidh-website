@@ -185,7 +185,7 @@ type TranslationKeys = {
 export const translations: Record<Language, TranslationKeys> = {
     en: {
         // Banner
-        bannerText: '🎙️ New in v2.1.1 — Intelligent Quiz now evaluates your recitation word by word using AI.',
+        bannerText: '🎙️ New in v2.2.2 — Intelligent Quiz now evaluates your recitation word by word using AI.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -193,7 +193,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'Beyond Ramadan: Master the Quran with our new Golden Mode & Word-by-Word Translation.',
-        versionBadge: 'v2.1.1',
+        versionBadge: 'v2.2.2',
         heroHeadline: 'Read in Gold.',
         heroHeadlineHighlight: 'Understand Every Word.',
         heroHeadlineTafsir: 'Read in Gold.',
@@ -288,7 +288,7 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'Rotate to landscape for a cinematic, distraction-free Quran experience',
 
         // Latest Updates
-        updatesTitle: 'Latest Features (v2.1.1)',
+        updatesTitle: 'Latest Features (v2.2.2)',
         update1Title: 'Intelligent AI Quiz',
         update1Desc: 'Recite a verse and get an instant word-by-word AI accuracy scorecard.',
         update2Title: 'AI Auto-Mark',
@@ -360,7 +360,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
     ta: {
         // Banner
-        bannerText: '🎙️ புதிய வெளியீடு v2.1.1 — Intelligent Quiz இப்போது உங்கள் ஓதுதலை AI மூலம் வார்த்தைக்கு வார்த்தை மதிப்பிடுகிறது.',
+        bannerText: '🎙️ புதிய வெளியீடு v2.2.2 — Intelligent Quiz இப்போது உங்கள் ஓதுதலை AI மூலம் வார்த்தைக்கு வார்த்தை மதிப்பிடுகிறது.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -368,7 +368,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'இந்த புனித ரமலானில் ஒவ்வொரு பகலையும் இரவையும் மதிப்புமிக்கதாக மாற்றுங்கள் - குர்ஆனை மனனம் செய்யுங்கள், ஓதுங்கள், சிந்தியுங்கள்.',
-        versionBadge: 'v2.1.1',
+        versionBadge: 'v2.2.2',
         heroHeadline: 'தங்கத்தில் ஓதுங்கள்.',
         heroHeadlineHighlight: 'ஒவ்வொரு வார்த்தையையும் புரிந்து கொள்ளுங்கள்.',
         heroHeadlineTafsir: 'தங்கத்தில் ஓதுங்கள்.',
@@ -463,7 +463,7 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'முழு கோல்டன் அனுபவத்தைப் பெற உங்கள் சாதனத்தைத் கிடைமட்டமாக மாற்றவும்',
 
         // Latest Updates
-        updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.1.1)',
+        updatesTitle: 'சமீபத்திய புதுப்பிப்புகள் (v2.2.2)',
         update1Title: 'அறிவார்ந்த AI வினாடி வினா',
         update1Desc: 'ஒரு வசனத்தை ஓதி, உங்கள் துல்லியத்தின் அடிப்படையில் வார்த்தைக்கு வார்த்தை AI மதிப்பெண்ணைப் பெறுங்கள்.',
         update2Title: 'தஜ்வீத் எழுத்துருக்கள்',
@@ -535,7 +535,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
     ms: {
         // Banner
-        bannerText: '🎙️ Baru di v2.1.1 — Kuiz AI Pintar kini menilai bacaan anda perkataan demi perkataan menggunakan AI.',
+        bannerText: '🎙️ Baru di v2.2.2 — Kuiz AI Pintar kini menilai bacaan anda perkataan demi perkataan menggunakan AI.',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -543,7 +543,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'Ramadan ini, manfaatkan setiap siang dan malam. Hafal, Baca, Renungi.',
-        versionBadge: 'v2.1.1',
+        versionBadge: 'v2.2.2',
         heroHeadline: 'Jadikan Ramadan ini',
         heroHeadlineHighlight: 'hafazan terkuat anda.',
         heroHeadlineTafsir: 'Jadikan Ramadan ini',
@@ -638,7 +638,7 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'Putar peranti anda ke landskap untuk membuka pengalaman Emas sepenuhnya',
 
         // Latest Updates
-        updatesTitle: 'Kemas Kini Terkini (v2.1.1)',
+        updatesTitle: 'Kemas Kini Terkini (v2.2.2)',
         update1Title: 'Kuiz AI Pintar',
         update1Desc: 'Baca ayat dan dapatkan kad skor AI untuk ketepatan anda, satu perkataan demi satu perkataan.',
         update2Title: 'Fon Tajwid',
@@ -709,7 +709,7 @@ export const translations: Record<Language, TranslationKeys> = {
     },
     ur: {
         // Banner
-        bannerText: '🎙️ v2.1.1 میں نیا — ذہین کوئز اب آپ کی تلاوت کا لفظ بہ لفظ AI کے ساتھ جائزہ لیتا ہے۔',
+        bannerText: '🎙️ v2.2.2 میں نیا — ذہین کوئز اب آپ کی تلاوت کا لفظ بہ لفظ AI کے ساتھ جائزہ لیتا ہے۔',
         bannerCTA: 'Download Free →',
 
         // Navbar
@@ -717,7 +717,7 @@ export const translations: Record<Language, TranslationKeys> = {
 
         // Hero
         ramadanText: 'اس رمضان ہر دن اور رات کو قیمتی بنائیں، حفظ کریں، تلاوت کریں اور غور و فکر کریں۔',
-        versionBadge: 'v2.1.1',
+        versionBadge: 'v2.2.2',
         heroHeadline: 'گولڈ میں پڑھیں.',
         heroHeadlineHighlight: 'ہر لفظ کو سمجھیں۔',
         heroHeadlineTafsir: 'گولڈ میں پڑھیں.',
@@ -812,7 +812,7 @@ export const translations: Record<Language, TranslationKeys> = {
         landscapeNudge: 'مکمل گولڈن تجربہ حاصل کرنے کے لیے اپنے آلے کو لینڈ اسکیپ میں گھمائیں',
 
         // Latest Updates
-        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.1.1)',
+        updatesTitle: 'تازہ ترین اپ ڈیٹس (v2.2.2)',
         update1Title: 'ذہین AI کوئز',
         update1Desc: 'آیت پڑھ کر سنائیں اور ہر لفظ کی درستگی پر AI اسکور کارڈ حاصل کریں۔',
         update2Title: 'تجویدی فونٹس',

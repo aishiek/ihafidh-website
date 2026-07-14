@@ -24,15 +24,15 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         const langParam = urlParams.get('lang') as Language | null;
 
         if (langParam && ['en', 'ta', 'ms', 'ur'].includes(langParam)) {
-            setLanguageState(langParam);
+            queueMicrotask(() => setLanguageState(langParam));
             localStorage.setItem(STORAGE_KEY, langParam);
         } else {
             const saved = localStorage.getItem(STORAGE_KEY) as Language | null;
             if (saved && ['en', 'ta', 'ms', 'ur'].includes(saved)) {
-                setLanguageState(saved);
+                queueMicrotask(() => setLanguageState(saved));
             }
         }
-        setMounted(true);
+        queueMicrotask(() => setMounted(true));
     }, []);
 
     const setLanguage = (lang: Language) => {

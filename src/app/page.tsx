@@ -8,7 +8,6 @@ import {
   CaseSensitive,
   CheckCircle2,
   ChevronRight,
-  Clock,
   CreditCard,
   Eye,
   Facebook,
@@ -24,17 +23,12 @@ import {
   Mail,
   Maximize,
   Moon,
-  Music,
   RotateCw,
   Scissors,
-  Search,
-  Settings,
   Settings2,
   Smartphone,
   Sparkles,
-  Star,
   Sun,
-  Target,
   ToggleLeft,
   Twitter,
   Type,
@@ -48,8 +42,9 @@ import Testimonials from "./Testimonials";
 import DownloadDrawer from "./DownloadDrawer";
 import LanguageSelector from "./LanguageSelector";
 import { LanguageProvider, useLanguage } from "@/i18n/LanguageContext";
+import GlobalUmmahMilestones from "./GlobalUmmahMilestones";
 
-function FeaturesExplorer({ openDrawer }: { openDrawer: (e: React.MouseEvent) => void }) {
+export function FeaturesExplorer({ openDrawer }: { openDrawer: (e: React.MouseEvent) => void }) {
   const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState<'Recitation' | 'Memorization' | 'Experience' | 'Growth'>('Recitation');
 
@@ -120,8 +115,8 @@ function FeaturesExplorer({ openDrawer }: { openDrawer: (e: React.MouseEvent) =>
           {features[activeCategory].map((f) => (
             <div key={f.id} className={`${styles.fCard} glass animate-fade-in`}>
               <div className={styles.fIcon}>{f.icon}</div>
-              <h4>{t(`${f.id}Title` as any)}</h4>
-              <p>{t(`${f.id}Desc` as any)}</p>
+              <h4>{t(`${f.id}Title` as Parameters<typeof t>[0])}</h4>
+              <p>{t(`${f.id}Desc` as Parameters<typeof t>[0])}</p>
             </div>
           ))}
         </div>
@@ -306,6 +301,9 @@ function HomeContent() {
           </div>
         </div>
       </section>
+
+      {/* Global Ummah Milestones Dashboard Widget */}
+      <GlobalUmmahMilestones />
 
       {/* How It Works Section — Restored in AI Teal Theme */}
       <section className={styles.howItWorks} id="how-it-works" style={{ padding: '6rem 0', background: 'rgba(255, 255, 255, 0.01)' }}>

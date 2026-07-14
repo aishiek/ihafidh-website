@@ -458,6 +458,13 @@ function HomeContent() {
                 <p>{t('update5Desc')}</p>
               </div>
             </div>
+            <div className={styles.readerFeatureItem}>
+              <div className={styles.readerFeatureIcon}><Globe size={20} /></div>
+              <div>
+                <h4 style={{ color: '#fff' }}>{t('update6Title')}</h4>
+                <p>{t('update6Desc')}</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

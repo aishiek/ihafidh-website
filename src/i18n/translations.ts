@@ -116,6 +116,8 @@ type TranslationKeys = {
     update4Desc: string;
     update5Title: string;
     update5Desc: string;
+    update6Title: string;
+    update6Desc: string;
 
     // Testimonials
     testimonialsTitle: string;
@@ -299,6 +301,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'Listen to audio samples when selecting your preferred Qari in settings.',
         update5Title: 'Custom Page Mode',
         update5Desc: 'Customize your reading experience from 3 up to 20 verses per page.',
+        update6Title: 'Global Ummah Map',
+        update6Desc: 'See hearts memorizing the Quran all around the globe on an interactive world map as we unite in our Hifdh journey.',
 
         // Testimonials
         testimonialsTitle: 'Loved by the Ummah',
@@ -474,6 +478,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'உங்கள் வசதிக்கேற்ப ஒரு பக்கத்திற்கு 3 முதல் 20 ஆயத்துக்கள் வரை உங்கள் வாசிப்பு .',
         update5Title: 'குர்ஆன் துஆக்கள் தொகுப்பு',
         update5Desc: 'குர்ஆனில் இருந்து உண்மையான பிரார்த்தனைகளை அணுகவும். தினசரி ஆன்மீக வளர்ச்சிக்காக மெனுவில் கிடைக்கிறது.',
+        update6Title: 'உலகளாவிய உம்மத் வரைபடம்',
+        update6Desc: 'உலகெங்கிலும் குர்ஆனை மனனம் செய்யும் இதயங்களை ஒரு வரைபடத்தில் பார்த்து, நமது ஹிஃப்ழ் பயணத்தில் உம்மத்தாக இணைவோம்.',
 
         // Testimonials
         testimonialsTitle: 'நற்சான்றிதழ்கள்',
@@ -649,6 +655,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'Sesuaikan pengalaman bacaan anda dari 3 hingga 20 ayat setiap halaman.',
         update5Title: 'Koleksi Doa Quran',
         update5Desc: 'Akses doa-doa sahih dari Al-Quran. Tersedia dalam menu untuk pengayaan rohani harian.',
+        update6Title: 'Peta Ummah Global',
+        update6Desc: 'Lihat komuniti yang sedang menghafal Al-Quran di seluruh dunia menerusi peta interaktif sambil kita bersatu dalam perjalanan Hafazan ini.',
 
         // Testimonials
         testimonialsTitle: 'Dicintai Umat',
@@ -823,6 +831,8 @@ export const translations: Record<Language, TranslationKeys> = {
         update4Desc: 'فی صفحہ 3 سے 20 آیات تک تلاوت کے تجربے کو اپنی مرضی کے مطابق بنائیں۔',
         update5Title: 'قرآنی دعاؤں کا مجموعہ',
         update5Desc: 'قرآن سے مستند دعاؤں تک رسائی حاصل کریں۔ روزانہ روحانی ترقی کے لیے مینو میں دستیاب ہے۔',
+        update6Title: 'گلوبل امت میپ',
+        update6Desc: 'ایک انٹرایکٹو نقشے پر دنیا بھر میں قرآن مجید حفظ کرنے والے مسلمانوں کو دیکھیں اور اس مبارک سفر میں امت کے ساتھ جڑیں۔',
 
         // Testimonials
         testimonialsTitle: 'امت کی پسند',

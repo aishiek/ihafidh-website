@@ -10,6 +10,7 @@ import {
   Sparkles,
   ShieldCheck,
   Activity,
+  HandHeart,
 } from 'lucide-react';
 import styles from './GlobalUmmahMilestones.module.css';
 import { useGlobalUmmahStats } from '@/hooks/useGlobalUmmahStats';
@@ -54,7 +55,7 @@ function AnimatedCounter({
     return () => observer.disconnect();
   }, [hasTriggered]);
 
-  // Animate from zero on trigger, or smoothly transition on subsequent live updates
+  // Animate smoothly from zero to the target aspirational goal on trigger
   useEffect(() => {
     if (!hasTriggered) return;
 
@@ -85,21 +86,23 @@ function AnimatedCounter({
     requestAnimationFrame(step);
   }, [hasTriggered, value, duration]);
 
+  // Format integer with commas and append suffix
+  const formattedNumber = displayValue.toLocaleString() + suffix;
+
   return (
     <span ref={counterRef} className={className}>
-      {displayValue.toLocaleString()}
-      <span className={styles.plusSign}>{suffix}</span>
+      {formattedNumber}
     </span>
   );
 }
 
 const SECTION_TRANSLATIONS = {
   en: {
-    badge: 'Social Proof • Global Ummah Progress',
+    badge: 'Our Vision for the Ummah • Aspirational Milestones',
     titleMain: 'Memorizing Together',
     titleHighlight: 'as an Ummah',
-    subtitle: 'Real-time anonymous global milestones achieved by iHafidh users worldwide.',
-    primaryTag: 'Primary Milestone Highlight',
+    subtitle: 'Our sincere vision and milestones for what the global iHafidh community will achieve together, insha\'Allah.',
+    primaryTag: 'Primary Milestone Goal',
     primaryTitle: 'Total Verses Memorized',
     primaryDesc:
       'Verses recited, reviewed, and preserved in hearts across the world using our AI recitation evaluator & active recall tools.',
@@ -108,18 +111,18 @@ const SECTION_TRANSLATIONS = {
     juzTitle: 'Juz Completed',
     juzDesc: 'Full 30th Quranic divisions finished',
     quizzesTitle: 'AI Quizzes Evaluated',
-    quizzesDesc: 'Real-time Tajweed & Hifdh verification',
+    quizzesDesc: 'Tajweed & Hifdh verification sessions',
     audioTitle: 'Audio Recitations Played',
     audioDesc: 'Repetition & active listening sessions',
-    footerCaption: 'All statistics are aggregated anonymously across our worldwide community. No user-identifiable data is ever collected.',
-    syncActive: 'Live Global Sync Active',
+    footerCaption: 'These aspirational milestones reflect our sincere goal for the global iHafidh community. Please make Du\'a that Allah (SWT) helps our Ummah achieve and surpass these numbers together!',
+    aspirationalNote: 'Aspirational Vision • Make Du\'a For Us 🤲',
   },
   ur: {
-    badge: 'سماجی ثبوت • عالمی امت کی پیشرفت',
+    badge: 'امت کے لیے ہمارا وژن • خواہش مندانہ سنگ میل',
     titleMain: 'امت کے طور پر',
     titleHighlight: 'مل کر حفظ کرنا',
-    subtitle: 'دنیا بھر کے iHafidh صارفین کے ذریعے حاصل کیے گئے ریئل ٹائم گمنام عالمی سنگ میل۔',
-    primaryTag: 'بنیادی سنگ میل کی جھلک',
+    subtitle: 'عالمی iHafidh کمیونٹی کے لیے ہمارا مخلصانہ وژن اور اہداف، جنہیں ہم ان شاء اللہ مل کر حاصل کریں گے۔',
+    primaryTag: 'بنیادی سنگ میل کا ہدف',
     primaryTitle: 'کل حفظ کی گئی آیات',
     primaryDesc:
       'ہمارے AI تلاوت ایویلیویٹر اور فعال یادداشت کے ٹولز کا استعمال کرتے ہوئے دنیا بھر کے دلوں میں محفوظ اور تلاوت کی گئیں آیات۔',
@@ -131,35 +134,35 @@ const SECTION_TRANSLATIONS = {
     quizzesDesc: 'تجوید اور حفظ کی فوری تصدیق',
     audioTitle: 'آڈیو تلاوتیں سنی گئیں',
     audioDesc: 'تکرار اور سننے کے سیشنز',
-    footerCaption: 'تمام اعداد و شمار دنیا بھر کے تمام صارفین سے گمنام طور پر جمع کیے جاتے ہیں۔ کبھی بھی صارف کا کوئی ذاتی ڈیٹا اکٹھا نہیں کیا جاتا۔',
-    syncActive: 'لائیو عالمی سنک فعال ہے',
+    footerCaption: 'یہ خواہش مندانہ سنگ میل عالمی iHafidh کمیونٹی کے لیے ہمارے مخلصانہ وژن اور ہدف کی عکاسی کرتے ہیں۔ براہِ کرم دعا کریں کہ اللہ سبحانہ وتعالیٰ ہماری امت کو مل کر ان اہداف تک پہنچنے کی توفیق عطا فرمائے!',
+    aspirationalNote: 'خواہش مندانہ وژن • ہمارے لیے دعا کریں 🤲',
   },
   ta: {
-    badge: 'சமூக சான்று • உலகளாவிய உம்மா முன்னேற்றம்',
+    badge: 'உம்மாவிற்கான எங்கள் இலக்கு • லட்சிய மைல்கற்கள்',
     titleMain: 'உம்மாவாக இணைந்து',
     titleHighlight: 'மனனம் செய்வோம்',
-    subtitle: 'உலகெங்கிலும் உள்ள iHafidh பயனர்களால் எட்டப்பட்ட நிகழ்நேர அநாமதேய உலகளாவிய மைல்கற்கள்.',
-    primaryTag: 'முக்கிய மைல்கல் சாதனை',
-    primaryTitle: 'மொத்தம் மனனம் செய்யப்பட்ட வசனங்கள்',
+    subtitle: 'உலகளாவிய iHafidh சமூகம் இணைந்து எட்டவுள்ள எங்கள் உண்மையான லட்சிய இலக்குகள், இன்ஷா அல்லாஹ்.',
+    primaryTag: 'முக்கிய லட்சிய இலக்கு',
+    primaryTitle: 'மொத்தம் மனனம் செய்யப்படும் வசனங்கள்',
     primaryDesc:
-      'எங்கள் AI ஓதுதல் மதிப்பீட்டாளர் மூலம் உலகெங்கிலும் உள்ள இதயங்களில் பாதுகாக்கப்பட்டு ஓதப்பட்ட வசனங்கள்.',
-    surahsTitle: 'முடிக்கப்பட்ட சூராக்கள்',
-    surahsDesc: 'முழு அத்தியாயங்கள் தேர்ச்சி பெறப்பட்டன',
-    juzTitle: 'முடிக்கப்பட்ட ஜுஸ்',
-    juzDesc: 'குர்ஆனின் 30 பிரிவுகள் முடிக்கப்பட்டன',
+      'எங்கள் AI ஓதுதல் மதிப்பீட்டாளர் மூலம் உலகெங்கிலும் உள்ள இதயங்களில் பாதுகாக்கப்பட்டு ஓதப்படும் வசனங்கள்.',
+    surahsTitle: 'முடிக்கப்படும் சூராக்கள்',
+    surahsDesc: 'முழு அத்தியாயங்கள் தேர்ச்சி பெறப்படும்',
+    juzTitle: 'முடிக்கப்படும் ஜுஸ்',
+    juzDesc: 'குர்ஆனின் 30 பிரிவுகள் முடிக்கப்படும்',
     quizzesTitle: 'AI வினாடி வினாக்கள்',
-    quizzesDesc: 'தஜ்வீத் & ஹிஃப்ழ் சரிபார்ப்பு',
-    audioTitle: 'ஒலிபரப்பப்பட்ட ஓதுதல்கள்',
+    quizzesDesc: 'தஜ்வீத் & ஹிஃப்ழ் சரிபார்ப்பு அமர்வுகள்',
+    audioTitle: 'ஒலிபரப்பப்படும் ஓதுதல்கள்',
     audioDesc: 'கேட்டல் மற்றும் திரும்ப ஓதும் அமர்வுகள்',
-    footerCaption: 'அனைத்து புள்ளிவிவரங்களும் உலகெங்கிலும் உள்ள அனைத்து பயனர்களிடமிருந்தும் அநாமதேயமாக சேகரிக்கப்படுகின்றன. தனிப்பட்ட தகவல்கள் எதுவும் சேகரிக்கப்படுவதில்லை.',
-    syncActive: 'நேரலை ஒத்திசைவு செயலில் உள்ளது',
+    footerCaption: 'இந்த லட்சிய மைல்கற்கள் உலகளாவிய iHafidh சமூகத்திற்கான எங்கள் உண்மையான இலக்கைப் பிரதிபலிக்கின்றன. அல்லாஹ் (SWT) நமது உம்மாவிற்கு இந்த இலக்குகளை எட்ட உதவ துவா செய்யுங்கள்!',
+    aspirationalNote: 'லட்சிய இலக்கு • எங்களுக்காக துவா செய்யுங்கள் 🤲',
   },
   ms: {
-    badge: 'Bukti Sosial • Kemajuan Ummah Global',
+    badge: 'Visi Kami untuk Ummah • Pencapaian Aspirasi',
     titleMain: 'Menghafal Bersama',
     titleHighlight: 'sebagai Satu Ummah',
-    subtitle: 'Pencapaian masa nyata global yang dikumpulkan secara tanpa nama oleh pengguna iHafidh di seluruh dunia.',
-    primaryTag: 'Pencapaian Utama',
+    subtitle: 'Visi ikhlas dan matlamat pencapaian yang akan dicapai bersama oleh komuniti iHafidh global, insya-Allah.',
+    primaryTag: 'Matlamat Pencapaian Utama',
     primaryTitle: 'Jumlah Ayat Dihafal',
     primaryDesc:
       'Ayat-ayat yang dibaca, disemak, dan terpelihara dalam hati di seluruh dunia menggunakan penilai bacaan AI & alat imbas kembali kami.',
@@ -168,16 +171,16 @@ const SECTION_TRANSLATIONS = {
     juzTitle: 'Juzuk Selesai',
     juzDesc: 'Bahagian ke-30 Al-Quran diselesaikan',
     quizzesTitle: 'Kuiz AI Dinilai',
-    quizzesDesc: 'Pengesahan Tajwid & Hafazan masa nyata',
+    quizzesDesc: 'Sesi pengesahan Tajwid & Hafazan',
     audioTitle: 'Bacan Audio Dimainkan',
     audioDesc: 'Sesi ulangan & mendengarkan bacaan',
-    footerCaption: 'Semua statistik dikumpulkan secara tanpa nama dari semua pengguna di seluruh dunia. Tiada data peribadi pengguna yang pernah dikumpulkan.',
-    syncActive: 'Segerak Global Langsung Aktif',
+    footerCaption: 'Pencapaian aspirasi ini mencerminkan matlamat ikhlas kami untuk komuniti iHafidh global. Sila doakan agar Allah (SWT) membantu Ummah kita mencapai angka-angka ini bersama-sama!',
+    aspirationalNote: 'Visi Aspirasi • Doakan Kami 🤲',
   },
 };
 
 export default function GlobalUmmahMilestones() {
-  const { stats, loading } = useGlobalUmmahStats({ simulateLive: true });
+  const { stats, loading } = useGlobalUmmahStats();
   const { language } = useLanguage();
   const t = SECTION_TRANSLATIONS[language] || SECTION_TRANSLATIONS.en;
   const isRtl = language === 'ur';
@@ -193,7 +196,7 @@ export default function GlobalUmmahMilestones() {
         {/* Section Header */}
         <div className={`${styles.sectionHeader} animate-fade-in`}>
           <div className={styles.badge}>
-            <span className={styles.liveDot} />
+            <Sparkles size={14} className={styles.badgeIcon} />
             <span>{t.badge}</span>
           </div>
           <h2 className={styles.title}>
@@ -209,7 +212,7 @@ export default function GlobalUmmahMilestones() {
             <div className={styles.primaryGlow} />
             <div className={styles.primaryContent}>
               <div className={styles.primaryTag}>
-                <Sparkles size={16} />
+                <Award size={16} />
                 <span>{t.primaryTag}</span>
               </div>
               <div className={styles.primaryCounter}>
@@ -218,21 +221,21 @@ export default function GlobalUmmahMilestones() {
                 ) : (
                   <AnimatedCounter
                     value={stats.total_verses_memorized}
-                    duration={2400}
+                    duration={2500}
                     suffix="+"
                   />
                 )}
               </div>
-              <h3 className={styles.primaryLabel}>{t.primaryTitle}</h3>
+              <h3 className={styles.primaryTitle}>{t.primaryTitle}</h3>
               <p className={styles.primaryDesc}>{t.primaryDesc}</p>
             </div>
             <div className={styles.primaryIconContainer}>
-              <Globe size={48} strokeWidth={1.5} />
+              <Globe className={styles.primaryGlobeIcon} />
             </div>
           </div>
         </div>
 
-        {/* 4-Column Secondary Grid */}
+        {/* Secondary Milestones Grid (4 Columns) */}
         <div className={styles.grid}>
           {/* Card 1: Surahs Completed */}
           <div className={styles.card}>
@@ -245,7 +248,7 @@ export default function GlobalUmmahMilestones() {
             <div>
               <div className={styles.cardCounter}>
                 {loading ? (
-                  <div className={styles.skeleton} style={{ width: 130, height: 38 }} />
+                  <div className={styles.skeleton} style={{ width: 140, height: 38 }} />
                 ) : (
                   <AnimatedCounter
                     value={stats.total_surahs_completed}
@@ -262,19 +265,19 @@ export default function GlobalUmmahMilestones() {
           {/* Card 2: Juz Completed */}
           <div className={styles.card}>
             <div className={styles.cardTop}>
-              <div className={`${styles.iconWrapper} ${styles.iconGold}`}>
+              <div className={`${styles.iconWrapper} ${styles.iconTeal}`}>
                 <Award size={24} />
               </div>
-              <Activity size={18} color="#D4AF37" style={{ opacity: 0.6 }} />
+              <Activity size={18} color="#2DD4BF" style={{ opacity: 0.6 }} />
             </div>
             <div>
               <div className={styles.cardCounter}>
                 {loading ? (
-                  <div className={styles.skeleton} style={{ width: 110, height: 38 }} />
+                  <div className={styles.skeleton} style={{ width: 140, height: 38 }} />
                 ) : (
                   <AnimatedCounter
                     value={stats.total_juz_completed}
-                    duration={1800}
+                    duration={2100}
                     suffix="+"
                   />
                 )}
@@ -287,10 +290,10 @@ export default function GlobalUmmahMilestones() {
           {/* Card 3: AI Quizzes Evaluated */}
           <div className={styles.card}>
             <div className={styles.cardTop}>
-              <div className={`${styles.iconWrapper} ${styles.iconTeal}`}>
+              <div className={`${styles.iconWrapper} ${styles.iconGold}`}>
                 <Brain size={24} />
               </div>
-              <Activity size={18} color="#2DD4BF" style={{ opacity: 0.6 }} />
+              <Activity size={18} color="#D4AF37" style={{ opacity: 0.6 }} />
             </div>
             <div>
               <div className={styles.cardCounter}>
@@ -335,15 +338,15 @@ export default function GlobalUmmahMilestones() {
           </div>
         </div>
 
-        {/* Footer Guarantee Caption */}
+        {/* Footer Guarantee & Du'a Request Caption */}
         <div className={styles.footerContainer}>
           <div className={styles.footerNote}>
             <ShieldCheck size={20} className={styles.footerNoteIcon} />
             <span>{t.footerCaption}</span>
           </div>
-          <div className={styles.syncStatus}>
-            <span className={styles.liveDot} style={{ width: 6, height: 6 }} />
-            <span>{t.syncActive}</span>
+          <div className={styles.aspirationalPill}>
+            <HandHeart size={15} className={styles.duaaIcon} />
+            <span>{t.aspirationalNote}</span>
           </div>
         </div>
       </div>
